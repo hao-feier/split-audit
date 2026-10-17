@@ -1,0 +1,355 @@
+{
+ "regions": {
+  "vietnam": {
+   "t1": {
+    "S2B_48QXH_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9983,
+     "cf_mangrove": 0.9983
+    },
+    "S2A_48QXH_20191207_0_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9983,
+     "cf_mangrove": 0.9983
+    },
+    "S2B_48QXJ_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9843,
+     "cf_mangrove": 0.9843
+    },
+    "S2A_48QXJ_20191207_0_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9843,
+     "cf_mangrove": 0.9843
+    },
+    "S2A_48QYH_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 1.0,
+     "cf_mangrove": 1.0
+    },
+    "S2B_48QYH_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 1.0,
+     "cf_mangrove": 1.0
+    },
+    "S2A_48QYJ_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9991,
+     "cf_mangrove": 0.9991
+    },
+    "S2B_48QYJ_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9991,
+     "cf_mangrove": 0.9991
+    }
+   },
+   "t2": {
+    "S2A_48QXH_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7619,
+     "cf_mangrove": 0.7619
+    },
+    "S2B_48QXH_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7619,
+     "cf_mangrove": 0.7619
+    },
+    "S2A_48QXJ_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7765,
+     "cf_mangrove": 0.7765
+    },
+    "S2B_48QXJ_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7765,
+     "cf_mangrove": 0.7765
+    },
+    "S2A_48QYH_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.8526,
+     "cf_mangrove": 0.8526
+    },
+    "S2B_48QYH_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.8526,
+     "cf_mangrove": 0.8526
+    },
+    "S2A_48QYJ_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7443,
+     "cf_mangrove": 0.7443
+    },
+    "S2B_48QYJ_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.7443,
+     "cf_mangrove": 0.7443
+    }
+   },
+   "t1_tidal_summary": {
+    "n_scenes": 8,
+    "date_range": "2019-12-07 .. 2019-12-12",
+    "scene_span_days": 5,
+    "tidal_states_covered": [
+     "mid",
+     "spring"
+    ]
+   },
+   "t2_tidal_summary": {
+    "n_scenes": 8,
+    "date_range": "2024-12-05 .. 2024-12-20",
+    "scene_span_days": 15,
+    "tidal_states_covered": [
+     "mid"
+    ]
+   }
+  },
+  "beilunhe": {
+   "t1": {
+    "S2A_48QZJ_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9601,
+     "cf_mangrove": 0.9601
+    },
+    "S2B_48QZJ_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9601,
+     "cf_mangrove": 0.9601
+    },
+    "S2B_48QZK_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9886,
+     "cf_mangrove": 0.9886
+    },
+    "S2A_48QZK_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9886,
+     "cf_mangrove": 0.9886
+    },
+    "S2A_49QBD_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9654,
+     "cf_mangrove": 0.9654
+    },
+    "S2B_49QBD_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9654,
+     "cf_mangrove": 0.9654
+    },
+    "S2A_49QBE_20191207_1_L2A": {
+     "date": "2019-12-07",
+     "lunar_age_days": 9.72,
+     "tidal_state": "mid",
+     "cf_region": 0.9867,
+     "cf_mangrove": 0.9867
+    },
+    "S2B_49QBE_20191212_0_L2A": {
+     "date": "2019-12-12",
+     "lunar_age_days": 14.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9867,
+     "cf_mangrove": 0.9867
+    }
+   },
+   "t2": {
+    "S2A_48QZJ_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9971,
+     "cf_mangrove": 0.9971
+    },
+    "S2B_48QZJ_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9971,
+     "cf_mangrove": 0.9971
+    },
+    "S2A_48QZK_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9799,
+     "cf_mangrove": 0.9799
+    },
+    "S2B_48QZK_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9799,
+     "cf_mangrove": 0.9799
+    },
+    "S2A_49QBD_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9966,
+     "cf_mangrove": 0.9966
+    },
+    "S2B_49QBD_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9966,
+     "cf_mangrove": 0.9966
+    },
+    "S2A_49QBE_20241220_0_L2A": {
+     "date": "2024-12-20",
+     "lunar_age_days": 18.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9766,
+     "cf_mangrove": 0.9766
+    },
+    "S2B_49QBE_20241205_0_L2A": {
+     "date": "2024-12-05",
+     "lunar_age_days": 3.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9766,
+     "cf_mangrove": 0.9766
+    }
+   },
+   "t1_tidal_summary": {
+    "n_scenes": 8,
+    "date_range": "2019-12-07 .. 2019-12-12",
+    "scene_span_days": 5,
+    "tidal_states_covered": [
+     "mid",
+     "spring"
+    ]
+   },
+   "t2_tidal_summary": {
+    "n_scenes": 8,
+    "date_range": "2024-12-05 .. 2024-12-20",
+    "scene_span_days": 15,
+    "tidal_states_covered": [
+     "mid"
+    ]
+   }
+  },
+  "zhanjiang": {
+   "t1": {
+    "S2A_49QCD_20191204_0_L2A": {
+     "date": "2019-12-04",
+     "lunar_age_days": 6.72,
+     "tidal_state": "neap",
+     "cf_region": 0.9802,
+     "cf_mangrove": 0.9802
+    },
+    "S2A_49QCD_20191214_0_L2A": {
+     "date": "2019-12-14",
+     "lunar_age_days": 16.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9802,
+     "cf_mangrove": 0.9802
+    },
+    "S2A_49QDD_20191204_0_L2A": {
+     "date": "2019-12-04",
+     "lunar_age_days": 6.72,
+     "tidal_state": "neap",
+     "cf_region": 0.9636,
+     "cf_mangrove": 0.9636
+    },
+    "S2A_49QDD_20191214_0_L2A": {
+     "date": "2019-12-14",
+     "lunar_age_days": 16.72,
+     "tidal_state": "spring",
+     "cf_region": 0.9636,
+     "cf_mangrove": 0.9636
+    }
+   },
+   "t2": {
+    "S2A_49QCD_20241207_0_L2A": {
+     "date": "2024-12-07",
+     "lunar_age_days": 5.82,
+     "tidal_state": "mid",
+     "cf_region": 1.0,
+     "cf_mangrove": 1.0
+    },
+    "S2A_49QCD_20250106_0_L2A": {
+     "date": "2025-01-06",
+     "lunar_age_days": 6.29,
+     "tidal_state": "neap",
+     "cf_region": 1.0,
+     "cf_mangrove": 1.0
+    },
+    "S2A_49QDD_20250106_0_L2A": {
+     "date": "2025-01-06",
+     "lunar_age_days": 6.29,
+     "tidal_state": "neap",
+     "cf_region": 0.9998,
+     "cf_mangrove": 0.9998
+    },
+    "S2A_49QDD_20241207_0_L2A": {
+     "date": "2024-12-07",
+     "lunar_age_days": 5.82,
+     "tidal_state": "mid",
+     "cf_region": 0.9998,
+     "cf_mangrove": 0.9998
+    }
+   },
+   "t1_tidal_summary": {
+    "n_scenes": 4,
+    "date_range": "2019-12-04 .. 2019-12-14",
+    "scene_span_days": 10,
+    "tidal_states_covered": [
+     "neap",
+     "spring"
+    ]
+   },
+   "t2_tidal_summary": {
+    "n_scenes": 4,
+    "date_range": "2024-12-07 .. 2025-01-06",
+    "scene_span_days": 30,
+    "tidal_states_covered": [
+     "mid",
+     "neap"
+    ]
+   }
+  }
+ },
+ "summary": {}
+}

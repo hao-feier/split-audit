@@ -1,0 +1,104 @@
+{
+  "n_runs": 90,
+  "n_cells": 45,
+  "metric": "separated minus scattered, paired by (model, draw, seed)",
+  "gaps": {
+    "F1_change": {
+      "n_cells": 45,
+      "mean_pp": 0.147,
+      "median_pp": 1.15,
+      "sd_pp": 10.964,
+      "ci95": [
+        -3.056,
+        3.351
+      ],
+      "n_negative": 20,
+      "n_positive": 25,
+      "min_pp": -28.46,
+      "max_pp": 32.3
+    },
+    "roc_auc": {
+      "n_cells": 45,
+      "mean_pp": -0.324,
+      "median_pp": -0.54,
+      "sd_pp": 2.715,
+      "ci95": [
+        -1.117,
+        0.47
+      ],
+      "n_negative": 27,
+      "n_positive": 17,
+      "min_pp": -8.55,
+      "max_pp": 6.98
+    },
+    "ap": {
+      "n_cells": 45,
+      "mean_pp": 0.789,
+      "median_pp": 1.26,
+      "sd_pp": 9.266,
+      "ci95": [
+        -1.918,
+        3.497
+      ],
+      "n_negative": 18,
+      "n_positive": 27,
+      "min_pp": -22.61,
+      "max_pp": 28.43
+    },
+    "MCC_change": {
+      "n_cells": 45,
+      "mean_pp": 0.768,
+      "median_pp": 1.234,
+      "sd_pp": 9.947,
+      "ci95": [
+        -2.138,
+        3.675
+      ],
+      "n_negative": 17,
+      "n_positive": 28,
+      "min_pp": -25.449,
+      "max_pp": 29.021
+    },
+    "bal_acc_change": {
+      "n_cells": 45,
+      "mean_pp": 0.965,
+      "median_pp": 1.295,
+      "sd_pp": 8.701,
+      "ci95": [
+        -1.578,
+        3.507
+      ],
+      "n_negative": 17,
+      "n_positive": 28,
+      "min_pp": -22.33,
+      "max_pp": 24.44
+    }
+  },
+  "argmax_floor": {
+    "n_runs_max_p_change_below_0p5": 0,
+    "min_max_p_change": 0.7822,
+    "median_max_p_change": 0.9976
+  },
+  "same_seed_rerun_f1_drift_pp": {
+    "n": 90,
+    "mean_pp": -0.6824,
+    "max_abs_pp": 34.9,
+    "note": "training is not bit-deterministic on this GPU; F1 and the score-based metrics therefore come from the same re-run rather than being spliced across runs"
+  },
+  "by_arm": {
+    "scattered": {
+      "n": 45,
+      "F1_change": 0.525,
+      "roc_auc": 0.9319,
+      "ap": 0.5565,
+      "prevalence": 0.06057
+    },
+    "separated": {
+      "n": 45,
+      "F1_change": 0.5265,
+      "roc_auc": 0.9287,
+      "ap": 0.5643,
+      "prevalence": 0.06064
+    }
+  }
+}

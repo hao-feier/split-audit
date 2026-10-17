@@ -1,0 +1,296 @@
+{
+ "vietnam": {
+  "unet": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.30207908492136043,
+    "mIoU": 0.47023616113875655
+   },
+   "nonoverlap": {
+    "F1ch": 0.3203176704169424,
+    "mIoU": 0.4751377523293563
+   }
+  },
+  "unet_cbam": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.23506918852418135,
+    "mIoU": 0.44296949374257977
+   },
+   "nonoverlap": {
+    "F1ch": 0.2538567095821206,
+    "mIoU": 0.4429693199508967
+   }
+  },
+  "unet_msa": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.2302171142365226,
+    "mIoU": 0.44354699060729486
+   },
+   "nonoverlap": {
+    "F1ch": 0.2629889598250503,
+    "mIoU": 0.44260669415009035
+   }
+  },
+  "unet_cbam_msa": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.2673908272986614,
+    "mIoU": 0.4736556745792987
+   },
+   "nonoverlap": {
+    "F1ch": 0.29172905040606145,
+    "mIoU": 0.47917138618761035
+   }
+  },
+  "deeplabv3plus": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.26852237769177334,
+    "mIoU": 0.4444989761229844
+   },
+   "nonoverlap": {
+    "F1ch": 0.2888979604178951,
+    "mIoU": 0.4407067308782536
+   }
+  },
+  "temporal_unet": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.21768120851876377,
+    "mIoU": 0.42916153594834083
+   },
+   "nonoverlap": {
+    "F1ch": 0.26089716678783165,
+    "mIoU": 0.4290368280118796
+   }
+  },
+  "temporal_unet_gn": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.26472912993251047,
+    "mIoU": 0.4775965065218346
+   },
+   "nonoverlap": {
+    "F1ch": 0.29829113357788317,
+    "mIoU": 0.48027004170093035
+   }
+  },
+  "fc_siam": {
+   "n_patches_full": 10,
+   "n_patches_nonoverlap": 4,
+   "full": {
+    "F1ch": 0.2663153927704733,
+    "mIoU": 0.4774284918982198
+   },
+   "nonoverlap": {
+    "F1ch": 0.2958484841724853,
+    "mIoU": 0.4774326654363602
+   }
+  }
+ },
+ "beilunhe": {
+  "unet": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.40724234532180353,
+    "mIoU": 0.5284079042228741
+   },
+   "nonoverlap": {
+    "F1ch": 0.3234173817456733,
+    "mIoU": 0.45910890828987716
+   }
+  },
+  "unet_cbam": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.3650003827604685,
+    "mIoU": 0.48300738579516866
+   },
+   "nonoverlap": {
+    "F1ch": 0.2916598927003739,
+    "mIoU": 0.41345237617811637
+   }
+  },
+  "unet_msa": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.44801703784059727,
+    "mIoU": 0.5036901316272869
+   },
+   "nonoverlap": {
+    "F1ch": 0.3570437122296013,
+    "mIoU": 0.4273310259737142
+   }
+  },
+  "unet_cbam_msa": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.4476189099529492,
+    "mIoU": 0.5517548001647301
+   },
+   "nonoverlap": {
+    "F1ch": 0.373626817447496,
+    "mIoU": 0.49429845944595896
+   }
+  },
+  "deeplabv3plus": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.37109033775371053,
+    "mIoU": 0.4851708181082939
+   },
+   "nonoverlap": {
+    "F1ch": 0.2991785559878945,
+    "mIoU": 0.4208989754888161
+   }
+  },
+  "temporal_unet": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.4115281172308113,
+    "mIoU": 0.523080641965373
+   },
+   "nonoverlap": {
+    "F1ch": 0.31573790125024953,
+    "mIoU": 0.45329844795270025
+   }
+  },
+  "temporal_unet_gn": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.34822533988159154,
+    "mIoU": 0.5007126085597937
+   },
+   "nonoverlap": {
+    "F1ch": 0.26937589841878296,
+    "mIoU": 0.4397041029089758
+   }
+  },
+  "fc_siam": {
+   "n_patches_full": 18,
+   "n_patches_nonoverlap": 7,
+   "full": {
+    "F1ch": 0.3900315205300936,
+    "mIoU": 0.5268172087015288
+   },
+   "nonoverlap": {
+    "F1ch": 0.30231142180629156,
+    "mIoU": 0.4664974122783905
+   }
+  }
+ },
+ "zhanjiang": {
+  "unet": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.3463742758752867,
+    "mIoU": 0.43134402785322135
+   },
+   "nonoverlap": {
+    "F1ch": 0.37135335983793916,
+    "mIoU": 0.433898089908893
+   }
+  },
+  "unet_cbam": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.3549205848185702,
+    "mIoU": 0.43532899120882607
+   },
+   "nonoverlap": {
+    "F1ch": 0.38498427735966506,
+    "mIoU": 0.44109381175579804
+   }
+  },
+  "unet_msa": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.3091019876130903,
+    "mIoU": 0.4485599713823203
+   },
+   "nonoverlap": {
+    "F1ch": 0.3175779327911083,
+    "mIoU": 0.4491188975533196
+   }
+  },
+  "unet_cbam_msa": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.24698022507500642,
+    "mIoU": 0.41784783490563815
+   },
+   "nonoverlap": {
+    "F1ch": 0.24698845606532177,
+    "mIoU": 0.41799153475585016
+   }
+  },
+  "deeplabv3plus": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.2724769546524178,
+    "mIoU": 0.40340354358216557
+   },
+   "nonoverlap": {
+    "F1ch": 0.2910332619694052,
+    "mIoU": 0.40780597944112246
+   }
+  },
+  "temporal_unet": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.36383423080948973,
+    "mIoU": 0.46885771336149573
+   },
+   "nonoverlap": {
+    "F1ch": 0.3613335094904655,
+    "mIoU": 0.46739947259939957
+   }
+  },
+  "temporal_unet_gn": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.3951057856196661,
+    "mIoU": 0.4741619165708246
+   },
+   "nonoverlap": {
+    "F1ch": 0.41810256973079757,
+    "mIoU": 0.47789745762256663
+   }
+  },
+  "fc_siam": {
+   "n_patches_full": 15,
+   "n_patches_nonoverlap": 6,
+   "full": {
+    "F1ch": 0.39386012401676,
+    "mIoU": 0.45054369324040905
+   },
+   "nonoverlap": {
+    "F1ch": 0.43496996682903505,
+    "mIoU": 0.4603960638245209
+   }
+  }
+ }
+}

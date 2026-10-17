@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{times}
+\usepackage{hyperref}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Cover Letter}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent\textbf{To:} The Editor-in-Chief\\
+\noindent\textbf{Journal:} \emph{Remote Sensing} (MDPI)\\
+\noindent\textbf{Date:} October 16, 2026
+
+\vspace{0.5cm}
+
+\noindent Dear Editor,
+
+We are pleased to submit our manuscript entitled ``The Split Is Part of the
+Measurement: Spatial-Interleaving Evaluation Bias in Change Detection,
+Quantified in Bi-Temporal Mangrove Mapping from Sentinel-2'' for
+consideration for publication in \emph{Remote Sensing}.
+
+This paper documents a spatial-evaluation failure mode in bi-temporal change
+detection: a spatially interleaved random split produces a 29.6-percentage-point
+higher change $F1$ than a buffer-separated test assignment, positive in all ten
+partitions, while the corresponding ROC-AUC difference is only $+1.9$\,pp. The
+audit quantifies this in a Sentinel-2 mangrove change-detection setting
+(0.8--2.6\% change prevalence), decomposes the gap into a small
+prevalence-arithmetic component ($+2.7$\,pp) and a dominant recall shift
+associated with the joint spatial configuration of training and test samples,
+and states the identification boundary of what the design can and cannot
+attribute.
+
+We believe this work is well suited to \emph{Remote Sensing} because it
+addresses a methodological concern that affects a large share of change-detection
+studies: the evaluation protocol itself moves the reported score. The paper
+provides a quantified, reproducible demonstration of the effect size, a
+decomposition that separates prevalence arithmetic from the spatial-configuration
+component, and a ten-item reporting checklist for practitioners.
+
+The manuscript is original, has not been published previously, and is not under
+consideration elsewhere. All authors have read and approved the submitted
+version. The full code base and results are deposited at
+\url{https://github.com/hao-feier/split-audit}.
+
+Thank you for your consideration.
+
+\vspace{1cm}
+
+\noindent Sincerely,\\
+Junzhe Yuan\\
+School of Environment and Ecology, Hunan Agricultural University, Changsha, China\\
+\texttt{haofeier0613@gmail.com}\\[4pt]
+Feier Hao\\
+College of Information and Intelligence, Hunan Agricultural University, Changsha, China
+
+\end{document}

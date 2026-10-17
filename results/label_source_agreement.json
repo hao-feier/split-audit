@@ -1,0 +1,173 @@
+{
+  "vietnam": {
+    "A_v4112_2019_vs_v4019_2020": {
+      "region": {
+        "pixels": 39971840,
+        "agreement": 0.9947829521983477,
+        "IoU": 0.7555874352005194,
+        "area_a_km2": 77.43,
+        "area_b_km2": 72.36,
+        "symdiff_km2": 20.85
+      },
+      "patch_union": {
+        "pixels": 8519680,
+        "agreement": 0.9767309335561899,
+        "IoU": 0.722781384261702,
+        "area_a_km2": 73.71,
+        "area_b_km2": 68.85,
+        "symdiff_km2": 19.82
+      }
+    },
+    "B_v4112_2020_vs_v4019_2020_same_year": {
+      "region": {
+        "pixels": 39971840,
+        "agreement": 0.9950368809641988,
+        "IoU": 0.7670947094568576,
+        "area_a_km2": 78.16,
+        "area_b_km2": 72.36,
+        "symdiff_km2": 19.84
+      },
+      "patch_union": {
+        "pixels": 8519680,
+        "agreement": 0.9779282789963942,
+        "IoU": 0.7354892176272051,
+        "area_a_km2": 74.56,
+        "area_b_km2": 68.85,
+        "symdiff_km2": 18.8
+      }
+    },
+    "C_v4112_2019_vs_v4112_2020_same_source": {
+      "region": {
+        "pixels": 39971840,
+        "agreement": 0.9988566951133598,
+        "IoU": 0.9429308564242748,
+        "area_a_km2": 77.43,
+        "area_b_km2": 78.16,
+        "symdiff_km2": 4.57
+      },
+      "patch_union": {
+        "pixels": 8519680,
+        "agreement": 0.9949957040640024,
+        "IoU": 0.9002601864690533,
+        "area_a_km2": 73.71,
+        "area_b_km2": 74.56,
+        "symdiff_km2": 4.26
+      }
+    },
+    "v4112_2020_mangrove_km2": 78.16
+  },
+  "beilunhe": {
+    "A_v4112_2019_vs_v4019_2020": {
+      "region": {
+        "pixels": 41436819,
+        "agreement": 0.999146145846765,
+        "IoU": 0.8236285237157598,
+        "area_a_km2": 18.25,
+        "area_b_km2": 18.33,
+        "symdiff_km2": 3.54
+      },
+      "patch_union": {
+        "pixels": 2555904,
+        "agreement": 0.9915157220302484,
+        "IoU": 0.6811697170952712,
+        "area_a_km2": 14.23,
+        "area_b_km2": 14.4,
+        "symdiff_km2": 2.17
+      }
+    },
+    "B_v4112_2020_vs_v4019_2020_same_year": {
+      "region": {
+        "pixels": 41436819,
+        "agreement": 0.99913880937627,
+        "IoU": 0.8227184658949774,
+        "area_a_km2": 18.36,
+        "area_b_km2": 18.33,
+        "symdiff_km2": 3.57
+      },
+      "patch_union": {
+        "pixels": 2555904,
+        "agreement": 0.991493420723157,
+        "IoU": 0.6805581204473171,
+        "area_a_km2": 14.31,
+        "area_b_km2": 14.4,
+        "symdiff_km2": 2.17
+      }
+    },
+    "C_v4112_2019_vs_v4112_2020_same_source": {
+      "region": {
+        "pixels": 41436819,
+        "agreement": 0.9999194918895681,
+        "IoU": 0.9819406249323315,
+        "area_a_km2": 18.25,
+        "area_b_km2": 18.36,
+        "symdiff_km2": 0.33
+      },
+      "patch_union": {
+        "pixels": 2555904,
+        "agreement": 0.9991834591596555,
+        "IoU": 0.7698906260192655,
+        "area_a_km2": 14.23,
+        "area_b_km2": 14.31,
+        "symdiff_km2": 0.21
+      }
+    },
+    "v4112_2020_mangrove_km2": 18.36
+  },
+  "zhanjiang": {
+    "A_v4112_2019_vs_v4019_2020": {
+      "region": {
+        "pixels": 45815426,
+        "agreement": 0.998424395311745,
+        "IoU": 0.5890223004093438,
+        "area_a_km2": 14.59,
+        "area_b_km2": 13.32,
+        "symdiff_km2": 7.22
+      },
+      "patch_union": {
+        "pixels": 1572864,
+        "agreement": 0.9756526947021484,
+        "IoU": 0.3498352071461574,
+        "area_a_km2": 7.86,
+        "area_b_km2": 7.32,
+        "symdiff_km2": 3.83
+      }
+    },
+    "B_v4112_2020_vs_v4019_2020_same_year": {
+      "region": {
+        "pixels": 45815426,
+        "agreement": 0.9984121723543506,
+        "IoU": 0.5942518029348935,
+        "area_a_km2": 15.26,
+        "area_b_km2": 13.32,
+        "symdiff_km2": 7.27
+      },
+      "patch_union": {
+        "pixels": 1572864,
+        "agreement": 0.9753290812174479,
+        "IoU": 0.3524082136163027,
+        "area_a_km2": 8.33,
+        "area_b_km2": 7.32,
+        "symdiff_km2": 3.88
+      }
+    },
+    "C_v4112_2019_vs_v4112_2020_same_source": {
+      "region": {
+        "pixels": 45815426,
+        "agreement": 0.9997763635331035,
+        "IoU": 0.9336291497975708,
+        "area_a_km2": 14.59,
+        "area_b_km2": 15.26,
+        "symdiff_km2": 1.02
+      },
+      "patch_union": {
+        "pixels": 1572864,
+        "agreement": 0.9962253570556641,
+        "IoU": 0.5159188479424236,
+        "area_a_km2": 7.86,
+        "area_b_km2": 8.33,
+        "symdiff_km2": 0.59
+      }
+    },
+    "v4112_2020_mangrove_km2": 15.26
+  }
+}

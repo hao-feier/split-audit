@@ -1,0 +1,140 @@
+{
+  "vietnam_train": {
+    "mangrove_frac": {
+      "mean": 0.1427,
+      "std": 0.0821
+    },
+    "change_frac": {
+      "mean": 0.0385,
+      "std": 0.0214
+    },
+    "ndvi": {
+      "mean": 0.561,
+      "std": 0.0913
+    },
+    "ndwi": {
+      "mean": 0.4558,
+      "std": 0.0966
+    },
+    "mndwi": {
+      "mean": 0.575,
+      "std": 0.1315
+    },
+    "n_patches": 40
+  },
+  "vietnam_val": {
+    "mangrove_frac": {
+      "mean": 0.084,
+      "std": 0.0296
+    },
+    "change_frac": {
+      "mean": 0.0165,
+      "std": 0.007
+    },
+    "ndvi": {
+      "mean": 0.5421,
+      "std": 0.0869
+    },
+    "ndwi": {
+      "mean": 0.5009,
+      "std": 0.0979
+    },
+    "mndwi": {
+      "mean": 0.5903,
+      "std": 0.1026
+    },
+    "n_patches": 10
+  },
+  "vietnam_test": {
+    "mangrove_frac": {
+      "mean": 0.1158,
+      "std": 0.0595
+    },
+    "change_frac": {
+      "mean": 0.0126,
+      "std": 0.0045
+    },
+    "ndvi": {
+      "mean": 0.4906,
+      "std": 0.1414
+    },
+    "ndwi": {
+      "mean": 0.5596,
+      "std": 0.1438
+    },
+    "mndwi": {
+      "mean": 0.6773,
+      "std": 0.1443
+    },
+    "n_patches": 10
+  },
+  "vietnam_buffer": {
+    "mangrove_frac": {
+      "mean": 0.1035,
+      "std": 0.0677
+    },
+    "change_frac": {
+      "mean": 0.0203,
+      "std": 0.0163
+    },
+    "ndvi": {
+      "mean": 0.5133,
+      "std": 0.0873
+    },
+    "ndwi": {
+      "mean": 0.513,
+      "std": 0.1057
+    },
+    "mndwi": {
+      "mean": 0.6175,
+      "std": 0.1207
+    },
+    "n_patches": 16
+  },
+  "beilunhe_test": {
+    "mangrove_frac": {
+      "mean": 0.0973,
+      "std": 0.0451
+    },
+    "change_frac": {
+      "mean": 0.0081,
+      "std": 0.0075
+    },
+    "ndvi": {
+      "mean": 0.5955,
+      "std": 0.0983
+    },
+    "ndwi": {
+      "mean": 0.4439,
+      "std": 0.1095
+    },
+    "mndwi": {
+      "mean": 0.5451,
+      "std": 0.1223
+    },
+    "n_patches": 18
+  },
+  "zhanjiang_test": {
+    "mangrove_frac": {
+      "mean": 0.0819,
+      "std": 0.0252
+    },
+    "change_frac": {
+      "mean": 0.0265,
+      "std": 0.0228
+    },
+    "ndvi": {
+      "mean": 0.5255,
+      "std": 0.0837
+    },
+    "ndwi": {
+      "mean": 0.5201,
+      "std": 0.1007
+    },
+    "mndwi": {
+      "mean": 0.5936,
+      "std": 0.1133
+    },
+    "n_patches": 15
+  }
+}

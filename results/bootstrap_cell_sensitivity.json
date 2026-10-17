@@ -1,0 +1,983 @@
+{
+  "config": {
+    "cells_px": [
+      512,
+      1024,
+      2048
+    ],
+    "B": 2000,
+    "models": [
+      "unet",
+      "unet_cbam",
+      "unet_cbam_msa",
+      "deeplabv3plus",
+      "temporal_unet",
+      "temporal_unet_gn",
+      "fc_siam",
+      "changeformer"
+    ],
+    "note": "cell sizes are multiples of the 512 px patch; seeds resampled together with their patch"
+  },
+  "per_cell": {
+    "512": {
+      "vietnam": {
+        "n_clusters": 4,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.291,
+            "ci95": [
+              0.212,
+              0.386
+            ],
+            "ci_width": 0.174
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.254,
+            "ci95": [
+              0.181,
+              0.377
+            ],
+            "ci_width": 0.195
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.258,
+            "ci95": [
+              0.179,
+              0.391
+            ],
+            "ci_width": 0.212
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.272,
+            "ci95": [
+              0.169,
+              0.392
+            ],
+            "ci_width": 0.223
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.242,
+            "ci95": [
+              0.147,
+              0.406
+            ],
+            "ci_width": 0.259
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.254,
+            "ci95": [
+              0.165,
+              0.396
+            ],
+            "ci_width": 0.231
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.27,
+            "ci95": [
+              0.193,
+              0.388
+            ],
+            "ci_width": 0.194
+          },
+          "changeformer": {
+            "F1ch_mean": 0.11,
+            "ci95": [
+              0.054,
+              0.178
+            ],
+            "ci_width": 0.124
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.033,
+            "p_raw": 0.1,
+            "p_holm": 0.6
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.597,
+            "p_holm": 1.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": -0.014,
+            "p_raw": 0.343,
+            "p_holm": 1.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.016,
+            "p_raw": 0.394,
+            "p_holm": 1.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.538,
+            "p_holm": 1.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.012,
+            "p_raw": 0.208,
+            "p_holm": 1.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.148,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "beilunhe": {
+        "n_clusters": 9,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.386,
+            "ci95": [
+              0.195,
+              0.502
+            ],
+            "ci_width": 0.307
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.378,
+            "ci95": [
+              0.194,
+              0.499
+            ],
+            "ci_width": 0.305
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.437,
+            "ci95": [
+              0.221,
+              0.56
+            ],
+            "ci_width": 0.339
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.367,
+            "ci95": [
+              0.12,
+              0.509
+            ],
+            "ci_width": 0.389
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.393,
+            "ci95": [
+              0.164,
+              0.533
+            ],
+            "ci_width": 0.369
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.322,
+            "ci95": [
+              0.13,
+              0.478
+            ],
+            "ci_width": 0.348
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.343,
+            "ci95": [
+              0.159,
+              0.462
+            ],
+            "ci_width": 0.303
+          },
+          "changeformer": {
+            "F1ch_mean": 0.064,
+            "ci95": [
+              0.013,
+              0.115
+            ],
+            "ci_width": 0.102
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": 0.05,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.059,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.07,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.043,
+            "p_raw": 0.006,
+            "p_holm": 0.006
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.115,
+            "p_raw": 0.001,
+            "p_holm": 0.002
+          },
+          "fc_siam": {
+            "delta_F1ch": 0.094,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.372,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "zhanjiang": {
+        "n_clusters": 6,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.323,
+            "ci95": [
+              0.226,
+              0.405
+            ],
+            "ci_width": 0.179
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.344,
+            "ci95": [
+              0.241,
+              0.437
+            ],
+            "ci_width": 0.196
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.308,
+            "ci95": [
+              0.231,
+              0.367
+            ],
+            "ci_width": 0.136
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.305,
+            "ci95": [
+              0.204,
+              0.394
+            ],
+            "ci_width": 0.19
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.342,
+            "ci95": [
+              0.241,
+              0.414
+            ],
+            "ci_width": 0.173
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.372,
+            "ci95": [
+              0.247,
+              0.467
+            ],
+            "ci_width": 0.22
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.373,
+            "ci95": [
+              0.225,
+              0.498
+            ],
+            "ci_width": 0.274
+          },
+          "changeformer": {
+            "F1ch_mean": 0.092,
+            "ci95": [
+              0.045,
+              0.126
+            ],
+            "ci_width": 0.081
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.015,
+            "p_raw": 0.211,
+            "p_holm": 0.444
+          },
+          "unet_cbam": {
+            "delta_F1ch": -0.036,
+            "p_raw": 0.002,
+            "p_holm": 0.01
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.003,
+            "p_raw": 0.831,
+            "p_holm": 0.831
+          },
+          "temporal_unet": {
+            "delta_F1ch": -0.034,
+            "p_raw": 0.029,
+            "p_holm": 0.116
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": -0.064,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.065,
+            "p_raw": 0.148,
+            "p_holm": 0.444
+          },
+          "changeformer": {
+            "delta_F1ch": 0.216,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      }
+    },
+    "1024": {
+      "vietnam": {
+        "n_clusters": 4,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.291,
+            "ci95": [
+              0.212,
+              0.386
+            ],
+            "ci_width": 0.174
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.255,
+            "ci95": [
+              0.181,
+              0.377
+            ],
+            "ci_width": 0.195
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.259,
+            "ci95": [
+              0.179,
+              0.391
+            ],
+            "ci_width": 0.212
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.273,
+            "ci95": [
+              0.169,
+              0.392
+            ],
+            "ci_width": 0.223
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.244,
+            "ci95": [
+              0.147,
+              0.406
+            ],
+            "ci_width": 0.259
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.255,
+            "ci95": [
+              0.165,
+              0.396
+            ],
+            "ci_width": 0.231
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.27,
+            "ci95": [
+              0.193,
+              0.388
+            ],
+            "ci_width": 0.194
+          },
+          "changeformer": {
+            "F1ch_mean": 0.11,
+            "ci95": [
+              0.054,
+              0.178
+            ],
+            "ci_width": 0.124
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.032,
+            "p_raw": 0.113,
+            "p_holm": 0.678
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.594,
+            "p_holm": 1.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": -0.014,
+            "p_raw": 0.344,
+            "p_holm": 1.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.015,
+            "p_raw": 0.4,
+            "p_holm": 1.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.569,
+            "p_holm": 1.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.011,
+            "p_raw": 0.236,
+            "p_holm": 1.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.149,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "beilunhe": {
+        "n_clusters": 5,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.351,
+            "ci95": [
+              0.175,
+              0.479
+            ],
+            "ci_width": 0.304
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.345,
+            "ci95": [
+              0.174,
+              0.473
+            ],
+            "ci_width": 0.299
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.398,
+            "ci95": [
+              0.201,
+              0.534
+            ],
+            "ci_width": 0.334
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.324,
+            "ci95": [
+              0.103,
+              0.478
+            ],
+            "ci_width": 0.375
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.354,
+            "ci95": [
+              0.142,
+              0.512
+            ],
+            "ci_width": 0.37
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.301,
+            "ci95": [
+              0.099,
+              0.462
+            ],
+            "ci_width": 0.363
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.309,
+            "ci95": [
+              0.148,
+              0.436
+            ],
+            "ci_width": 0.288
+          },
+          "changeformer": {
+            "F1ch_mean": 0.057,
+            "ci95": [
+              0.01,
+              0.101
+            ],
+            "ci_width": 0.091
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": 0.047,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.053,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.074,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.044,
+            "p_raw": 0.003,
+            "p_holm": 0.006
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.097,
+            "p_raw": 0.107,
+            "p_holm": 0.107
+          },
+          "fc_siam": {
+            "delta_F1ch": 0.09,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.341,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "zhanjiang": {
+        "n_clusters": 2,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.319,
+            "ci95": [
+              0.24,
+              0.386
+            ],
+            "ci_width": 0.147
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.34,
+            "ci95": [
+              0.258,
+              0.41
+            ],
+            "ci_width": 0.152
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.306,
+            "ci95": [
+              0.251,
+              0.353
+            ],
+            "ci_width": 0.101
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.302,
+            "ci95": [
+              0.22,
+              0.374
+            ],
+            "ci_width": 0.155
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.342,
+            "ci95": [
+              0.268,
+              0.402
+            ],
+            "ci_width": 0.134
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.367,
+            "ci95": [
+              0.274,
+              0.44
+            ],
+            "ci_width": 0.167
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.365,
+            "ci95": [
+              0.24,
+              0.466
+            ],
+            "ci_width": 0.225
+          },
+          "changeformer": {
+            "F1ch_mean": 0.089,
+            "ci95": [
+              0.05,
+              0.118
+            ],
+            "ci_width": 0.069
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.013,
+            "p_raw": 0.521,
+            "p_holm": 1.0
+          },
+          "unet_cbam": {
+            "delta_F1ch": -0.033,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.005,
+            "p_raw": 0.508,
+            "p_holm": 1.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": -0.035,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": -0.06,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.058,
+            "p_raw": 0.521,
+            "p_holm": 1.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.217,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      }
+    },
+    "2048": {
+      "vietnam": {
+        "n_clusters": 4,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.292,
+            "ci95": [
+              0.212,
+              0.386
+            ],
+            "ci_width": 0.174
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.255,
+            "ci95": [
+              0.181,
+              0.377
+            ],
+            "ci_width": 0.195
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.259,
+            "ci95": [
+              0.179,
+              0.391
+            ],
+            "ci_width": 0.212
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.273,
+            "ci95": [
+              0.169,
+              0.392
+            ],
+            "ci_width": 0.223
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.244,
+            "ci95": [
+              0.147,
+              0.406
+            ],
+            "ci_width": 0.259
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.255,
+            "ci95": [
+              0.165,
+              0.396
+            ],
+            "ci_width": 0.231
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.271,
+            "ci95": [
+              0.193,
+              0.388
+            ],
+            "ci_width": 0.194
+          },
+          "changeformer": {
+            "F1ch_mean": 0.11,
+            "ci95": [
+              0.054,
+              0.178
+            ],
+            "ci_width": 0.124
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.032,
+            "p_raw": 0.124,
+            "p_holm": 0.744
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.576,
+            "p_holm": 1.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": -0.014,
+            "p_raw": 0.353,
+            "p_holm": 1.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.015,
+            "p_raw": 0.387,
+            "p_holm": 1.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.545,
+            "p_holm": 1.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.011,
+            "p_raw": 0.245,
+            "p_holm": 1.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.149,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "beilunhe": {
+        "n_clusters": 2,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.37,
+            "ci95": [
+              0.211,
+              0.455
+            ],
+            "ci_width": 0.245
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.363,
+            "ci95": [
+              0.223,
+              0.437
+            ],
+            "ci_width": 0.213
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.421,
+            "ci95": [
+              0.26,
+              0.502
+            ],
+            "ci_width": 0.242
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.352,
+            "ci95": [
+              0.173,
+              0.445
+            ],
+            "ci_width": 0.272
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.377,
+            "ci95": [
+              0.223,
+              0.449
+            ],
+            "ci_width": 0.225
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.317,
+            "ci95": [
+              0.267,
+              0.341
+            ],
+            "ci_width": 0.073
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.325,
+            "ci95": [
+              0.175,
+              0.401
+            ],
+            "ci_width": 0.226
+          },
+          "changeformer": {
+            "F1ch_mean": 0.059,
+            "ci95": [
+              0.03,
+              0.075
+            ],
+            "ci_width": 0.045
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": 0.051,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "unet_cbam": {
+            "delta_F1ch": 0.058,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.069,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": 0.044,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": 0.104,
+            "p_raw": 0.489,
+            "p_holm": 0.489
+          },
+          "fc_siam": {
+            "delta_F1ch": 0.096,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.362,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "zhanjiang": {
+        "n_clusters": 2,
+        "models": {
+          "unet": {
+            "F1ch_mean": 0.32,
+            "ci95": [
+              0.24,
+              0.386
+            ],
+            "ci_width": 0.147
+          },
+          "unet_cbam": {
+            "F1ch_mean": 0.34,
+            "ci95": [
+              0.258,
+              0.41
+            ],
+            "ci_width": 0.152
+          },
+          "unet_cbam_msa": {
+            "F1ch_mean": 0.307,
+            "ci95": [
+              0.251,
+              0.353
+            ],
+            "ci_width": 0.101
+          },
+          "deeplabv3plus": {
+            "F1ch_mean": 0.302,
+            "ci95": [
+              0.22,
+              0.374
+            ],
+            "ci_width": 0.155
+          },
+          "temporal_unet": {
+            "F1ch_mean": 0.342,
+            "ci95": [
+              0.268,
+              0.402
+            ],
+            "ci_width": 0.134
+          },
+          "temporal_unet_gn": {
+            "F1ch_mean": 0.368,
+            "ci95": [
+              0.274,
+              0.44
+            ],
+            "ci_width": 0.167
+          },
+          "fc_siam": {
+            "F1ch_mean": 0.366,
+            "ci95": [
+              0.24,
+              0.466
+            ],
+            "ci_width": 0.225
+          },
+          "changeformer": {
+            "F1ch_mean": 0.089,
+            "ci95": [
+              0.05,
+              0.118
+            ],
+            "ci_width": 0.069
+          }
+        },
+        "contrasts_vs_proposed": {
+          "unet": {
+            "delta_F1ch": -0.013,
+            "p_raw": 0.498,
+            "p_holm": 1.0
+          },
+          "unet_cbam": {
+            "delta_F1ch": -0.033,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "deeplabv3plus": {
+            "delta_F1ch": 0.004,
+            "p_raw": 0.492,
+            "p_holm": 1.0
+          },
+          "temporal_unet": {
+            "delta_F1ch": -0.036,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "temporal_unet_gn": {
+            "delta_F1ch": -0.061,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          },
+          "fc_siam": {
+            "delta_F1ch": -0.059,
+            "p_raw": 0.498,
+            "p_holm": 1.0
+          },
+          "changeformer": {
+            "delta_F1ch": 0.217,
+            "p_raw": 0.0,
+            "p_holm": 0.0
+          }
+        }
+      }
+    }
+  }
+}

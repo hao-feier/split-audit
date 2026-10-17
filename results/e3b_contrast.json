@@ -1,0 +1,102 @@
+{
+ "design": {
+  "splits": 16,
+  "paired_runs": 96,
+  "architectures": [
+   "temporal_unet",
+   "unet",
+   "unet_cbam_msa"
+  ],
+  "unit_of_inference": "split seed (whole splits resampled)",
+  "n_boot": 10000,
+  "scale_caveat": "block arm runs 18-25 train / 5-6 test patches against the main protocol's 40/10/10; a zero-overlap interleaved split is not achievable at full scale (0 of 4000 permutations). No extrapolation to the full protocol."
+ },
+ "contrasts": {
+  "within_model": {
+   "mean_pp": -5.556423943113094,
+   "ci95": [
+    -8.6294519063106,
+    -2.2914470264091924
+   ],
+   "n_splits": 16,
+   "per_split_means_pp": [
+    -7.621568231251307,
+    0.0,
+    -9.833029924199794,
+    7.177484722872628,
+    -5.269960039896447,
+    -8.772834537821643,
+    -15.11516836339583,
+    -9.404776487291848,
+    -13.135594085321847,
+    -4.6935722676068155,
+    -1.4538956622820276,
+    0.0,
+    0.0,
+    -11.60299826457315,
+    4.602304226547063,
+    -13.779174175588489
+   ],
+   "splits_positive": 2,
+   "per_model": {
+    "temporal_unet": {
+     "mean_pp": -7.122349838608418,
+     "n": 32
+    },
+    "unet": {
+     "mean_pp": -4.312837390212554,
+     "n": 32
+    },
+    "unet_cbam_msa": {
+     "mean_pp": -5.234084600518312,
+     "n": 32
+    }
+   },
+   "band": "B",
+   "action": "rewrite conclusion 3 as two-part (overlap necessary)"
+  },
+  "between_arm": {
+   "mean_pp": -9.986481708783916,
+   "ci95": [
+    -14.30944148180308,
+    -5.5381425798040205
+   ],
+   "n_splits": 16,
+   "per_split_means_pp": [
+    -27.337495991138564,
+    -4.797486821959896,
+    -12.67472816488577,
+    -4.4619262376585445,
+    -14.758573748504503,
+    -9.852646471681092,
+    -7.87803256393246,
+    -7.1392404229914455,
+    -25.594426867747572,
+    -5.305170385974919,
+    -11.278112471870559,
+    -8.407965165770998,
+    -0.6513808467132103,
+    -16.773362395735113,
+    10.976547878689251,
+    -13.849706662667282
+   ],
+   "splits_positive": 1,
+   "per_model": {
+    "temporal_unet": {
+     "mean_pp": -10.17431219739257,
+     "n": 32
+    },
+    "unet": {
+     "mean_pp": -13.544378579126198,
+     "n": 32
+    },
+    "unet_cbam_msa": {
+     "mean_pp": -6.240754349832986,
+     "n": 32
+    }
+   },
+   "band": "B",
+   "action": "rewrite conclusion 3 as two-part (overlap necessary)"
+  }
+ }
+}

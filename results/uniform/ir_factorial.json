@@ -1,0 +1,146 @@
+{
+ "config": {
+  "k": [
+   1,
+   2,
+   3
+  ],
+  "seeds": [
+   2026,
+   2027,
+   2028,
+   2029,
+   2030
+  ],
+  "models": [
+   "unet",
+   "unet_cbam",
+   "unet_cbam_msa",
+   "deeplabv3plus",
+   "temporal_unet"
+  ],
+  "note": "excl_collapse blocks exclude all-background-collapse runs (test F1ch < 0.05); II unchanged (main sweep)"
+ },
+ "per_model": {
+  "unet": {
+   "n_runs": 15,
+   "II": 0.2677,
+   "IR": 0.3262,
+   "IR_std": 0.0306,
+   "RI": 0.2523,
+   "RR": 0.5365,
+   "isolated_test_mean": 0.2723,
+   "sanity_gap_vs_II": 0.0046,
+   "dTrain_pp": -1.54,
+   "dTest_pp": 5.85,
+   "dInt_pp": 22.57,
+   "excl_collapse": {
+    "n_runs": 15,
+    "II": 0.2677,
+    "IR": 0.3262,
+    "IR_std": 0.0306,
+    "RI": 0.2861,
+    "RR": 0.6059,
+    "dTrain_pp": 1.84,
+    "dTest_pp": 5.85,
+    "dInt_pp": 26.13
+   }
+  },
+  "unet_cbam": {
+   "n_runs": 15,
+   "II": 0.2437,
+   "IR": 0.3334,
+   "IR_std": 0.0547,
+   "RI": 0.2511,
+   "RR": 0.5343,
+   "isolated_test_mean": 0.2548,
+   "sanity_gap_vs_II": 0.0111,
+   "dTrain_pp": 0.74,
+   "dTest_pp": 8.97,
+   "dInt_pp": 19.35,
+   "excl_collapse": {
+    "n_runs": 15,
+    "II": 0.2437,
+    "IR": 0.3334,
+    "IR_std": 0.0547,
+    "RI": 0.2861,
+    "RR": 0.6047,
+    "dTrain_pp": 4.24,
+    "dTest_pp": 8.97,
+    "dInt_pp": 22.89
+   }
+  },
+  "unet_cbam_msa": {
+   "n_runs": 15,
+   "II": 0.2518,
+   "IR": 0.2929,
+   "IR_std": 0.1528,
+   "RI": 0.2489,
+   "RR": 0.5102,
+   "isolated_test_mean": 0.2222,
+   "sanity_gap_vs_II": -0.0297,
+   "dTrain_pp": -0.29,
+   "dTest_pp": 4.11,
+   "dInt_pp": 22.02,
+   "excl_collapse": {
+    "n_runs": 12,
+    "II": 0.2518,
+    "IR": 0.366,
+    "IR_std": 0.0242,
+    "RI": 0.2834,
+    "RR": 0.5759,
+    "dTrain_pp": 3.16,
+    "dTest_pp": 11.42,
+    "dInt_pp": 17.83
+   }
+  },
+  "deeplabv3plus": {
+   "n_runs": 15,
+   "II": 0.2754,
+   "IR": 0.3529,
+   "IR_std": 0.0396,
+   "RI": 0.2672,
+   "RR": 0.5841,
+   "isolated_test_mean": 0.2641,
+   "sanity_gap_vs_II": -0.0112,
+   "dTrain_pp": -0.82,
+   "dTest_pp": 7.76,
+   "dInt_pp": 23.93,
+   "excl_collapse": {
+    "n_runs": 15,
+    "II": 0.2754,
+    "IR": 0.3529,
+    "IR_std": 0.0396,
+    "RI": 0.2672,
+    "RR": 0.5841,
+    "dTrain_pp": -0.82,
+    "dTest_pp": 7.76,
+    "dInt_pp": 23.93
+   }
+  },
+  "temporal_unet": {
+   "n_runs": 15,
+   "II": 0.2415,
+   "IR": 0.3349,
+   "IR_std": 0.0455,
+   "RI": 0.2929,
+   "RR": 0.5903,
+   "isolated_test_mean": 0.268,
+   "sanity_gap_vs_II": 0.0265,
+   "dTrain_pp": 5.14,
+   "dTest_pp": 9.35,
+   "dInt_pp": 20.39,
+   "excl_collapse": {
+    "n_runs": 15,
+    "II": 0.2415,
+    "IR": 0.3349,
+    "IR_std": 0.0455,
+    "RI": 0.2929,
+    "RR": 0.5903,
+    "dTrain_pp": 5.14,
+    "dTest_pp": 9.35,
+    "dInt_pp": 20.39
+   }
+  }
+ }
+}

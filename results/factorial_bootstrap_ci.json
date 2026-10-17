@@ -1,0 +1,115 @@
+{
+  "config": {
+    "models": [
+      "unet",
+      "unet_cbam",
+      "unet_cbam_msa",
+      "deeplabv3plus",
+      "temporal_unet"
+    ],
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "splits": [
+      1,
+      2,
+      3
+    ],
+    "B": 2000,
+    "note": "95% percentile bootstrap CI over (k, seed) runs. II from ir_k{k}/isolated_test, IR from ir_k{k}/ir_test, RI from random_split_k{k}/isolated_test, RR from random_split_k{k}/random_test."
+  },
+  "per_model": {
+    "unet": {
+      "n_runs": 9,
+      "dTrain_pp": 7.92,
+      "dTrain_ci95_pp": [
+        6.93,
+        8.87
+      ],
+      "dTest_pp": 3.76,
+      "dTest_ci95_pp": [
+        2.65,
+        4.94
+      ],
+      "dInt_pp": 20.98,
+      "dInt_ci95_pp": [
+        19.63,
+        22.54
+      ]
+    },
+    "unet_cbam": {
+      "n_runs": 9,
+      "dTrain_pp": 9.73,
+      "dTrain_ci95_pp": [
+        8.44,
+        10.77
+      ],
+      "dTest_pp": 6.65,
+      "dTest_ci95_pp": [
+        5.38,
+        7.96
+      ],
+      "dInt_pp": 18.48,
+      "dInt_ci95_pp": [
+        16.83,
+        20.14
+      ]
+    },
+    "unet_cbam_msa": {
+      "n_runs": 9,
+      "dTrain_pp": 13.72,
+      "dTrain_ci95_pp": [
+        10.83,
+        16.56
+      ],
+      "dTest_pp": 12.05,
+      "dTest_ci95_pp": [
+        5.51,
+        18.16
+      ],
+      "dInt_pp": 13.34,
+      "dInt_ci95_pp": [
+        7.54,
+        20.05
+      ]
+    },
+    "deeplabv3plus": {
+      "n_runs": 9,
+      "dTrain_pp": 3.6,
+      "dTrain_ci95_pp": [
+        1.97,
+        5.47
+      ],
+      "dTest_pp": 9.86,
+      "dTest_ci95_pp": [
+        8.51,
+        10.98
+      ],
+      "dInt_pp": 18.17,
+      "dInt_ci95_pp": [
+        15.69,
+        20.41
+      ]
+    },
+    "temporal_unet": {
+      "n_runs": 9,
+      "dTrain_pp": 9.01,
+      "dTrain_ci95_pp": [
+        5.44,
+        12.47
+      ],
+      "dTest_pp": 13.13,
+      "dTest_ci95_pp": [
+        9.99,
+        16.96
+      ],
+      "dInt_pp": 11.98,
+      "dInt_ci95_pp": [
+        8.36,
+        15.67
+      ]
+    }
+  }
+}

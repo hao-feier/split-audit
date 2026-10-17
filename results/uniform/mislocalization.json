@@ -1,0 +1,251 @@
+{
+  "config": {
+    "models": [
+      "unet",
+      "unet_cbam",
+      "unet_cbam_msa",
+      "deeplabv3plus",
+      "temporal_unet"
+    ],
+    "seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "regions": [
+      "vietnam",
+      "beilunhe",
+      "zhanjiang"
+    ],
+    "thresholds_m": [
+      20.0,
+      50.0,
+      100.0
+    ],
+    "note": "missed_within_* = share of omitted true-change pixels within t m of any predicted-change pixel; spurious_within_* = share of false-change pixels within t m of any true-change pixel; bg_within_* = zero-signal proximity of non-change pixels to predicted change"
+  },
+  "per_model": {
+    "unet": {
+      "vietnam": {
+        "bg_within_100m_frac": 0.074,
+        "bg_within_20m_frac": 0.012,
+        "bg_within_50m_frac": 0.032,
+        "commission": 0.638,
+        "missed_within_100m_frac": 0.411,
+        "missed_within_20m_frac": 0.156,
+        "missed_within_50m_frac": 0.291,
+        "omission": 0.795,
+        "spurious_within_100m_frac": 0.806,
+        "spurious_within_20m_frac": 0.418,
+        "spurious_within_50m_frac": 0.685,
+        "n_runs": 50
+      },
+      "beilunhe": {
+        "bg_within_100m_frac": 0.023,
+        "bg_within_20m_frac": 0.004,
+        "bg_within_50m_frac": 0.01,
+        "commission": 0.496,
+        "missed_within_100m_frac": 0.311,
+        "missed_within_20m_frac": 0.135,
+        "missed_within_50m_frac": 0.244,
+        "omission": 0.812,
+        "spurious_within_100m_frac": 0.562,
+        "spurious_within_20m_frac": 0.371,
+        "spurious_within_50m_frac": 0.5,
+        "n_runs": 88
+      },
+      "zhanjiang": {
+        "bg_within_100m_frac": 0.085,
+        "bg_within_20m_frac": 0.014,
+        "bg_within_50m_frac": 0.038,
+        "commission": 0.591,
+        "missed_within_100m_frac": 0.397,
+        "missed_within_20m_frac": 0.122,
+        "missed_within_50m_frac": 0.26,
+        "omission": 0.874,
+        "spurious_within_100m_frac": 0.953,
+        "spurious_within_20m_frac": 0.464,
+        "spurious_within_50m_frac": 0.792,
+        "n_runs": 75
+      }
+    },
+    "unet_cbam": {
+      "vietnam": {
+        "bg_within_100m_frac": 0.11,
+        "bg_within_20m_frac": 0.019,
+        "bg_within_50m_frac": 0.051,
+        "commission": 0.657,
+        "missed_within_100m_frac": 0.483,
+        "missed_within_20m_frac": 0.172,
+        "missed_within_50m_frac": 0.334,
+        "omission": 0.793,
+        "spurious_within_100m_frac": 0.767,
+        "spurious_within_20m_frac": 0.387,
+        "spurious_within_50m_frac": 0.645,
+        "n_runs": 50
+      },
+      "beilunhe": {
+        "bg_within_100m_frac": 0.033,
+        "bg_within_20m_frac": 0.005,
+        "bg_within_50m_frac": 0.014,
+        "commission": 0.627,
+        "missed_within_100m_frac": 0.314,
+        "missed_within_20m_frac": 0.129,
+        "missed_within_50m_frac": 0.236,
+        "omission": 0.837,
+        "spurious_within_100m_frac": 0.443,
+        "spurious_within_20m_frac": 0.257,
+        "spurious_within_50m_frac": 0.378,
+        "n_runs": 90
+      },
+      "zhanjiang": {
+        "bg_within_100m_frac": 0.107,
+        "bg_within_20m_frac": 0.017,
+        "bg_within_50m_frac": 0.048,
+        "commission": 0.646,
+        "missed_within_100m_frac": 0.465,
+        "missed_within_20m_frac": 0.146,
+        "missed_within_50m_frac": 0.31,
+        "omission": 0.856,
+        "spurious_within_100m_frac": 0.916,
+        "spurious_within_20m_frac": 0.4,
+        "spurious_within_50m_frac": 0.723,
+        "n_runs": 75
+      }
+    },
+    "unet_cbam_msa": {
+      "vietnam": {
+        "bg_within_100m_frac": 0.104,
+        "bg_within_20m_frac": 0.018,
+        "bg_within_50m_frac": 0.047,
+        "commission": 0.679,
+        "missed_within_100m_frac": 0.471,
+        "missed_within_20m_frac": 0.166,
+        "missed_within_50m_frac": 0.325,
+        "omission": 0.786,
+        "spurious_within_100m_frac": 0.723,
+        "spurious_within_20m_frac": 0.362,
+        "spurious_within_50m_frac": 0.607,
+        "n_runs": 50
+      },
+      "beilunhe": {
+        "bg_within_100m_frac": 0.028,
+        "bg_within_20m_frac": 0.004,
+        "bg_within_50m_frac": 0.012,
+        "commission": 0.602,
+        "missed_within_100m_frac": 0.332,
+        "missed_within_20m_frac": 0.131,
+        "missed_within_50m_frac": 0.25,
+        "omission": 0.847,
+        "spurious_within_100m_frac": 0.461,
+        "spurious_within_20m_frac": 0.304,
+        "spurious_within_50m_frac": 0.413,
+        "n_runs": 90
+      },
+      "zhanjiang": {
+        "bg_within_100m_frac": 0.086,
+        "bg_within_20m_frac": 0.012,
+        "bg_within_50m_frac": 0.037,
+        "commission": 0.683,
+        "missed_within_100m_frac": 0.348,
+        "missed_within_20m_frac": 0.087,
+        "missed_within_50m_frac": 0.206,
+        "omission": 0.932,
+        "spurious_within_100m_frac": 0.905,
+        "spurious_within_20m_frac": 0.381,
+        "spurious_within_50m_frac": 0.714,
+        "n_runs": 75
+      }
+    },
+    "deeplabv3plus": {
+      "vietnam": {
+        "bg_within_100m_frac": 0.029,
+        "bg_within_20m_frac": 0.006,
+        "bg_within_50m_frac": 0.013,
+        "commission": 0.618,
+        "missed_within_100m_frac": 0.206,
+        "missed_within_20m_frac": 0.07,
+        "missed_within_50m_frac": 0.141,
+        "omission": 0.81,
+        "spurious_within_100m_frac": 0.924,
+        "spurious_within_20m_frac": 0.481,
+        "spurious_within_50m_frac": 0.814,
+        "n_runs": 50
+      },
+      "beilunhe": {
+        "bg_within_100m_frac": 0.013,
+        "bg_within_20m_frac": 0.003,
+        "bg_within_50m_frac": 0.006,
+        "commission": 0.656,
+        "missed_within_100m_frac": 0.197,
+        "missed_within_20m_frac": 0.071,
+        "missed_within_50m_frac": 0.149,
+        "omission": 0.87,
+        "spurious_within_100m_frac": 0.502,
+        "spurious_within_20m_frac": 0.236,
+        "spurious_within_50m_frac": 0.446,
+        "n_runs": 65
+      },
+      "zhanjiang": {
+        "bg_within_100m_frac": 0.024,
+        "bg_within_20m_frac": 0.005,
+        "bg_within_50m_frac": 0.011,
+        "commission": 0.538,
+        "missed_within_100m_frac": 0.124,
+        "missed_within_20m_frac": 0.033,
+        "missed_within_50m_frac": 0.076,
+        "omission": 0.916,
+        "spurious_within_100m_frac": 0.939,
+        "spurious_within_20m_frac": 0.501,
+        "spurious_within_50m_frac": 0.831,
+        "n_runs": 72
+      }
+    },
+    "temporal_unet": {
+      "vietnam": {
+        "bg_within_100m_frac": 0.058,
+        "bg_within_20m_frac": 0.008,
+        "bg_within_50m_frac": 0.023,
+        "commission": 0.596,
+        "missed_within_100m_frac": 0.353,
+        "missed_within_20m_frac": 0.123,
+        "missed_within_50m_frac": 0.245,
+        "omission": 0.837,
+        "spurious_within_100m_frac": 0.841,
+        "spurious_within_20m_frac": 0.424,
+        "spurious_within_50m_frac": 0.715,
+        "n_runs": 50
+      },
+      "beilunhe": {
+        "bg_within_100m_frac": 0.018,
+        "bg_within_20m_frac": 0.003,
+        "bg_within_50m_frac": 0.008,
+        "commission": 0.55,
+        "missed_within_100m_frac": 0.25,
+        "missed_within_20m_frac": 0.103,
+        "missed_within_50m_frac": 0.189,
+        "omission": 0.852,
+        "spurious_within_100m_frac": 0.535,
+        "spurious_within_20m_frac": 0.381,
+        "spurious_within_50m_frac": 0.488,
+        "n_runs": 89
+      },
+      "zhanjiang": {
+        "bg_within_100m_frac": 0.026,
+        "bg_within_20m_frac": 0.003,
+        "bg_within_50m_frac": 0.01,
+        "commission": 0.497,
+        "missed_within_100m_frac": 0.163,
+        "missed_within_20m_frac": 0.051,
+        "missed_within_50m_frac": 0.108,
+        "omission": 0.921,
+        "spurious_within_100m_frac": 0.892,
+        "spurious_within_20m_frac": 0.583,
+        "spurious_within_50m_frac": 0.796,
+        "n_runs": 71
+      }
+    }
+  }
+}

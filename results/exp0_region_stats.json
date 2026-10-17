@@ -1,0 +1,50 @@
+{
+  "vietnam": {
+    "box": [
+      106.5,
+      20.5,
+      107.0,
+      21.2
+    ],
+    "t1_year": 2019,
+    "t2_year": 2024,
+    "mangrove_t1_km2": 82.6,
+    "mangrove_t2_km2": 75.7,
+    "core_t1_km2": 54.6,
+    "core_t2_km2": 48.0,
+    "loss_km2": 12.7,
+    "gain_km2": 6.0
+  },
+  "beilunhe": {
+    "box": [
+      108.1,
+      21.15,
+      108.7,
+      21.75
+    ],
+    "t1_year": 2019,
+    "t2_year": 2024,
+    "mangrove_t1_km2": 19.7,
+    "mangrove_t2_km2": 20.6,
+    "core_t1_km2": 13.2,
+    "core_t2_km2": 13.7,
+    "loss_km2": 0.6,
+    "gain_km2": 1.2
+  },
+  "zhanjiang": {
+    "box": [
+      110.05,
+      21.0,
+      110.85,
+      21.5
+    ],
+    "t1_year": 2019,
+    "t2_year": 2024,
+    "mangrove_t1_km2": 15.7,
+    "mangrove_t2_km2": 20.5,
+    "core_t1_km2": 4.7,
+    "core_t2_km2": 7.0,
+    "loss_km2": 0.4,
+    "gain_km2": 2.8
+  }
+}

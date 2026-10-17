@@ -1,0 +1,26 @@
+{
+  "model": "unet_cbam_msa",
+  "draw": 2,
+  "arm": "separated",
+  "seed": 2028,
+  "region": "vietnam_p128",
+  "n_train": 40,
+  "n_val": 10,
+  "n_test": 10,
+  "epochs_run": 26,
+  "best_val_miou": 0.4685,
+  "test": {
+    "F1_change": 0.4356,
+    "IoU_change": 0.2784,
+    "precision_change": 0.6699,
+    "recall_change": 0.3227,
+    "kappa_change": 0.4104,
+    "Omission": 0.6773,
+    "Commission": 0.3301
+  },
+  "train_F1_change": 0.4843,
+  "test_4class": {
+    "OA": 0.9183,
+    "mIoU": 0.5135
+  }
+}

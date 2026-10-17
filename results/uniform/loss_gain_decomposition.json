@@ -1,0 +1,1319 @@
+{
+ "method": "per-class F1 (loss=idx1, gain=idx2) pooled over 10 models x 3 split-draws x 3 run-seeds, uniform (cw none) protocol; honest=isolated_test, leaky=random_test",
+ "n_runs": 162,
+ "loss_honest_mean": 0.3445,
+ "loss_leaky_mean": 0.5276,
+ "loss_gap_pp": 18.31,
+ "gain_honest_mean": 0.0077,
+ "gain_leaky_mean": 0.6094,
+ "gain_gap_pp": 60.17,
+ "excluded_collapsed_runs": [
+  "unet/k3-s2026",
+  "unet_cbam/k3-s2026",
+  "unet_cbam_msa/k3-s2026",
+  "temporal_unet_gn/k3-s2026",
+  "changeformer/k1-s2026",
+  "changeformer/k1-s2028",
+  "changeformer/k2-s2026",
+  "changeformer/k2-s2028",
+  "changeformer/k3-s2026"
+ ],
+ "per_run": [
+  {
+   "model": "unet",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3606,
+   "gain": 0.0069
+  },
+  {
+   "model": "unet",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5679,
+   "gain": 0.5659
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3457,
+   "gain": 0.0073
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5668,
+   "gain": 0.5634
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3573,
+   "gain": 0.0058
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5715,
+   "gain": 0.5636
+  },
+  {
+   "model": "unet",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3587,
+   "gain": 0.0047
+  },
+  {
+   "model": "unet",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5392,
+   "gain": 0.7452
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3532,
+   "gain": 0.0032
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5303,
+   "gain": 0.7554
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3645,
+   "gain": 0.0034
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5399,
+   "gain": 0.7468
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3417,
+   "gain": 0.0054
+  },
+  {
+   "model": "unet",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5404,
+   "gain": 0.6616
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3623,
+   "gain": 0.0032
+  },
+  {
+   "model": "unet",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5413,
+   "gain": 0.6688
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3673,
+   "gain": 0.0052
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5559,
+   "gain": 0.5406
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3446,
+   "gain": 0.0106
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5872,
+   "gain": 0.5704
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3531,
+   "gain": 0.0015
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5601,
+   "gain": 0.5679
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3485,
+   "gain": 0.0037
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5254,
+   "gain": 0.7479
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3612,
+   "gain": 0.0009
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5338,
+   "gain": 0.758
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3438,
+   "gain": 0.0019
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5283,
+   "gain": 0.7275
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3406,
+   "gain": 0.0117
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5408,
+   "gain": 0.6809
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3699,
+   "gain": 0.003
+  },
+  {
+   "model": "unet_cbam",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5451,
+   "gain": 0.664
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3553,
+   "gain": 0.0041
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5659,
+   "gain": 0.5575
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3601,
+   "gain": 0.0024
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5613,
+   "gain": 0.5688
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3654,
+   "gain": 0.0028
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5599,
+   "gain": 0.5603
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3507,
+   "gain": 0.0028
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.529,
+   "gain": 0.7474
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3615,
+   "gain": 0.0024
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5298,
+   "gain": 0.7545
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3711,
+   "gain": 0.0296
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5183,
+   "gain": 0.7338
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3215,
+   "gain": 0.0058
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5062,
+   "gain": 0.6582
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3553,
+   "gain": 0.0036
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5479,
+   "gain": 0.6619
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3558,
+   "gain": 0.0026
+  },
+  {
+   "model": "unet_msa",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5452,
+   "gain": 0.6742
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.344,
+   "gain": 0.0045
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5845,
+   "gain": 0.5568
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3806,
+   "gain": 0.0026
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5737,
+   "gain": 0.5373
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3675,
+   "gain": 0.0026
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5861,
+   "gain": 0.5679
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3552,
+   "gain": 0.003
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5382,
+   "gain": 0.7363
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3575,
+   "gain": 0.0037
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5385,
+   "gain": 0.7278
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3592,
+   "gain": 0.0006
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5353,
+   "gain": 0.752
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.276,
+   "gain": 0.0
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.3267,
+   "gain": 0.3494
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3606,
+   "gain": 0.0017
+  },
+  {
+   "model": "unet_cbam_msa",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5462,
+   "gain": 0.6633
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3297,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.534,
+   "gain": 0.5064
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3382,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5512,
+   "gain": 0.5523
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3327,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5706,
+   "gain": 0.5298
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3249,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5273,
+   "gain": 0.7406
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3178,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5341,
+   "gain": 0.7345
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3332,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5307,
+   "gain": 0.7164
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3461,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5227,
+   "gain": 0.6198
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3432,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5312,
+   "gain": 0.6298
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3589,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5526,
+   "gain": 0.6162
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3791,
+   "gain": 0.0071
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5369,
+   "gain": 0.5231
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3595,
+   "gain": 0.0022
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5657,
+   "gain": 0.5452
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3676,
+   "gain": 0.0026
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5606,
+   "gain": 0.5319
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3357,
+   "gain": 0.0069
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.4856,
+   "gain": 0.7433
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.374,
+   "gain": 0.0015
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5366,
+   "gain": 0.751
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3573,
+   "gain": 0.0024
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5418,
+   "gain": 0.7262
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3654,
+   "gain": 0.0136
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5622,
+   "gain": 0.6591
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3552,
+   "gain": 0.0193
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5371,
+   "gain": 0.6246
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.352,
+   "gain": 0.0026
+  },
+  {
+   "model": "temporal_unet",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5628,
+   "gain": 0.6577
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3504,
+   "gain": 0.0289
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.4978,
+   "gain": 0.5351
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3619,
+   "gain": 0.0547
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5399,
+   "gain": 0.5456
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3569,
+   "gain": 0.0792
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5354,
+   "gain": 0.5689
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3586,
+   "gain": 0.0257
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.4829,
+   "gain": 0.7273
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3579,
+   "gain": 0.0127
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5144,
+   "gain": 0.7339
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3615,
+   "gain": 0.0237
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.503,
+   "gain": 0.7391
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3433,
+   "gain": 0.0088
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5441,
+   "gain": 0.6284
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3642,
+   "gain": 0.0363
+  },
+  {
+   "model": "temporal_unet_gn",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5344,
+   "gain": 0.6465
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3591,
+   "gain": 0.0088
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5381,
+   "gain": 0.5714
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3735,
+   "gain": 0.0174
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5107,
+   "gain": 0.5504
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3544,
+   "gain": 0.0202
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.4957,
+   "gain": 0.5351
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3702,
+   "gain": 0.0062
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5005,
+   "gain": 0.6897
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3484,
+   "gain": 0.036
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.4069,
+   "gain": 0.6979
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3811,
+   "gain": 0.009
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5027,
+   "gain": 0.7091
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3569,
+   "gain": 0.0081
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5206,
+   "gain": 0.6278
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3343,
+   "gain": 0.0206
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5343,
+   "gain": 0.6674
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.342,
+   "gain": 0.0119
+  },
+  {
+   "model": "fc_siam",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.4955,
+   "gain": 0.6721
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.2928,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5002,
+   "gain": 0.0229
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.2489,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.4507,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.2404,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.3896,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.2434,
+   "gain": 0.0
+  },
+  {
+   "model": "changeformer",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.3947,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.277,
+   "gain": 0.0004
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5382,
+   "gain": 0.5468
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3307,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.5227,
+   "gain": 0.5365
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "honest",
+   "loss": 0.3094,
+   "gain": 0.0006
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k1",
+   "arm": "leaky",
+   "loss": 0.555,
+   "gain": 0.5558
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3301,
+   "gain": 0.0002
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5217,
+   "gain": 0.7372
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3268,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5219,
+   "gain": 0.7364
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "honest",
+   "loss": 0.3314,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k2",
+   "arm": "leaky",
+   "loss": 0.5299,
+   "gain": 0.7128
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3209,
+   "gain": 0.0026
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2026,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5311,
+   "gain": 0.6424
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3182,
+   "gain": 0.0006
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2027,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.5102,
+   "gain": 0.6321
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "honest",
+   "loss": 0.3218,
+   "gain": 0.0
+  },
+  {
+   "model": "deeplabv3plus_pre",
+   "seed": 2028,
+   "draw": "k3",
+   "arm": "leaky",
+   "loss": 0.504,
+   "gain": 0.6461
+  }
+ ]
+}

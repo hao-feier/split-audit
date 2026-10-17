@@ -1,0 +1,9522 @@
+{
+ "changeformer": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      51427,
+      0,
+      0,
+      32910
+     ],
+     [
+      1846,
+      0,
+      0,
+      6617
+     ],
+     [
+      784,
+      0,
+      0,
+      2375
+     ],
+     [
+      104777,
+      0,
+      0,
+      978912
+     ]
+    ],
+    "OA": 0.873429192437066,
+    "kappa": 0.35228638231113024,
+    "kappa_change": null,
+    "F1_macro": 0.28447342286336336,
+    "mIoU": 0.28447342286336336,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.42296984426596923,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9303023089061883,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      90561,
+      0,
+      0,
+      48362
+     ],
+     [
+      1159,
+      0,
+      0,
+      2198
+     ],
+     [
+      1146,
+      0,
+      0,
+      9174
+     ],
+     [
+      190258,
+      0,
+      0,
+      2213046
+     ]
+    ],
+    "OA": 0.9012885460486779,
+    "kappa": 0.374622076753457,
+    "kappa_change": null,
+    "F1_macro": 0.2929249097637325,
+    "mIoU": 0.2929249097637325,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.42915125566583817,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9465381716838277,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      5585,
+      0,
+      0,
+      69609
+     ],
+     [
+      185,
+      0,
+      0,
+      3266
+     ],
+     [
+      418,
+      0,
+      0,
+      37738
+     ],
+     [
+      6407,
+      0,
+      0,
+      1449656
+     ]
+    ],
+    "OA": 0.9252173105875651,
+    "kappa": 0.08005380395376299,
+    "kappa_change": null,
+    "F1_macro": 0.24831189019259456,
+    "mIoU": 0.24831189019259456,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.12723689756119788,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9612045358402191,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 9.561,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      64867,
+      2052,
+      0,
+      17418
+     ],
+     [
+      2786,
+      552,
+      0,
+      5125
+     ],
+     [
+      1377,
+      180,
+      0,
+      1602
+     ],
+     [
+      166429,
+      13574,
+      0,
+      903686
+     ]
+    ],
+    "OA": 0.8215204874674479,
+    "kappa": 0.32157469148447737,
+    "kappa_change": null,
+    "F1_macro": 0.2732298998426375,
+    "mIoU": 0.2732298998426375,
+    "F1_change": 0.03945675482487491,
+    "IoU_change": 0.020125419279568325,
+    "precision_change": 0.0337449565961609,
+    "recall_change": 0.047496128033040784,
+    "Omission": 0.9525038719669592,
+    "Commission": 0.966255043403839,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.4056773693229434,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.044478465815237095,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.898510579064588,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      110265,
+      3973,
+      0,
+      24685
+     ],
+     [
+      1659,
+      165,
+      0,
+      1533
+     ],
+     [
+      2189,
+      564,
+      0,
+      7567
+     ],
+     [
+      232008,
+      27966,
+      0,
+      2143330
+     ]
+    ],
+    "OA": 0.8817858573717948,
+    "kappa": 0.3832758231742698,
+    "kappa_change": null,
+    "F1_macro": 0.29456944489147174,
+    "mIoU": 0.29456944489147174,
+    "F1_change": 0.007120509224296041,
+    "IoU_change": 0.00357297531398874,
+    "precision_change": 0.00505081425247949,
+    "recall_change": 0.012064049133581925,
+    "Omission": 0.9879359508664181,
+    "Commission": 0.9949491857475206,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.4546597834423269,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.00916030534351145,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9358663475983311,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      14851,
+      2720,
+      0,
+      57623
+     ],
+     [
+      448,
+      99,
+      0,
+      2904
+     ],
+     [
+      842,
+      331,
+      0,
+      36983
+     ],
+     [
+      5917,
+      4042,
+      0,
+      1446104
+     ]
+    ],
+    "OA": 0.9289131164550781,
+    "kappa": 0.21706387516460854,
+    "kappa_change": null,
+    "F1_macro": 0.28011056077031304,
+    "mIoU": 0.28011056077031304,
+    "F1_change": 0.0040574601938564315,
+    "IoU_change": 0.002032854209445585,
+    "precision_change": 0.013765294771968854,
+    "recall_change": 0.0023794073112697383,
+    "Omission": 0.9976205926887303,
+    "Commission": 0.9862347052280311,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.305412742154403,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.018603777130508314,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9641731426416911,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 9.561,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      47799,
+      0,
+      396,
+      36142
+     ],
+     [
+      1695,
+      0,
+      80,
+      6688
+     ],
+     [
+      815,
+      0,
+      22,
+      2322
+     ],
+     [
+      166819,
+      0,
+      11244,
+      905626
+     ]
+    ],
+    "OA": 0.8082470364040799,
+    "kappa": 0.22175916475235832,
+    "kappa_change": null,
+    "F1_macro": 0.24804330099101887,
+    "mIoU": 0.24804330099101887,
+    "F1_change": 0.0018832391713747645,
+    "IoU_change": 0.000942507068803016,
+    "precision_change": 0.0018736160790325327,
+    "recall_change": 0.0018929616245052486,
+    "Omission": 0.9981070383754947,
+    "Commission": 0.9981263839209674,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.31711143913887185,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.002952821958257835,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.89028330270287,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      82908,
+      0,
+      569,
+      55446
+     ],
+     [
+      1075,
+      0,
+      23,
+      2259
+     ],
+     [
+      1754,
+      0,
+      117,
+      8449
+     ],
+     [
+      380216,
+      0,
+      25175,
+      1997913
+     ]
+    ],
+    "OA": 0.8141690767728366,
+    "kappa": 0.19448289311303463,
+    "kappa_change": null,
+    "F1_macro": 0.2427821700750522,
+    "mIoU": 0.2427821700750522,
+    "F1_change": 0.0059149162053537575,
+    "IoU_change": 0.0029662306054152724,
+    "precision_change": 0.004520166898470098,
+    "recall_change": 0.008554507567449002,
+    "Omission": 0.991445492432551,
+    "Commission": 0.9954798331015299,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.27413221883493477,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.006463374212794166,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.8944468681916053,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      10169,
+      0,
+      758,
+      64267
+     ],
+     [
+      465,
+      0,
+      20,
+      2966
+     ],
+     [
+      3866,
+      0,
+      423,
+      33867
+     ],
+     [
+      135392,
+      0,
+      16921,
+      1303750
+     ]
+    ],
+    "OA": 0.8356361389160156,
+    "kappa": 0.0234604585938154,
+    "kappa_change": null,
+    "F1_macro": 0.2230372331806172,
+    "mIoU": 0.2230372331806172,
+    "F1_change": 0.014163973949002998,
+    "IoU_change": 0.007132499241223485,
+    "precision_change": 0.02334179450391789,
+    "recall_change": 0.010166558511788881,
+    "Omission": 0.9898334414882111,
+    "Commission": 0.9766582054960821,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.09035657482029091,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.01503251714702015,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9114223326609373,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 9.561,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      0,
+      42285,
+      0,
+      42052
+     ],
+     [
+      0,
+      1072,
+      0,
+      7391
+     ],
+     [
+      0,
+      588,
+      0,
+      2571
+     ],
+     [
+      0,
+      112221,
+      0,
+      971468
+     ]
+    ],
+    "OA": 0.824432373046875,
+    "kappa": 0.13089836848918326,
+    "kappa_change": null,
+    "F1_macro": 0.21548585474144558,
+    "mIoU": 0.21548585474144558,
+    "F1_change": 0.01277802941807519,
+    "IoU_change": 0.006430096691379352,
+    "precision_change": 0.006864490350012167,
+    "recall_change": 0.09223885733952848,
+    "Omission": 0.9077611426604715,
+    "Commission": 0.9931355096499879,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.013023221911084924,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9220590070763123,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      0,
+      74243,
+      0,
+      64680
+     ],
+     [
+      0,
+      810,
+      0,
+      2547
+     ],
+     [
+      0,
+      1049,
+      0,
+      9271
+     ],
+     [
+      0,
+      264766,
+      0,
+      2138538
+     ]
+    ],
+    "OA": 0.8370220477764423,
+    "kappa": 0.11871484364896653,
+    "kappa_change": null,
+    "F1_macro": 0.2161853058620752,
+    "mIoU": 0.2161853058620752,
+    "F1_change": 0.004569236627226445,
+    "IoU_change": 0.002289849746278994,
+    "precision_change": 0.002376286421723365,
+    "recall_change": 0.05922351392849309,
+    "Omission": 0.9407764860715069,
+    "Commission": 0.9976237135782766,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0047062241266613404,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9261067829566467,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      0,
+      5311,
+      0,
+      69883
+     ],
+     [
+      0,
+      228,
+      0,
+      3223
+     ],
+     [
+      0,
+      1948,
+      0,
+      36208
+     ],
+     [
+      0,
+      69312,
+      0,
+      1386751
+     ]
+    ],
+    "OA": 0.8818174997965494,
+    "kappa": 0.009819488145705485,
+    "kappa_change": null,
+    "F1_macro": 0.22218467147579643,
+    "mIoU": 0.22218467147579643,
+    "F1_change": 0.0038511561914092193,
+    "IoU_change": 0.001929293100238623,
+    "precision_change": 0.002968788656102293,
+    "recall_change": 0.005479847141106064,
+    "Omission": 0.994520152858894,
+    "Commission": 0.9970312113438977,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.005682242990654206,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9394924610315,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 9.561,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      54622,
+      0,
+      0,
+      29715
+     ],
+     [
+      1904,
+      0,
+      0,
+      6559
+     ],
+     [
+      797,
+      0,
+      0,
+      2362
+     ],
+     [
+      68601,
+      0,
+      0,
+      1015088
+     ]
+    ],
+    "OA": 0.9068044026692709,
+    "kappa": 0.45746314583910913,
+    "kappa_change": null,
+    "F1_macro": 0.3138510488162963,
+    "mIoU": 0.3138510488162963,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5195637802540651,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9498286012109031,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      92318,
+      0,
+      0,
+      46605
+     ],
+     [
+      1174,
+      0,
+      0,
+      2183
+     ],
+     [
+      910,
+      0,
+      0,
+      9410
+     ],
+     [
+      135751,
+      0,
+      0,
+      2267553
+     ]
+    ],
+    "OA": 0.9233018924028445,
+    "kappa": 0.45012098316525906,
+    "kappa_change": null,
+    "F1_macro": 0.3136941129026658,
+    "mIoU": 0.3136941129026658,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5002655279671395,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9589877893152015,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      5003,
+      0,
+      0,
+      70191
+     ],
+     [
+      135,
+      0,
+      0,
+      3316
+     ],
+     [
+      184,
+      0,
+      0,
+      37972
+     ],
+     [
+      565,
+      0,
+      0,
+      1455498
+     ]
+    ],
+    "OA": 0.9285615285237631,
+    "kappa": 0.07876066874473532,
+    "kappa_change": null,
+    "F1_macro": 0.24857098617450646,
+    "mIoU": 0.24857098617450646,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.12340745674079008,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9629366465544618,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 9.561,
+   "_epochs": 100
+  }
+ },
+ "deeplabv3plus_pre": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73092,
+      1109,
+      0,
+      10136
+     ],
+     [
+      2473,
+      2251,
+      0,
+      3739
+     ],
+     [
+      1364,
+      7,
+      0,
+      1788
+     ],
+     [
+      32537,
+      1100,
+      0,
+      1050052
+     ]
+    ],
+    "OA": 0.9540091620551215,
+    "kappa": 0.7185550362157898,
+    "kappa_change": null,
+    "F1_macro": 0.4428638167367817,
+    "mIoU": 0.4428638167367817,
+    "F1_change": 0.27981850954068,
+    "IoU_change": 0.16266801560919208,
+    "precision_change": 0.5039176180882023,
+    "recall_change": 0.19368439167096885,
+    "Omission": 0.8063156083290312,
+    "Commission": 0.49608238191179765,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7542917292301977,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.34818252126836813,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9770634092055286,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      126392,
+      356,
+      196,
+      11979
+     ],
+     [
+      1783,
+      316,
+      0,
+      1258
+     ],
+     [
+      2842,
+      0,
+      1178,
+      6300
+     ],
+     [
+      62137,
+      1106,
+      0,
+      2340061
+     ]
+    ],
+    "OA": 0.9655867356520432,
+    "kappa": 0.7307540755415258,
+    "kappa_change": null,
+    "F1_macro": 0.4394800210287939,
+    "mIoU": 0.4394800210287939,
+    "F1_change": 0.1775506566046705,
+    "IoU_change": 0.09742419302249755,
+    "precision_change": 0.4739847715736041,
+    "recall_change": 0.10923448124588725,
+    "Omission": 0.8907655187541128,
+    "Commission": 0.5260152284263959,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7612210421077039,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.12307692307692308,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.20147083974687874,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9826198397531589,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      44996,
+      20,
+      384,
+      29794
+     ],
+     [
+      864,
+      11,
+      0,
+      2576
+     ],
+     [
+      3947,
+      0,
+      1129,
+      33080
+     ],
+     [
+      9323,
+      7,
+      171,
+      1446562
+     ]
+    ],
+    "OA": 0.9490318298339844,
+    "kappa": 0.5291729945233556,
+    "kappa_change": null,
+    "F1_macro": 0.37169584485676055,
+    "mIoU": 0.37169584485676055,
+    "F1_change": 0.05262064668005262,
+    "IoU_change": 0.027021261466258977,
+    "precision_change": 0.662020905923345,
+    "recall_change": 0.02739923570553032,
+    "Omission": 0.9726007642944697,
+    "Commission": 0.33797909407665505,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6699621809952057,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.006305531670965893,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.056676706827309235,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9747476057714175,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      76665,
+      1085,
+      0,
+      6587
+     ],
+     [
+      3268,
+      2319,
+      0,
+      2876
+     ],
+     [
+      1607,
+      0,
+      0,
+      1552
+     ],
+     [
+      87264,
+      2100,
+      0,
+      994325
+     ]
+    ],
+    "OA": 0.9098553127712674,
+    "kappa": 0.5641486739148999,
+    "kappa_change": null,
+    "F1_macro": 0.38545413591006483,
+    "mIoU": 0.38545413591006483,
+    "F1_change": 0.27081630269765267,
+    "IoU_change": 0.15661511447288445,
+    "precision_change": 0.42132994186046513,
+    "recall_change": 0.19953536396489416,
+    "Omission": 0.8004646360351059,
+    "Commission": 0.5786700581395349,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6057098613025942,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3320684470537696,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9519494463695812,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130567,
+      314,
+      193,
+      7849
+     ],
+     [
+      2081,
+      305,
+      0,
+      971
+     ],
+     [
+      3337,
+      2,
+      1731,
+      5250
+     ],
+     [
+      98123,
+      1312,
+      46,
+      2303823
+     ]
+    ],
+    "OA": 0.9532541128305289,
+    "kappa": 0.6714617631379675,
+    "kappa_change": null,
+    "F1_macro": 0.42916180453248826,
+    "mIoU": 0.42916180453248826,
+    "F1_change": 0.23162684869169511,
+    "IoU_change": 0.1309830159547092,
+    "precision_change": 0.5216500128106585,
+    "recall_change": 0.14886305476347153,
+    "Omission": 0.8511369452365285,
+    "Commission": 0.4783499871893415,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7000329731309194,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11531190926275993,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.2816924328722539,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9759486842002145,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      52766,
+      18,
+      788,
+      21622
+     ],
+     [
+      1303,
+      96,
+      30,
+      2022
+     ],
+     [
+      5586,
+      5,
+      1432,
+      31133
+     ],
+     [
+      14720,
+      250,
+      554,
+      1440539
+     ]
+    ],
+    "OA": 0.9503892262776693,
+    "kappa": 0.578132817960285,
+    "kappa_change": null,
+    "F1_macro": 0.3901403901655853,
+    "mIoU": 0.3901403901655853,
+    "F1_change": 0.0682447521214828,
+    "IoU_change": 0.03532784611116249,
+    "precision_change": 0.4815631894106524,
+    "recall_change": 0.03672458961232485,
+    "Omission": 0.9632754103876752,
+    "Commission": 0.5184368105893475,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7055740160059906,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.050261780104712044,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.069921875,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9761802872487743,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      76304,
+      228,
+      0,
+      7805
+     ],
+     [
+      3175,
+      1855,
+      0,
+      3433
+     ],
+     [
+      1560,
+      3,
+      0,
+      1596
+     ],
+     [
+      62103,
+      725,
+      0,
+      1020861
+     ]
+    ],
+    "OA": 0.9316507975260416,
+    "kappa": 0.6331514435310025,
+    "kappa_change": null,
+    "F1_macro": 0.4081700365576135,
+    "mIoU": 0.4081700365576135,
+    "F1_change": 0.2570498163929883,
+    "IoU_change": 0.14747972650659882,
+    "precision_change": 0.6599075062255425,
+    "recall_change": 0.15961108242987437,
+    "Omission": 0.8403889175701256,
+    "Commission": 0.3400924937744575,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6708663217264011,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.32907574951215185,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9642662833005256,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129656,
+      8,
+      135,
+      9124
+     ],
+     [
+      2176,
+      148,
+      0,
+      1033
+     ],
+     [
+      3442,
+      0,
+      2034,
+      4844
+     ],
+     [
+      89765,
+      1839,
+      49,
+      2311651
+     ]
+    ],
+    "OA": 0.9560175186548477,
+    "kappa": 0.6841576517242486,
+    "kappa_change": null,
+    "F1_macro": 0.43283480793801177,
+    "mIoU": 0.43283480793801177,
+    "F1_change": 0.24393515930687534,
+    "IoU_change": 0.13891010949834479,
+    "precision_change": 0.517920721576074,
+    "recall_change": 0.15953791036045917,
+    "Omission": 0.8404620896395408,
+    "Commission": 0.48207927842392595,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.712469983130107,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.05530642750373692,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3244536608709523,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9774513758690355,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      51148,
+      3,
+      101,
+      23942
+     ],
+     [
+      1225,
+      43,
+      0,
+      2183
+     ],
+     [
+      5232,
+      0,
+      1282,
+      31642
+     ],
+     [
+      12970,
+      2,
+      11,
+      1443080
+     ]
+    ],
+    "OA": 0.9508469899495443,
+    "kappa": 0.5706425888548742,
+    "kappa_change": null,
+    "F1_macro": 0.3849408694163905,
+    "mIoU": 0.3849408694163905,
+    "F1_change": 0.06155775976213152,
+    "IoU_change": 0.03175630332662257,
+    "precision_change": 0.9188626907073509,
+    "recall_change": 0.031845602903357605,
+    "Omission": 0.9681543970966424,
+    "Commission": 0.08113730929264906,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7017678655955656,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.024578450985996,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.06482932996207333,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9760729951199055,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73202,
+      1001,
+      0,
+      10134
+     ],
+     [
+      2498,
+      2430,
+      0,
+      3535
+     ],
+     [
+      1021,
+      5,
+      0,
+      2133
+     ],
+     [
+      35280,
+      1280,
+      0,
+      1047129
+     ]
+    ],
+    "OA": 0.9517762925889757,
+    "kappa": 0.708481750135652,
+    "kappa_change": null,
+    "F1_macro": 0.4432311463241606,
+    "mIoU": 0.4432311463241606,
+    "F1_change": 0.29746603011384504,
+    "IoU_change": 0.17471958584987057,
+    "precision_change": 0.5152671755725191,
+    "recall_change": 0.20908621579762518,
+    "Omission": 0.7909137842023748,
+    "Commission": 0.4847328244274809,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.745673277714961,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3687684953334851,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9756072336976269,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129484,
+      651,
+      33,
+      8755
+     ],
+     [
+      1969,
+      407,
+      0,
+      981
+     ],
+     [
+      3545,
+      2,
+      312,
+      6461
+     ],
+     [
+      146630,
+      1458,
+      0,
+      2255216
+     ]
+    ],
+    "OA": 0.9332975729917868,
+    "kappa": 0.5788343810184251,
+    "kappa_change": null,
+    "F1_macro": 0.3703821668720967,
+    "mIoU": 0.3703821668720967,
+    "F1_change": 0.08694074969770253,
+    "IoU_change": 0.045445926300486696,
+    "precision_change": 0.2511351728955641,
+    "recall_change": 0.05257000804269942,
+    "Omission": 0.9474299919573006,
+    "Commission": 0.7488648271044359,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6157826280284674,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1385531914893617,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.05850914205344585,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9648566961379694,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      50442,
+      42,
+      580,
+      24130
+     ],
+     [
+      1154,
+      123,
+      17,
+      2157
+     ],
+     [
+      4760,
+      0,
+      4567,
+      28829
+     ],
+     [
+      10973,
+      307,
+      427,
+      1444356
+     ]
+    ],
+    "OA": 0.9533487955729166,
+    "kappa": 0.5954736353976432,
+    "kappa_change": null,
+    "F1_macro": 0.41312854618362804,
+    "mIoU": 0.41312854618362804,
+    "F1_change": 0.19676945668135096,
+    "IoU_change": 0.10912052117263844,
+    "precision_change": 0.7735444499422728,
+    "recall_change": 0.11272141706924316,
+    "Omission": 0.8872785829307568,
+    "Commission": 0.22645555005772722,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7078436462886692,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.06270711190415498,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.2087914599858276,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9773905570395884,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      77435,
+      1087,
+      0,
+      5815
+     ],
+     [
+      3463,
+      2370,
+      0,
+      2630
+     ],
+     [
+      1836,
+      18,
+      0,
+      1305
+     ],
+     [
+      160030,
+      1576,
+      0,
+      922083
+     ]
+    ],
+    "OA": 0.8493109809027778,
+    "kappa": 0.4195082440481084,
+    "kappa_change": null,
+    "F1_macro": 0.34152798962883796,
+    "mIoU": 0.34152798962883796,
+    "F1_change": 0.28429196905176035,
+    "IoU_change": 0.16569950360064323,
+    "precision_change": 0.4692140170263314,
+    "recall_change": 0.20392359318533815,
+    "Omission": 0.7960764068146619,
+    "Commission": 0.5307859829736685,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.4734623250922498,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3507473730945686,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9149818260480411,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      133151,
+      364,
+      0,
+      5408
+     ],
+     [
+      2308,
+      209,
+      0,
+      840
+     ],
+     [
+      4713,
+      148,
+      0,
+      5459
+     ],
+     [
+      242399,
+      6852,
+      0,
+      2154053
+     ]
+    ],
+    "OA": 0.8949526273287259,
+    "kappa": 0.4615603041338627,
+    "kappa_change": null,
+    "F1_macro": 0.31357684402702085,
+    "mIoU": 0.31357684402702085,
+    "F1_change": 0.019670588235294117,
+    "IoU_change": 0.00993298797585666,
+    "precision_change": 0.02759804568863066,
+    "recall_change": 0.015281128902537106,
+    "Omission": 0.9847188710974629,
+    "Commission": 0.9724019543113693,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5106520880393638,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.03824336688014639,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9428858952293073,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      55032,
+      459,
+      0,
+      19703
+     ],
+     [
+      1269,
+      183,
+      0,
+      1999
+     ],
+     [
+      7705,
+      66,
+      0,
+      30385
+     ],
+     [
+      23151,
+      638,
+      0,
+      1432274
+     ]
+    ],
+    "OA": 0.9457200368245443,
+    "kappa": 0.5611940585056471,
+    "kappa_change": null,
+    "F1_macro": 0.37553505700049283,
+    "mIoU": 0.37553505700049283,
+    "F1_change": 0.008520941494191326,
+    "IoU_change": 0.004278700023380874,
+    "precision_change": 0.13595839524517087,
+    "recall_change": 0.004398298363256183,
+    "Omission": 0.9956017016367438,
+    "Commission": 0.8640416047548292,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6779385405695069,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.07629768605378362,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9741955581916077,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  }
+ },
+ "deeplabv3plus": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74781,
+      1295,
+      0,
+      8261
+     ],
+     [
+      2569,
+      2727,
+      0,
+      3167
+     ],
+     [
+      1168,
+      9,
+      0,
+      1982
+     ],
+     [
+      82728,
+      2060,
+      0,
+      998901
+     ]
+    ],
+    "OA": 0.9124832153320312,
+    "kappa": 0.5664270508187169,
+    "kappa_change": null,
+    "F1_macro": 0.39472247221131396,
+    "mIoU": 0.39472247221131396,
+    "F1_change": 0.3079094450403658,
+    "IoU_change": 0.18196983851594822,
+    "precision_change": 0.4477097356755869,
+    "recall_change": 0.23464119772844605,
+    "Omission": 0.765358802271554,
+    "Commission": 0.5522902643244131,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6090079525048558,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3747423388759104,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9531498091603053,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131158,
+      955,
+      123,
+      6687
+     ],
+     [
+      1920,
+      508,
+      0,
+      929
+     ],
+     [
+      3655,
+      10,
+      2059,
+      4596
+     ],
+     [
+      159175,
+      3716,
+      21,
+      2240392
+     ]
+    ],
+    "OA": 0.9288756541716747,
+    "kappa": 0.5689105654293302,
+    "kappa_change": null,
+    "F1_macro": 0.4048438568122985,
+    "mIoU": 0.4048438568122985,
+    "F1_change": 0.24367554226588828,
+    "IoU_change": 0.13874175764782185,
+    "precision_change": 0.34726731601731603,
+    "recall_change": 0.187687358338817,
+    "Omission": 0.812312641661183,
+    "Commission": 0.6527326839826839,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6032596572001536,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11888602855136907,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3288349437035854,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9623867138268196,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      57076,
+      11,
+      1337,
+      16770
+     ],
+     [
+      1336,
+      86,
+      0,
+      2029
+     ],
+     [
+      7573,
+      0,
+      15531,
+      15052
+     ],
+     [
+      17887,
+      114,
+      5546,
+      1432516
+     ]
+    ],
+    "OA": 0.9569861094156901,
+    "kappa": 0.6791102430859469,
+    "kappa_change": null,
+    "F1_macro": 0.4724957037707422,
+    "mIoU": 0.4724957037707422,
+    "F1_change": 0.48626852659110725,
+    "IoU_change": 0.32123830093592515,
+    "precision_change": 0.6902541436464088,
+    "recall_change": 0.37534549474847984,
+    "Omission": 0.6246545052515202,
+    "Commission": 0.3097458563535912,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7176392189405656,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.04696886947023485,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.5128281327389796,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9803594953514712,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74972,
+      1435,
+      0,
+      7930
+     ],
+     [
+      2706,
+      2859,
+      0,
+      2898
+     ],
+     [
+      1334,
+      9,
+      0,
+      1816
+     ],
+     [
+      38395,
+      2020,
+      0,
+      1043274
+     ]
+    ],
+    "OA": 0.9503724839952257,
+    "kappa": 0.7090090398066261,
+    "kappa_change": null,
+    "F1_macro": 0.4456759635560821,
+    "mIoU": 0.4456759635560821,
+    "F1_change": 0.3186402897743104,
+    "IoU_change": 0.18951345618454196,
+    "precision_change": 0.4521587853866835,
+    "recall_change": 0.24599896747547753,
+    "Omission": 0.7540010325245224,
+    "Commission": 0.5478412146133165,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7432389563010549,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3867171648857027,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9752015206530918,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130245,
+      686,
+      91,
+      7901
+     ],
+     [
+      1958,
+      442,
+      0,
+      957
+     ],
+     [
+      3802,
+      6,
+      2514,
+      3998
+     ],
+     [
+      120985,
+      2973,
+      200,
+      2279146
+     ]
+    ],
+    "OA": 0.9438331799629407,
+    "kappa": 0.6288221278158301,
+    "kappa_change": null,
+    "F1_macro": 0.4333540983862799,
+    "mIoU": 0.4333540983862799,
+    "F1_change": 0.28714362037981445,
+    "IoU_change": 0.16764022004196677,
+    "precision_change": 0.42766203703703703,
+    "recall_change": 0.21612926811435257,
+    "Omission": 0.7838707318856475,
+    "Commission": 0.572337962962963,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6579475793924423,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11843515541264737,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3830857142857143,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9708189413000985,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      53175,
+      146,
+      776,
+      21097
+     ],
+     [
+      1127,
+      173,
+      0,
+      2151
+     ],
+     [
+      5473,
+      19,
+      1594,
+      31070
+     ],
+     [
+      14377,
+      292,
+      1216,
+      1440178
+     ]
+    ],
+    "OA": 0.9505716959635416,
+    "kappa": 0.5813823767056985,
+    "kappa_change": null,
+    "F1_macro": 0.39760307501570336,
+    "mIoU": 0.39760307501570336,
+    "F1_change": 0.0771228422407961,
+    "IoU_change": 0.04010804430724532,
+    "precision_change": 0.41911764705882354,
+    "recall_change": 0.042468815343572,
+    "Omission": 0.9575311846564281,
+    "Commission": 0.5808823529411764,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7121047768269656,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08478314138691498,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.07637391595994442,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9762068814756797,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      72212,
+      861,
+      0,
+      11264
+     ],
+     [
+      2477,
+      2360,
+      0,
+      3626
+     ],
+     [
+      1354,
+      0,
+      4,
+      1801
+     ],
+     [
+      10911,
+      1323,
+      1,
+      1071454
+     ]
+    ],
+    "OA": 0.9715016682942709,
+    "kappa": 0.806536709620335,
+    "kappa_change": null,
+    "F1_macro": 0.48136744279293986,
+    "mIoU": 0.48136744279293986,
+    "F1_change": 0.29237523962649187,
+    "IoU_change": 0.17121749837039182,
+    "precision_change": 0.5196746537700594,
+    "recall_change": 0.20340733092410945,
+    "Omission": 0.7965926690758905,
+    "Commission": 0.4803253462299406,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.843149961177178,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3628815253325133,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0025284450063211127,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.986681302530488,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      127565,
+      308,
+      257,
+      10793
+     ],
+     [
+      1918,
+      322,
+      0,
+      1117
+     ],
+     [
+      3136,
+      6,
+      2391,
+      4787
+     ],
+     [
+      16373,
+      559,
+      231,
+      2386141
+     ]
+    ],
+    "OA": 0.9845514542017227,
+    "kappa": 0.8630969305475009,
+    "kappa_change": null,
+    "F1_macro": 0.5197243060612602,
+    "mIoU": 0.5197243060612602,
+    "F1_change": 0.3056729198355022,
+    "IoU_change": 0.1804096289400186,
+    "precision_change": 0.6659302896416298,
+    "recall_change": 0.19836221393580464,
+    "Omission": 0.8016377860641953,
+    "Commission": 0.3340697103583702,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8861295868572322,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.14147627416520211,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.36230017425562544,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9929548481921674,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      51444,
+      5,
+      1627,
+      22118
+     ],
+     [
+      917,
+      11,
+      33,
+      2490
+     ],
+     [
+      6536,
+      0,
+      13350,
+      18270
+     ],
+     [
+      16137,
+      33,
+      4035,
+      1435858
+     ]
+    ],
+    "OA": 0.9540958404541016,
+    "kappa": 0.6387959295090745,
+    "kappa_change": null,
+    "F1_macro": 0.44657008769682915,
+    "mIoU": 0.44657008769682915,
+    "F1_change": 0.44022339005947186,
+    "IoU_change": 0.2822348964934516,
+    "precision_change": 0.6997486121294647,
+    "recall_change": 0.32112384935227245,
+    "Omission": 0.6788761506477275,
+    "Commission": 0.3002513878705353,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6848789839444045,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.006285714285714286,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4667750563801332,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9785051719044473,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75736,
+      1352,
+      0,
+      7249
+     ],
+     [
+      2951,
+      2634,
+      0,
+      2878
+     ],
+     [
+      1815,
+      15,
+      0,
+      1329
+     ],
+     [
+      26799,
+      1898,
+      0,
+      1054992
+     ]
+    ],
+    "OA": 0.9607628716362847,
+    "kappa": 0.7592243725851123,
+    "kappa_change": null,
+    "F1_macro": 0.46034369372917466,
+    "mIoU": 0.46034369372917466,
+    "F1_change": 0.3006677701044461,
+    "IoU_change": 0.1769328944716867,
+    "precision_change": 0.4465163587048652,
+    "recall_change": 0.22663913267940114,
+    "Omission": 0.7733608673205988,
+    "Commission": 0.5534836412951347,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7904069130339494,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.366801281158613,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.981325376010924,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129044,
+      774,
+      12,
+      9093
+     ],
+     [
+      1879,
+      400,
+      0,
+      1078
+     ],
+     [
+      4215,
+      0,
+      195,
+      5910
+     ],
+     [
+      47444,
+      131,
+      0,
+      2355729
+     ]
+    ],
+    "OA": 0.9724027193509616,
+    "kappa": 0.7766265521926973,
+    "kappa_change": null,
+    "F1_macro": 0.4392273794142767,
+    "mIoU": 0.4392273794142767,
+    "F1_change": 0.07834617157153204,
+    "IoU_change": 0.040770179525832534,
+    "precision_change": 0.39351851851851855,
+    "recall_change": 0.04350369233018937,
+    "Omission": 0.9564963076698106,
+    "Commission": 0.6064814814814814,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8027495684359497,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1716001716001716,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.037047591906526074,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9866692187872373,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      49239,
+      73,
+      16,
+      25866
+     ],
+     [
+      1033,
+      74,
+      0,
+      2344
+     ],
+     [
+      5159,
+      21,
+      94,
+      32882
+     ],
+     [
+      16460,
+      116,
+      0,
+      1439487
+     ]
+    ],
+    "OA": 0.9466133117675781,
+    "kappa": 0.534219169810424,
+    "kappa_change": null,
+    "F1_macro": 0.36867799302643633,
+    "mIoU": 0.36867799302643633,
+    "F1_change": 0.007999809528344563,
+    "IoU_change": 0.004015968254727129,
+    "precision_change": 0.4263959390862944,
+    "recall_change": 0.0040377821039728895,
+    "Omission": 0.9959622178960271,
+    "Commission": 0.5736040609137056,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6695312234422273,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.03962516733601071,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.004912977578006585,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9737310097062817,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75473,
+      1152,
+      0,
+      7712
+     ],
+     [
+      2895,
+      2525,
+      0,
+      3043
+     ],
+     [
+      1504,
+      14,
+      0,
+      1641
+     ],
+     [
+      21490,
+      2453,
+      0,
+      1059746
+     ]
+    ],
+    "OA": 0.9644775390625,
+    "kappa": 0.7764274450505569,
+    "kappa_change": null,
+    "F1_macro": 0.4651366346151023,
+    "mIoU": 0.4651366346151023,
+    "F1_change": 0.2842508161657098,
+    "IoU_change": 0.16567154386195132,
+    "precision_change": 0.4109700520833333,
+    "recall_change": 0.21726036826707967,
+    "Omission": 0.7827396317329203,
+    "Commission": 0.5890299479166667,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8128530579055353,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3457246525638393,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9831438549682234,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130576,
+      1241,
+      99,
+      7007
+     ],
+     [
+      1977,
+      491,
+      0,
+      889
+     ],
+     [
+      4130,
+      6,
+      1897,
+      4287
+     ],
+     [
+      33843,
+      2184,
+      83,
+      2367194
+     ]
+    ],
+    "OA": 0.9781893216646634,
+    "kappa": 0.8197702446985782,
+    "kappa_change": null,
+    "F1_macro": 0.4907413771847523,
+    "mIoU": 0.4907413771847523,
+    "F1_change": 0.24270759223498323,
+    "IoU_change": 0.1381145170618855,
+    "precision_change": 0.39793367772037996,
+    "recall_change": 0.17459969291511296,
+    "Omission": 0.825400307084887,
+    "Commission": 0.6020663222796201,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8439258165319649,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.13490864129688143,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.30599241874344707,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9899025253827299,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      55785,
+      129,
+      336,
+      18944
+     ],
+     [
+      1328,
+      133,
+      15,
+      1975
+     ],
+     [
+      6638,
+      0,
+      2197,
+      29321
+     ],
+     [
+      17587,
+      286,
+      554,
+      1437636
+     ]
+    ],
+    "OA": 0.9509728749593099,
+    "kappa": 0.5973480637341213,
+    "kappa_change": null,
+    "F1_macro": 0.3996937888699218,
+    "mIoU": 0.3996937888699218,
+    "F1_change": 0.10296749674083568,
+    "IoU_change": 0.054278193211731544,
+    "precision_change": 0.6383561643835617,
+    "recall_change": 0.056000192275338284,
+    "Omission": 0.9439998077246617,
+    "Commission": 0.3616438356164383,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7127616078501521,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.06651662915728933,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.10650055746764264,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9766751281191628,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 19.011,
+   "_epochs": 100
+  }
+ },
+ "fc_siam": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73453,
+      1453,
+      1294,
+      8137
+     ],
+     [
+      2015,
+      2815,
+      115,
+      3518
+     ],
+     [
+      939,
+      15,
+      502,
+      1703
+     ],
+     [
+      11705,
+      1792,
+      1596,
+      1068596
+     ]
+    ],
+    "OA": 0.9709387885199653,
+    "kappa": 0.8088580748467257,
+    "kappa_change": null,
+    "F1_macro": 0.509403044383341,
+    "mIoU": 0.509403044383341,
+    "F1_change": 0.3128654970760234,
+    "IoU_change": 0.1854419410745234,
+    "precision_change": 0.34616990189939467,
+    "recall_change": 0.2854069867492686,
+    "Omission": 0.7145930132507314,
+    "Commission": 0.6538300981006053,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8518808459312608,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3872609712477645,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.15061506150615062,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9868625622967405,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130122,
+      566,
+      3610,
+      4625
+     ],
+     [
+      1836,
+      720,
+      87,
+      714
+     ],
+     [
+      1970,
+      6,
+      5766,
+      2578
+     ],
+     [
+      22557,
+      599,
+      6665,
+      2373483
+     ]
+    ],
+    "OA": 0.9820756178635818,
+    "kappa": 0.8513106121758838,
+    "kappa_change": null,
+    "F1_macro": 0.5523515928276612,
+    "mIoU": 0.5523515928276612,
+    "F1_change": 0.4092629984856133,
+    "IoU_change": 0.257278857596192,
+    "precision_change": 0.3599533825406515,
+    "recall_change": 0.4742268041237113,
+    "Omission": 0.5257731958762887,
+    "Commission": 0.6400466174593484,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.880964631966636,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.27439024390243905,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4360254083484574,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9921127827343134,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      46399,
+      133,
+      20046,
+      8616
+     ],
+     [
+      911,
+      259,
+      352,
+      1929
+     ],
+     [
+      2839,
+      3,
+      27413,
+      7901
+     ],
+     [
+      7101,
+      345,
+      25821,
+      1422796
+     ]
+    ],
+    "OA": 0.9516824086507162,
+    "kappa": 0.6753984082967619,
+    "kappa_change": null,
+    "F1_macro": 0.4737335900870907,
+    "mIoU": 0.4737335900870907,
+    "F1_change": 0.47718983609101645,
+    "IoU_change": 0.3133613416829923,
+    "precision_change": 0.37207551228957136,
+    "recall_change": 0.6650803951258202,
+    "Omission": 0.3349196048741798,
+    "Commission": 0.6279244877104286,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7006583914711123,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.12359818659031258,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.490446201739006,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9821513440939079,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.428,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      71868,
+      1475,
+      1141,
+      9853
+     ],
+     [
+      1895,
+      2789,
+      36,
+      3743
+     ],
+     [
+      802,
+      14,
+      338,
+      2005
+     ],
+     [
+      21418,
+      2773,
+      912,
+      1058586
+     ]
+    ],
+    "OA": 0.9609485202365451,
+    "kappa": 0.7522240451031146,
+    "kappa_change": null,
+    "F1_macro": 0.4773059619782555,
+    "mIoU": 0.4773059619782555,
+    "F1_change": 0.29639810426540286,
+    "IoU_change": 0.17398319701774884,
+    "precision_change": 0.32992192445663643,
+    "recall_change": 0.2690586818103597,
+    "Omission": 0.7309413181896403,
+    "Commission": 0.6700780755433635,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7971162377994676,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3595462163207426,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.12101682778374508,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9811370069457188,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      126676,
+      460,
+      2146,
+      9641
+     ],
+     [
+      1597,
+      624,
+      23,
+      1113
+     ],
+     [
+      1766,
+      2,
+      3799,
+      4753
+     ],
+     [
+      49679,
+      5902,
+      1675,
+      2346048
+     ]
+    ],
+    "OA": 0.9691862448667868,
+    "kappa": 0.7580705288815802,
+    "kappa_change": null,
+    "F1_macro": 0.49055377772444697,
+    "mIoU": 0.49055377772444697,
+    "F1_change": 0.31249116857425463,
+    "IoU_change": 0.1851789826250785,
+    "precision_change": 0.30230332854897135,
+    "recall_change": 0.32338963222929007,
+    "Omission": 0.6766103677707099,
+    "Commission": 0.6976966714510286,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7951016975216623,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.12063798936684389,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.42298057117408006,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9847292438244237,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      45573,
+      171,
+      7432,
+      22018
+     ],
+     [
+      748,
+      224,
+      143,
+      2336
+     ],
+     [
+      3816,
+      0,
+      14547,
+      19793
+     ],
+     [
+      5097,
+      204,
+      4448,
+      1446314
+     ]
+    ],
+    "OA": 0.9579073588053385,
+    "kappa": 0.6511770614307905,
+    "kappa_change": null,
+    "F1_macro": 0.4623981040714173,
+    "mIoU": 0.4623981040714173,
+    "F1_change": 0.4295393742003024,
+    "IoU_change": 0.27351171187852974,
+    "precision_change": 0.5436710957341088,
+    "recall_change": 0.3550123777249021,
+    "Omission": 0.6449876222750979,
+    "Commission": 0.45632890426589123,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6988223387616156,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11061728395061729,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4494947934369496,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9817086166615306,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.428,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73559,
+      1181,
+      1,
+      9596
+     ],
+     [
+      1990,
+      2532,
+      0,
+      3941
+     ],
+     [
+      1163,
+      0,
+      10,
+      1986
+     ],
+     [
+      63273,
+      2616,
+      16,
+      1017784
+     ]
+    ],
+    "OA": 0.9272978040907118,
+    "kappa": 0.6107738697381104,
+    "kappa_change": null,
+    "F1_macro": 0.4058767171514803,
+    "mIoU": 0.4058767171514803,
+    "F1_change": 0.282790076760485,
+    "IoU_change": 0.1646799689038611,
+    "precision_change": 0.39993706733794837,
+    "recall_change": 0.218723111340561,
+    "Omission": 0.781276888659439,
+    "Commission": 0.6000629326620517,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6558340243043482,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.34234721471065443,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.006277463904582548,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9615360633652591,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132923,
+      736,
+      175,
+      5089
+     ],
+     [
+      1995,
+      550,
+      0,
+      812
+     ],
+     [
+      3582,
+      0,
+      2923,
+      3815
+     ],
+     [
+      194871,
+      6555,
+      186,
+      2201692
+     ]
+    ],
+    "OA": 0.9147792718349359,
+    "kappa": 0.5248180068894015,
+    "kappa_change": null,
+    "F1_macro": 0.4073531959346717,
+    "mIoU": 0.4073531959346717,
+    "F1_change": 0.2800580598338844,
+    "IoU_change": 0.16282994983355994,
+    "precision_change": 0.31217977528089885,
+    "recall_change": 0.2539299553995759,
+    "Omission": 0.746070044600424,
+    "Commission": 0.6878202247191012,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.562882441868836,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09823182711198428,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.42972655101440754,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9542055928950712,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      59324,
+      55,
+      2215,
+      13600
+     ],
+     [
+      1310,
+      174,
+      22,
+      1945
+     ],
+     [
+      7027,
+      0,
+      15610,
+      15519
+     ],
+     [
+      14259,
+      215,
+      2069,
+      1439520
+     ]
+    ],
+    "OA": 0.9629745483398438,
+    "kappa": 0.7187824280702974,
+    "kappa_change": null,
+    "F1_macro": 0.4972546505118225,
+    "mIoU": 0.4972546505118225,
+    "F1_change": 0.5094324398470154,
+    "IoU_change": 0.34177078145638007,
+    "precision_change": 0.77524557956778,
+    "recall_change": 0.37935924243516717,
+    "Omission": 0.6206407575648328,
+    "Commission": 0.22475442043222005,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7551714042033173,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08934531450577664,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.5376084860173578,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9837332619888903,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.428,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75713,
+      416,
+      334,
+      7874
+     ],
+     [
+      2708,
+      1957,
+      21,
+      3777
+     ],
+     [
+      1148,
+      0,
+      241,
+      1770
+     ],
+     [
+      46426,
+      801,
+      561,
+      1035901
+     ]
+    ],
+    "OA": 0.9441901312934028,
+    "kappa": 0.6814128590524602,
+    "kappa_change": null,
+    "F1_macro": 0.4419859313225445,
+    "mIoU": 0.4419859313225445,
+    "F1_change": 0.27555945590171127,
+    "IoU_change": 0.1597964376590331,
+    "precision_change": 0.5075040406372662,
+    "recall_change": 0.1891240750301153,
+    "Omission": 0.8108759249698847,
+    "Commission": 0.4924959593627338,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7199380027765627,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3363409813525823,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.11167747914735866,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9713039454555087,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130892,
+      283,
+      1937,
+      5811
+     ],
+     [
+      2117,
+      391,
+      17,
+      832
+     ],
+     [
+      2215,
+      0,
+      5007,
+      3098
+     ],
+     [
+      132642,
+      288,
+      3546,
+      2266828
+     ]
+    ],
+    "OA": 0.9402223244691507,
+    "kappa": 0.6186586058375446,
+    "kappa_change": null,
+    "F1_macro": 0.4574672217769137,
+    "mIoU": 0.4574672217769137,
+    "F1_change": 0.4293326970492325,
+    "IoU_change": 0.27334413611504965,
+    "precision_change": 0.4706600401081175,
+    "recall_change": 0.3946771952913651,
+    "Omission": 0.605322804708635,
+    "Commission": 0.5293399598918824,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6435375587835462,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.18106043065524427,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.48081816872329186,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9687562034268878,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      54688,
+      12,
+      10072,
+      10422
+     ],
+     [
+      1326,
+      103,
+      133,
+      1889
+     ],
+     [
+      4543,
+      0,
+      23299,
+      10314
+     ],
+     [
+      12100,
+      71,
+      14435,
+      1429457
+     ]
+    ],
+    "OA": 0.9584725697835287,
+    "kappa": 0.7083761048207194,
+    "kappa_change": null,
+    "F1_macro": 0.48847317890604103,
+    "mIoU": 0.48847317890604103,
+    "F1_change": 0.521597646324611,
+    "IoU_change": 0.3528116990803558,
+    "precision_change": 0.4862753246753247,
+    "recall_change": 0.5624534333165092,
+    "Omission": 0.4375465666834908,
+    "Commission": 0.5137246753246754,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7397717972823992,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0566400879846027,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.5412393286485858,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9830713392901661,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.428,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      69953,
+      734,
+      3235,
+      10415
+     ],
+     [
+      2247,
+      1998,
+      159,
+      4059
+     ],
+     [
+      733,
+      3,
+      514,
+      1909
+     ],
+     [
+      43477,
+      913,
+      26539,
+      1012760
+     ]
+    ],
+    "OA": 0.9199566311306424,
+    "kappa": 0.5818121148218977,
+    "kappa_change": null,
+    "F1_macro": 0.4171409985351281,
+    "mIoU": 0.4171409985351281,
+    "F1_change": 0.10989347507491742,
+    "IoU_change": 0.05814141881726652,
+    "precision_change": 0.07367649215427483,
+    "recall_change": 0.2161418000344175,
+    "Omission": 0.7838581999655825,
+    "Commission": 0.9263235078457251,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.696926977738148,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3299479811741392,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.03058977563530322,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9586753703086662,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      120141,
+      43,
+      11127,
+      7612
+     ],
+     [
+      1989,
+      171,
+      238,
+      959
+     ],
+     [
+      577,
+      1,
+      6046,
+      3696
+     ],
+     [
+      80727,
+      480,
+      134618,
+      2187479
+     ]
+    ],
+    "OA": 0.9052910437950721,
+    "kappa": 0.49126505963187767,
+    "kappa_change": null,
+    "F1_macro": 0.38224150483900377,
+    "mIoU": 0.38224150483900377,
+    "F1_change": 0.07472310863516445,
+    "IoU_change": 0.03881161664086301,
+    "precision_change": 0.040707419920903064,
+    "recall_change": 0.45455874826350806,
+    "Omission": 0.5454412517364919,
+    "Commission": 0.9592925800790969,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7018463183168447,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08440276406712735,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.07448151821076816,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.950447637979166,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      31627,
+      27,
+      29183,
+      14357
+     ],
+     [
+      694,
+      40,
+      513,
+      2204
+     ],
+     [
+      1191,
+      0,
+      23848,
+      13117
+     ],
+     [
+      3365,
+      20,
+      26567,
+      1426111
+     ]
+    ],
+    "OA": 0.941992441813151,
+    "kappa": 0.5880445833337625,
+    "kappa_change": null,
+    "F1_macro": 0.4042580049675428,
+    "mIoU": 0.4042580049675428,
+    "F1_change": 0.39223348795205454,
+    "IoU_change": 0.24396172268349725,
+    "precision_change": 0.2978627895957505,
+    "recall_change": 0.5741341601172879,
+    "Omission": 0.4258658398827121,
+    "Commission": 0.7021372104042495,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.564410061478884,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.022611644997173545,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4032908588194509,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9795216240385843,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.428,
+   "_epochs": 100
+  }
+ },
+ "temporal_unet_gn": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      70436,
+      0,
+      0,
+      13901
+     ],
+     [
+      3097,
+      0,
+      0,
+      5366
+     ],
+     [
+      947,
+      0,
+      0,
+      2212
+     ],
+     [
+      9397,
+      0,
+      0,
+      1074292
+     ]
+    ],
+    "OA": 0.97039794921875,
+    "kappa": 0.7909186596197941,
+    "kappa_change": null,
+    "F1_macro": 0.42310717768390016,
+    "mIoU": 0.42310717768390016,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8374570487593185,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9858331880374037,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      127752,
+      0,
+      0,
+      11171
+     ],
+     [
+      2043,
+      0,
+      0,
+      1314
+     ],
+     [
+      2927,
+      0,
+      0,
+      7393
+     ],
+     [
+      32022,
+      0,
+      0,
+      2371282
+     ]
+    ],
+    "OA": 0.9777495555388622,
+    "kappa": 0.8095148897998085,
+    "kappa_change": null,
+    "F1_macro": 0.42619906151787756,
+    "mIoU": 0.42619906151787756,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8413953442422127,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.989175015184179,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      54782,
+      0,
+      0,
+      20412
+     ],
+     [
+      934,
+      0,
+      0,
+      2517
+     ],
+     [
+      6710,
+      0,
+      0,
+      31446
+     ],
+     [
+      8461,
+      0,
+      0,
+      1447602
+     ]
+    ],
+    "OA": 0.9551900227864584,
+    "kappa": 0.6063340166388991,
+    "kappa_change": null,
+    "F1_macro": 0.3896068249804997,
+    "mIoU": 0.3896068249804997,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7500222479309424,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9787575556787602,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      68292,
+      0,
+      0,
+      16045
+     ],
+     [
+      3127,
+      0,
+      0,
+      5336
+     ],
+     [
+      799,
+      0,
+      0,
+      2360
+     ],
+     [
+      11381,
+      0,
+      0,
+      1072308
+     ]
+    ],
+    "OA": 0.9668986002604166,
+    "kappa": 0.7658723700433449,
+    "kappa_change": null,
+    "F1_macro": 0.41341125245203625,
+    "mIoU": 0.41341125245203625,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8133098323170732,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9838870543157021,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      125346,
+      0,
+      0,
+      13577
+     ],
+     [
+      1953,
+      0,
+      0,
+      1404
+     ],
+     [
+      2106,
+      0,
+      0,
+      8214
+     ],
+     [
+      18545,
+      0,
+      0,
+      2384759
+     ]
+    ],
+    "OA": 0.9820810953776041,
+    "kappa": 0.8385511705090677,
+    "kappa_change": null,
+    "F1_macro": 0.43970118752554166,
+    "mIoU": 0.43970118752554166,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8738779878203944,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9913245142954296,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      52747,
+      0,
+      0,
+      22447
+     ],
+     [
+      908,
+      0,
+      0,
+      2543
+     ],
+     [
+      5787,
+      0,
+      0,
+      32369
+     ],
+     [
+      6342,
+      0,
+      0,
+      1449721
+     ]
+    ],
+    "OA": 0.9552434285481771,
+    "kappa": 0.5967114895716452,
+    "kappa_change": null,
+    "F1_macro": 0.38893443048785115,
+    "mIoU": 0.38893443048785115,
+    "F1_change": 0.0,
+    "IoU_change": 0.0,
+    "precision_change": 0.0,
+    "recall_change": 0.0,
+    "Omission": 1.0,
+    "Commission": 1.0,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.748301153371448,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9785022187589326,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74437,
+      925,
+      96,
+      8879
+     ],
+     [
+      2156,
+      2344,
+      3,
+      3960
+     ],
+     [
+      1155,
+      5,
+      120,
+      1879
+     ],
+     [
+      28055,
+      966,
+      209,
+      1054459
+     ]
+    ],
+    "OA": 0.9590657552083334,
+    "kappa": 0.745649030130727,
+    "kappa_change": null,
+    "F1_macro": 0.4660558790639408,
+    "mIoU": 0.4660558790639408,
+    "F1_change": 0.3025168815224064,
+    "IoU_change": 0.17821495732677564,
+    "precision_change": 0.5278491859468724,
+    "recall_change": 0.21201170194458785,
+    "Omission": 0.7879882980554122,
+    "Commission": 0.47215081405312764,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7829704428315978,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3690466818861686,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.06690827989963757,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9795862817286353,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131325,
+      336,
+      850,
+      6412
+     ],
+     [
+      1864,
+      555,
+      2,
+      936
+     ],
+     [
+      2840,
+      1,
+      3611,
+      3868
+     ],
+     [
+      107792,
+      1555,
+      585,
+      2293372
+     ]
+    ],
+    "OA": 0.9502950815054086,
+    "kappa": 0.661796706683549,
+    "kappa_change": null,
+    "F1_macro": 0.47125776228037186,
+    "mIoU": 0.47125776228037186,
+    "F1_change": 0.3935386359342528,
+    "IoU_change": 0.24497236269551922,
+    "precision_change": 0.5558372248165444,
+    "recall_change": 0.30459896176062,
+    "Omission": 0.69540103823938,
+    "Commission": 0.4441627751834556,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6862289154108229,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1912474155754652,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4699375325351379,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9742670392608836,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      55091,
+      72,
+      2312,
+      17719
+     ],
+     [
+      1058,
+      219,
+      13,
+      2161
+     ],
+     [
+      5018,
+      0,
+      5143,
+      27995
+     ],
+     [
+      9589,
+      85,
+      1043,
+      1445346
+     ]
+    ],
+    "OA": 0.9573612213134766,
+    "kappa": 0.6412480987967305,
+    "kappa_change": null,
+    "F1_macro": 0.43798264223104766,
+    "mIoU": 0.43798264223104766,
+    "F1_change": 0.2123816691092011,
+    "IoU_change": 0.11880705486129575,
+    "precision_change": 0.6033532125576685,
+    "recall_change": 0.12887254548513472,
+    "Omission": 0.8711274545148653,
+    "Commission": 0.3966467874423315,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7549297704693388,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11444996080480795,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.22041271133777615,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.980133483245425,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73244,
+      891,
+      4,
+      10198
+     ],
+     [
+      2087,
+      2312,
+      0,
+      4064
+     ],
+     [
+      1075,
+      8,
+      26,
+      2050
+     ],
+     [
+      13416,
+      1625,
+      17,
+      1068631
+     ]
+    ],
+    "OA": 0.9699613783094618,
+    "kappa": 0.7992393157379032,
+    "kappa_change": null,
+    "F1_macro": 0.47897184830529543,
+    "mIoU": 0.47897184830529543,
+    "F1_change": 0.283308088458043,
+    "IoU_change": 0.16503141102562294,
+    "precision_change": 0.47880401392586525,
+    "recall_change": 0.20117019445878506,
+    "Omission": 0.798829805541215,
+    "Commission": 0.5211959860741348,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8411164510590897,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3476953154372509,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.016219588271990017,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9855346596379653,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130868,
+      560,
+      436,
+      7059
+     ],
+     [
+      1863,
+      580,
+      0,
+      914
+     ],
+     [
+      2882,
+      0,
+      2004,
+      5434
+     ],
+     [
+      43936,
+      1765,
+      288,
+      2357315
+     ]
+    ],
+    "OA": 0.9745150835086138,
+    "kappa": 0.7944892129725366,
+    "kappa_change": null,
+    "F1_macro": 0.4891328170238297,
+    "mIoU": 0.4891328170238297,
+    "F1_change": 0.2676333505955463,
+    "IoU_change": 0.15449001554466102,
+    "precision_change": 0.458725368364992,
+    "recall_change": 0.1889303209768224,
+    "Omission": 0.8110696790231776,
+    "Commission": 0.541274631635008,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8218493305533925,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.18524433088470138,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.30717351318209685,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9875585093168743,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      54911,
+      108,
+      809,
+      19366
+     ],
+     [
+      978,
+      234,
+      3,
+      2236
+     ],
+     [
+      6028,
+      0,
+      7993,
+      24135
+     ],
+     [
+      10701,
+      179,
+      426,
+      1444757
+     ]
+    ],
+    "OA": 0.9586938222249349,
+    "kappa": 0.656897607892922,
+    "kappa_change": null,
+    "F1_macro": 0.45464655412835353,
+    "mIoU": 0.45464655412835353,
+    "F1_change": 0.32037228139177165,
+    "IoU_change": 0.19074005378837058,
+    "precision_change": 0.8436218211648893,
+    "recall_change": 0.19773115100824382,
+    "Omission": 0.8022688489917562,
+    "Commission": 0.15637817883511074,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7429843314480556,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11782477341389729,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3373499060923882,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9806407953418176,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75312,
+      388,
+      0,
+      8637
+     ],
+     [
+      2727,
+      1870,
+      0,
+      3866
+     ],
+     [
+      1245,
+      8,
+      0,
+      1906
+     ],
+     [
+      19313,
+      816,
+      0,
+      1063560
+     ]
+    ],
+    "OA": 0.9670189751519097,
+    "kappa": 0.7865775620159368,
+    "kappa_change": null,
+    "F1_macro": 0.4654029149797192,
+    "mIoU": 0.4654029149797192,
+    "F1_change": 0.2543525571273123,
+    "IoU_change": 0.14570671653420603,
+    "precision_change": 0.6067488643737833,
+    "recall_change": 0.16090173808294614,
+    "Omission": 0.8390982619170538,
+    "Commission": 0.3932511356262167,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.823378923546197,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.32394976180164575,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9840224494346469,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130416,
+      442,
+      0,
+      8065
+     ],
+     [
+      1827,
+      458,
+      0,
+      1072
+     ],
+     [
+      3165,
+      2,
+      0,
+      7153
+     ],
+     [
+      52004,
+      328,
+      0,
+      2350972
+     ]
+    ],
+    "OA": 0.9710247333233173,
+    "kappa": 0.7684174866616724,
+    "kappa_change": null,
+    "F1_macro": 0.4370561589056775,
+    "mIoU": 0.4370561589056775,
+    "F1_change": 0.0614476420473603,
+    "IoU_change": 0.031697695342238215,
+    "precision_change": 0.3723577235772358,
+    "recall_change": 0.03348687577685165,
+    "Omission": 0.9665131242231484,
+    "Commission": 0.6276422764227643,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7992768167680451,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.19969478962284717,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9856155433128899,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      59380,
+      62,
+      0,
+      15752
+     ],
+     [
+      1137,
+      183,
+      0,
+      2131
+     ],
+     [
+      7739,
+      0,
+      0,
+      30417
+     ],
+     [
+      12180,
+      173,
+      0,
+      1443710
+     ]
+    ],
+    "OA": 0.9557552337646484,
+    "kappa": 0.6294496753149363,
+    "kappa_change": null,
+    "F1_macro": 0.40656607939126654,
+    "mIoU": 0.40656607939126654,
+    "F1_change": 0.008709101725163593,
+    "IoU_change": 0.00437359590841738,
+    "precision_change": 0.43779904306220097,
+    "recall_change": 0.004398298363256183,
+    "Omission": 0.9956017016367438,
+    "Commission": 0.562200956937799,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7630919488530489,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09459808736107521,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9794262218065835,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  }
+ },
+ "temporal_unet": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      68457,
+      1314,
+      0,
+      14566
+     ],
+     [
+      1249,
+      2125,
+      0,
+      5089
+     ],
+     [
+      930,
+      0,
+      6,
+      2223
+     ],
+     [
+      6272,
+      997,
+      0,
+      1076420
+     ]
+    ],
+    "OA": 0.9723307291666666,
+    "kappa": 0.8023750060429461,
+    "kappa_change": null,
+    "F1_macro": 0.47763704041263544,
+    "mIoU": 0.47763704041263544,
+    "F1_change": 0.26531374501992033,
+    "IoU_change": 0.15294624273307975,
+    "precision_change": 0.47973885637100405,
+    "recall_change": 0.18335914644639476,
+    "Omission": 0.8166408535536053,
+    "Commission": 0.5202611436289959,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8491053986170114,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3294829056516009,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0037914691943127963,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9866419919092093,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      128042,
+      1084,
+      126,
+      9671
+     ],
+     [
+      1316,
+      752,
+      0,
+      1289
+     ],
+     [
+      2860,
+      0,
+      2642,
+      4818
+     ],
+     [
+      25985,
+      1795,
+      49,
+      2375475
+     ]
+    ],
+    "OA": 0.9808314396784856,
+    "kappa": 0.8360371306779713,
+    "kappa_change": null,
+    "F1_macro": 0.5278928405468135,
+    "mIoU": 0.5278928405468135,
+    "F1_change": 0.3372919254658385,
+    "IoU_change": 0.2028569720877413,
+    "precision_change": 0.5263647642679901,
+    "recall_change": 0.2481538349053155,
+    "Omission": 0.7518461650946845,
+    "Commission": 0.47363523573200994,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8618700483969763,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2152261018889525,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.40222272969475525,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9909048948630708,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      49527,
+      86,
+      20,
+      25561
+     ],
+     [
+      552,
+      154,
+      0,
+      2745
+     ],
+     [
+      4097,
+      0,
+      2618,
+      31441
+     ],
+     [
+      7432,
+      111,
+      3,
+      1448517
+     ]
+    ],
+    "OA": 0.954193115234375,
+    "kappa": 0.5849618104073152,
+    "kappa_change": null,
+    "F1_macro": 0.40846866267106674,
+    "mIoU": 0.40846866267106674,
+    "F1_change": 0.12430771990403372,
+    "IoU_change": 0.06627298156693046,
+    "precision_change": 0.9264705882352942,
+    "recall_change": 0.06662340471555267,
+    "Omission": 0.9333765952844473,
+    "Commission": 0.07352941176470584,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7240683615736612,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08100999473961074,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.12834277030173788,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.977299063160036,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      69751,
+      1069,
+      7,
+      13510
+     ],
+     [
+      1422,
+      2133,
+      0,
+      4908
+     ],
+     [
+      851,
+      0,
+      6,
+      2302
+     ],
+     [
+      5958,
+      765,
+      13,
+      1076953
+     ]
+    ],
+    "OA": 0.9738862779405382,
+    "kappa": 0.8140490673887631,
+    "kappa_change": null,
+    "F1_macro": 0.4844214190559526,
+    "mIoU": 0.4844214190559526,
+    "F1_change": 0.2739673390970221,
+    "IoU_change": 0.158726625111309,
+    "precision_change": 0.535687453042825,
+    "recall_change": 0.18404749612803303,
+    "Omission": 0.8159525038719669,
+    "Commission": 0.46431254695717505,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8594311202015784,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3432019308125503,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0037676609105180532,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9874133683450982,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      124183,
+      1154,
+      3,
+      13583
+     ],
+     [
+      1214,
+      728,
+      0,
+      1415
+     ],
+     [
+      2458,
+      6,
+      0,
+      7856
+     ],
+     [
+      10670,
+      478,
+      3,
+      2392153
+     ]
+    ],
+    "OA": 0.9848038110977564,
+    "kappa": 0.860062395489095,
+    "kappa_change": null,
+    "F1_macro": 0.4854949946338586,
+    "mIoU": 0.4854949946338586,
+    "F1_change": 0.09072216337466509,
+    "IoU_change": 0.04751648064747732,
+    "precision_change": 0.3069139966273187,
+    "recall_change": 0.053228047086349345,
+    "Omission": 0.9467719529136507,
+    "Commission": 0.6930860033726813,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8951803581211615,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.25441202166695787,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9929425477101831,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      36876,
+      85,
+      3,
+      38230
+     ],
+     [
+      268,
+      180,
+      0,
+      3003
+     ],
+     [
+      1960,
+      0,
+      0,
+      36196
+     ],
+     [
+      3466,
+      140,
+      6,
+      1452451
+     ]
+    ],
+    "OA": 0.9470030466715494,
+    "kappa": 0.46067060039634555,
+    "kappa_change": null,
+    "F1_macro": 0.363002133827168,
+    "mIoU": 0.363002133827168,
+    "F1_change": 0.008567144998929107,
+    "IoU_change": 0.004302000430200043,
+    "precision_change": 0.43478260869565216,
+    "recall_change": 0.004326195111399524,
+    "Omission": 0.9956738048886005,
+    "Commission": 0.5652173913043479,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6262694881288,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09336099585062241,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9728591604059421,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      69842,
+      2074,
+      284,
+      12137
+     ],
+     [
+      1522,
+      2622,
+      3,
+      4316
+     ],
+     [
+      849,
+      2,
+      76,
+      2232
+     ],
+     [
+      43894,
+      4154,
+      74,
+      1035567
+     ]
+    ],
+    "OA": 0.9393539428710938,
+    "kappa": 0.6472146794961396,
+    "kappa_change": null,
+    "F1_macro": 0.4185525368557912,
+    "mIoU": 0.4185525368557912,
+    "F1_change": 0.25804600449524173,
+    "IoU_change": 0.14813594685115028,
+    "precision_change": 0.2904510711594359,
+    "recall_change": 0.2321459301325073,
+    "Omission": 0.7678540698674927,
+    "Commission": 0.7095489288405641,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6968729420686077,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3028587929540861,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.042269187986651836,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.96875171017348,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129066,
+      1378,
+      1003,
+      7476
+     ],
+     [
+      1619,
+      776,
+      0,
+      962
+     ],
+     [
+      2686,
+      3,
+      3368,
+      4263
+     ],
+     [
+      84571,
+      5926,
+      174,
+      2312633
+     ]
+    ],
+    "OA": 0.9569385235126202,
+    "kappa": 0.6921619525370892,
+    "kappa_change": null,
+    "F1_macro": 0.4723765684123525,
+    "mIoU": 0.4723765684123525,
+    "F1_change": 0.3150731800038016,
+    "IoU_change": 0.18699517169802807,
+    "precision_change": 0.328159645232816,
+    "recall_change": 0.30299042187614245,
+    "Omission": 0.6970095781238576,
+    "Commission": 0.6718403547671841,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7233323525702997,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.13566433566433567,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.45314497140935084,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9781391597326756,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      52710,
+      173,
+      2408,
+      19903
+     ],
+     [
+      745,
+      185,
+      27,
+      2494
+     ],
+     [
+      4830,
+      0,
+      10142,
+      23184
+     ],
+     [
+      8338,
+      228,
+      1078,
+      1446419
+     ]
+    ],
+    "OA": 0.959686279296875,
+    "kappa": 0.6629787555257447,
+    "kappa_change": null,
+    "F1_macro": 0.46154525689878256,
+    "mIoU": 0.46154525689878256,
+    "F1_change": 0.3698252399369718,
+    "IoU_change": 0.22686232727752026,
+    "precision_change": 0.725159750017555,
+    "recall_change": 0.24820342730790493,
+    "Omission": 0.7517965726920951,
+    "Commission": 0.27484024998244505,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7433523484490576,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09165221699281645,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.39149987454401575,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9812673609756644,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73909,
+      969,
+      0,
+      9459
+     ],
+     [
+      2146,
+      2126,
+      0,
+      4191
+     ],
+     [
+      1198,
+      0,
+      0,
+      1961
+     ],
+     [
+      54958,
+      1265,
+      0,
+      1027466
+     ]
+    ],
+    "OA": 0.9354493882921007,
+    "kappa": 0.6407094066142551,
+    "kappa_change": null,
+    "F1_macro": 0.4128890785353826,
+    "mIoU": 0.4128890785353826,
+    "F1_change": 0.26604930546865224,
+    "IoU_change": 0.15343533487297922,
+    "precision_change": 0.48761467889908255,
+    "recall_change": 0.18292892789537085,
+    "Omission": 0.8170710721046291,
+    "Commission": 0.5123853211009175,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6826107837523321,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.33159167121578415,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9662238346860914,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132109,
+      994,
+      175,
+      5645
+     ],
+     [
+      1792,
+      716,
+      0,
+      849
+     ],
+     [
+      3679,
+      1,
+      2373,
+      4267
+     ],
+     [
+      130423,
+      4740,
+      61,
+      2268080
+     ]
+    ],
+    "OA": 0.940284924629407,
+    "kappa": 0.6170323826958837,
+    "kappa_change": null,
+    "F1_macro": 0.43094879530349206,
+    "mIoU": 0.43094879530349206,
+    "F1_change": 0.2717157056779698,
+    "IoU_change": 0.15721701954397393,
+    "precision_change": 0.34094922737306843,
+    "recall_change": 0.22585362287051253,
+    "Omission": 0.7741463771294874,
+    "Commission": 0.6590507726269316,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.649302330153394,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.14600326264274063,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3670817541959935,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.968820914345882,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      59824,
+      49,
+      430,
+      14891
+     ],
+     [
+      1206,
+      113,
+      0,
+      2132
+     ],
+     [
+      9834,
+      0,
+      13949,
+      14373
+     ],
+     [
+      16401,
+      384,
+      844,
+      1438434
+     ]
+    ],
+    "OA": 0.9615071614583334,
+    "kappa": 0.7084202599494236,
+    "kappa_change": null,
+    "F1_macro": 0.48319551938004435,
+    "mIoU": 0.48319551938004435,
+    "F1_change": 0.490170105967652,
+    "IoU_change": 0.324652537285866,
+    "precision_change": 0.8917496353605174,
+    "recall_change": 0.33797197586944505,
+    "Omission": 0.662028024130555,
+    "Commission": 0.10825036463948257,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7364812044885171,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.05654240680510383,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.5226399895089829,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9832444316999972,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75324,
+      504,
+      154,
+      8355
+     ],
+     [
+      2482,
+      2071,
+      7,
+      3903
+     ],
+     [
+      1399,
+      0,
+      64,
+      1696
+     ],
+     [
+      25770,
+      1777,
+      81,
+      1056061
+     ]
+    ],
+    "OA": 0.9608968098958334,
+    "kappa": 0.7561130318374286,
+    "kappa_change": null,
+    "F1_macro": 0.4586250383376054,
+    "mIoU": 0.4586250383376054,
+    "F1_change": 0.2622850122850123,
+    "IoU_change": 0.15093672675857192,
+    "precision_change": 0.45835122370115927,
+    "recall_change": 0.1837033212872139,
+    "Omission": 0.8162966787127861,
+    "Commission": 0.5416487762988407,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7957657200811359,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3232149824424502,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.03694083694083694,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9806927971531836,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130917,
+      362,
+      505,
+      7139
+     ],
+     [
+      1976,
+      420,
+      0,
+      961
+     ],
+     [
+      3332,
+      1,
+      3216,
+      3771
+     ],
+     [
+      33877,
+      1079,
+      175,
+      2368173
+     ]
+    ],
+    "OA": 0.9791940542367789,
+    "kappa": 0.8277336765597059,
+    "kappa_change": null,
+    "F1_macro": 0.5238658841763033,
+    "mIoU": 0.5238658841763033,
+    "F1_change": 0.3741703112940571,
+    "IoU_change": 0.23014114817393505,
+    "precision_change": 0.6314692601597777,
+    "recall_change": 0.26584777363456896,
+    "Omission": 0.734152226365431,
+    "Commission": 0.36853073984022233,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8472906722757059,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.16095037363479595,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4524479459763647,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9901738280384367,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      55245,
+      16,
+      456,
+      19477
+     ],
+     [
+      717,
+      61,
+      6,
+      2667
+     ],
+     [
+      8562,
+      0,
+      8240,
+      21354
+     ],
+     [
+      13545,
+      246,
+      381,
+      1441891
+     ]
+    ],
+    "OA": 0.9571310679117838,
+    "kappa": 0.652127566169453,
+    "kappa_change": null,
+    "F1_macro": 0.43821981956779676,
+    "mIoU": 0.43821981956779676,
+    "F1_change": 0.32544645482524065,
+    "IoU_change": 0.1943481925454205,
+    "precision_change": 0.882521794599192,
+    "recall_change": 0.19950969788737472,
+    "Omission": 0.8004903021126253,
+    "Commission": 0.117478205400808,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7209176383080065,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.03232644409114997,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3488642858654925,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9803940366866432,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.281,
+   "_epochs": 100
+  }
+ },
+ "unet_cbam_msa": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73994,
+      1596,
+      27,
+      8720
+     ],
+     [
+      2029,
+      2831,
+      0,
+      3603
+     ],
+     [
+      1151,
+      1,
+      27,
+      1980
+     ],
+     [
+      54801,
+      2593,
+      29,
+      1026266
+     ]
+    ],
+    "OA": 0.9351247151692709,
+    "kappa": 0.642781505283048,
+    "kappa_change": null,
+    "F1_macro": 0.4216837539709256,
+    "mIoU": 0.4216837539709256,
+    "F1_change": 0.3052440457118445,
+    "IoU_change": 0.18011091504915552,
+    "precision_change": 0.40230855855855857,
+    "recall_change": 0.24591292376527277,
+    "Omission": 0.7540870762347273,
+    "Commission": 0.5976914414414414,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6841414253485706,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.36566778610178247,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.016656384947563233,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9662347982213083,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131286,
+      1077,
+      380,
+      6180
+     ],
+     [
+      1741,
+      692,
+      0,
+      924
+     ],
+     [
+      3239,
+      1,
+      2718,
+      4362
+     ],
+     [
+      124790,
+      4300,
+      107,
+      2274107
+     ]
+    ],
+    "OA": 0.9424465864132612,
+    "kappa": 0.6252973509615882,
+    "kappa_change": null,
+    "F1_macro": 0.4402709396215354,
+    "mIoU": 0.4402709396215354,
+    "F1_change": 0.2971418612757058,
+    "IoU_change": 0.17449595742503327,
+    "precision_change": 0.36765498652291106,
+    "recall_change": 0.24932368209402647,
+    "Omission": 0.7506763179059736,
+    "Commission": 0.6323450134770889,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6564644643843802,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1468123475124642,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4019223659889094,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9700007059259605,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      50644,
+      135,
+      4043,
+      20372
+     ],
+     [
+      916,
+      249,
+      96,
+      2190
+     ],
+     [
+      5017,
+      1,
+      3766,
+      29372
+     ],
+     [
+      8838,
+      500,
+      2840,
+      1443885
+     ]
+    ],
+    "OA": 0.9527486165364584,
+    "kappa": 0.5976934056465563,
+    "kappa_change": null,
+    "F1_macro": 0.41619470296347244,
+    "mIoU": 0.41619470296347244,
+    "F1_change": 0.15083494562052707,
+    "IoU_change": 0.08156921701678112,
+    "precision_change": 0.3452278589853826,
+    "recall_change": 0.09649818540149493,
+    "Omission": 0.9035018145985051,
+    "Commission": 0.6547721410146174,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7203521822927409,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11485239852398524,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.1540254800515327,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9782809746460055,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.183,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75170,
+      2328,
+      118,
+      6721
+     ],
+     [
+      1935,
+      3086,
+      0,
+      3442
+     ],
+     [
+      1413,
+      9,
+      101,
+      1636
+     ],
+     [
+      36590,
+      19767,
+      174,
+      1027158
+     ]
+    ],
+    "OA": 0.9371566772460938,
+    "kappa": 0.6580489689237584,
+    "kappa_change": null,
+    "F1_macro": 0.4181799090649733,
+    "mIoU": 0.4181799090649733,
+    "F1_change": 0.17132105899744657,
+    "IoU_change": 0.0936856958081016,
+    "precision_change": 0.12457491302818277,
+    "recall_change": 0.2742213044226467,
+    "Omission": 0.7257786955773533,
+    "Commission": 0.8754250869718172,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7537917721677655,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.18340118265830685,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.05686936936936937,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9678090458795297,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131781,
+      1062,
+      638,
+      5442
+     ],
+     [
+      1687,
+      750,
+      0,
+      920
+     ],
+     [
+      3253,
+      1,
+      3404,
+      3662
+     ],
+     [
+      95211,
+      1518,
+      263,
+      2306312
+     ]
+    ],
+    "OA": 0.9555315849108573,
+    "kappa": 0.6888125755503616,
+    "kappa_change": null,
+    "F1_macro": 0.4841338622715123,
+    "mIoU": 0.4841338622715123,
+    "F1_change": 0.38980903673814105,
+    "IoU_change": 0.2420886998076811,
+    "precision_change": 0.5440020953378732,
+    "recall_change": 0.3037215763690868,
+    "Omission": 0.6962784236309132,
+    "Commission": 0.45599790466212675,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7106874654514568,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2242822966507177,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4655042735042735,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9773253892246019,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      52194,
+      93,
+      4058,
+      18849
+     ],
+     [
+      1030,
+      175,
+      48,
+      2198
+     ],
+     [
+      4543,
+      0,
+      2793,
+      30820
+     ],
+     [
+      11357,
+      55,
+      1708,
+      1442943
+     ]
+    ],
+    "OA": 0.9524695078531901,
+    "kappa": 0.5970833611929993,
+    "kappa_change": null,
+    "F1_macro": 0.408902707839118,
+    "mIoU": 0.408902707839118,
+    "F1_change": 0.11745849575558502,
+    "IoU_change": 0.06239357564800605,
+    "precision_change": 0.33236282194848826,
+    "recall_change": 0.07133415050352104,
+    "Omission": 0.928665849496479,
+    "Commission": 0.6676371780515118,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7233193364653058,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09273979862215156,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.11945341402390779,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9779770257818619,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.183,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      71664,
+      1487,
+      29,
+      11157
+     ],
+     [
+      1632,
+      2817,
+      0,
+      4014
+     ],
+     [
+      815,
+      2,
+      33,
+      2309
+     ],
+     [
+      25492,
+      1828,
+      9,
+      1056360
+     ]
+    ],
+    "OA": 0.9586537679036459,
+    "kappa": 0.7377669337373449,
+    "kappa_change": null,
+    "F1_macro": 0.46176208025135385,
+    "mIoU": 0.46176208025135385,
+    "F1_change": 0.3197397206484546,
+    "IoU_change": 0.19029178073045336,
+    "precision_change": 0.45930701047542305,
+    "recall_change": 0.2452245740836345,
+    "Omission": 0.7547754259163655,
+    "Commission": 0.5406929895245769,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7792106121561378,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3859697198054395,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.02043343653250774,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9792313336228621,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      128510,
+      777,
+      650,
+      8986
+     ],
+     [
+      1598,
+      692,
+      0,
+      1067
+     ],
+     [
+      2531,
+      0,
+      2983,
+      4806
+     ],
+     [
+      57648,
+      4516,
+      139,
+      2341001
+     ]
+    ],
+    "OA": 0.9676364996494391,
+    "kappa": 0.7495932053677185,
+    "kappa_change": null,
+    "F1_macro": 0.48923014792910285,
+    "mIoU": 0.48923014792910285,
+    "F1_change": 0.31364683792779724,
+    "IoU_change": 0.18599119388633029,
+    "precision_change": 0.3766526596289843,
+    "recall_change": 0.26869927615705197,
+    "Omission": 0.7313007238429481,
+    "Commission": 0.6233473403710157,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.780717475167826,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.14814814814814814,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.42336077206925915,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9837866482432629,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      35960,
+      239,
+      1209,
+      37786
+     ],
+     [
+      371,
+      249,
+      22,
+      2809
+     ],
+     [
+      1768,
+      6,
+      217,
+      36165
+     ],
+     [
+      3682,
+      263,
+      285,
+      1451833
+     ]
+    ],
+    "OA": 0.9462095896402994,
+    "kappa": 0.4567663719202645,
+    "kappa_change": null,
+    "F1_macro": 0.3648489479482927,
+    "mIoU": 0.3648489479482927,
+    "F1_change": 0.02113522461845477,
+    "IoU_change": 0.01068047947560221,
+    "precision_change": 0.18714859437751005,
+    "recall_change": 0.011200038455067656,
+    "Omission": 0.9887999615449323,
+    "Commission": 0.8128514056224899,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6148322291087839,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11834600760456274,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.010880192534282634,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9728645445237241,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.183,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73595,
+      1181,
+      186,
+      9375
+     ],
+     [
+      2152,
+      2353,
+      7,
+      3951
+     ],
+     [
+      1017,
+      8,
+      23,
+      2111
+     ],
+     [
+      53241,
+      1685,
+      1345,
+      1027418
+     ]
+    ],
+    "OA": 0.9353544447157118,
+    "kappa": 0.6407763098194258,
+    "kappa_change": null,
+    "F1_macro": 0.4175237251253677,
+    "mIoU": 0.4175237251253677,
+    "F1_change": 0.2581205866376969,
+    "IoU_change": 0.1481851066483722,
+    "precision_change": 0.3500294637595757,
+    "recall_change": 0.20443985544656684,
+    "Omission": 0.7955601445534332,
+    "Commission": 0.6499705362404242,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6867062918140169,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.343754565376187,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.009745762711864408,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9662795596987412,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130930,
+      287,
+      385,
+      7321
+     ],
+     [
+      1944,
+      477,
+      12,
+      924
+     ],
+     [
+      2729,
+      1,
+      526,
+      7064
+     ],
+     [
+      110434,
+      981,
+      402,
+      2291487
+     ]
+    ],
+    "OA": 0.9481655023036859,
+    "kappa": 0.6452471376632376,
+    "kappa_change": null,
+    "F1_macro": 0.40331732209427706,
+    "mIoU": 0.40331732209427706,
+    "F1_change": 0.11977549558156197,
+    "IoU_change": 0.06370276278183551,
+    "precision_change": 0.3266037121458808,
+    "recall_change": 0.07333479564231922,
+    "Omission": 0.9266652043576807,
+    "Commission": 0.6733962878541192,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6802265170407316,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.18694885361552027,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.09033920137398024,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9730099148638033,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      43550,
+      141,
+      1521,
+      29982
+     ],
+     [
+      615,
+      227,
+      60,
+      2549
+     ],
+     [
+      2454,
+      3,
+      907,
+      34792
+     ],
+     [
+      5770,
+      385,
+      1113,
+      1448795
+     ]
+    ],
+    "OA": 0.9495283762613932,
+    "kappa": 0.5238979384689363,
+    "kappa_change": null,
+    "F1_macro": 0.38713079720036514,
+    "mIoU": 0.38713079720036514,
+    "F1_change": 0.049342964058828646,
+    "IoU_change": 0.025295561008253403,
+    "precision_change": 0.2602708285517558,
+    "recall_change": 0.027255029201817,
+    "Omission": 0.972744970798183,
+    "Commission": 0.7397291714482441,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6826928352523456,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.10791537913002139,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.04344181813827622,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9749036145510653,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.183,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      72374,
+      2567,
+      0,
+      9396
+     ],
+     [
+      1771,
+      3072,
+      0,
+      3620
+     ],
+     [
+      1120,
+      6,
+      9,
+      2024
+     ],
+     [
+      35357,
+      4202,
+      6,
+      1044124
+     ]
+    ],
+    "OA": 0.9490788777669271,
+    "kappa": 0.6976333032834106,
+    "kappa_change": null,
+    "F1_macro": 0.436286256912083,
+    "mIoU": 0.436286256912083,
+    "F1_change": 0.28681809718860546,
+    "IoU_change": 0.16741835570287453,
+    "precision_change": 0.3124112756033259,
+    "recall_change": 0.2651006711409396,
+    "Omission": 0.7348993288590604,
+    "Commission": 0.6875887243966741,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7424535415138568,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.33555434188967775,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.005671077504725898,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.974517617400727,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      133189,
+      267,
+      309,
+      5158
+     ],
+     [
+      1899,
+      595,
+      0,
+      863
+     ],
+     [
+      3464,
+      0,
+      2482,
+      4374
+     ],
+     [
+      108610,
+      1349,
+      77,
+      2293268
+     ]
+    ],
+    "OA": 0.9505576109274839,
+    "kappa": 0.664206347032653,
+    "kappa_change": null,
+    "F1_macro": 0.4570597859816101,
+    "mIoU": 0.4570597859816101,
+    "F1_change": 0.32810833866496053,
+    "IoU_change": 0.19624976082658332,
+    "precision_change": 0.6058279188816696,
+    "recall_change": 0.2249762374789793,
+    "Omission": 0.7750237625210207,
+    "Commission": 0.39417208111833035,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6899465143685976,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2137212643678161,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.37640279041552926,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9744143096817972,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      56003,
+      62,
+      1272,
+      17857
+     ],
+     [
+      1127,
+      216,
+      8,
+      2100
+     ],
+     [
+      5856,
+      0,
+      4186,
+      28114
+     ],
+     [
+      10966,
+      354,
+      1093,
+      1443650
+     ]
+    ],
+    "OA": 0.9562524159749349,
+    "kappa": 0.6344271188342426,
+    "kappa_change": null,
+    "F1_macro": 0.4300469398334964,
+    "mIoU": 0.4300469398334964,
+    "F1_change": 0.18041723021435305,
+    "IoU_change": 0.09915307685377062,
+    "precision_change": 0.6121540814907523,
+    "recall_change": 0.10579950489100391,
+    "Omission": 0.8942004951089961,
+    "Commission": 0.38784591850924766,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7509822589945423,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.10580455547391623,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.187230235938723,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9794815359605724,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.183,
+   "_epochs": 100
+  }
+ },
+ "unet_cbam": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74214,
+      951,
+      90,
+      9082
+     ],
+     [
+      2207,
+      2362,
+      2,
+      3892
+     ],
+     [
+      1238,
+      0,
+      59,
+      1862
+     ],
+     [
+      46870,
+      964,
+      100,
+      1035755
+     ]
+    ],
+    "OA": 0.9429846869574653,
+    "kappa": 0.6728433104412451,
+    "kappa_change": null,
+    "F1_macro": 0.4348043384689392,
+    "mIoU": 0.4348043384689392,
+    "F1_change": 0.2998142414860681,
+    "IoU_change": 0.1763420496758686,
+    "precision_change": 0.5346731448763251,
+    "recall_change": 0.20831182240578214,
+    "Omission": 0.7916881775942178,
+    "Commission": 0.4653268551236749,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7106374421878142,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.37080062794348506,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.03460410557184751,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9705896133590719,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130244,
+      284,
+      347,
+      8048
+     ],
+     [
+      1729,
+      562,
+      0,
+      1066
+     ],
+     [
+      3065,
+      0,
+      3053,
+      4202
+     ],
+     [
+      96105,
+      1933,
+      293,
+      2304973
+     ]
+    ],
+    "OA": 0.9541954627403846,
+    "kappa": 0.6778835194304001,
+    "kappa_change": null,
+    "F1_macro": 0.4690675314380896,
+    "mIoU": 0.4690675314380896,
+    "F1_change": 0.3588267407811802,
+    "IoU_change": 0.21864037740413694,
+    "precision_change": 0.5585599505562423,
+    "recall_change": 0.26431234919938584,
+    "Omission": 0.7356876508006142,
+    "Commission": 0.4414400494437577,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7038960617835738,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1831812255541069,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4357382430600157,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9763539551164194,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      51975,
+      40,
+      6259,
+      16920
+     ],
+     [
+      865,
+      149,
+      220,
+      2217
+     ],
+     [
+      5122,
+      0,
+      14031,
+      19003
+     ],
+     [
+      8437,
+      16,
+      5260,
+      1442350
+     ]
+    ],
+    "OA": 0.9590816497802734,
+    "kappa": 0.6757983808247383,
+    "kappa_change": null,
+    "F1_macro": 0.4672389578259428,
+    "mIoU": 0.4672389578259428,
+    "F1_change": 0.4196383652451836,
+    "IoU_change": 0.26553312610014607,
+    "precision_change": 0.5459095283926853,
+    "recall_change": 0.3408080371091403,
+    "Omission": 0.6591919628908597,
+    "Commission": 0.45409047160731475,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7341464620426151,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08150984682713348,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.438976316365798,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.982342222326653,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.528,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      72213,
+      2029,
+      169,
+      9926
+     ],
+     [
+      1938,
+      2727,
+      7,
+      3791
+     ],
+     [
+      1063,
+      9,
+      93,
+      1994
+     ],
+     [
+      45842,
+      5523,
+      148,
+      1032176
+     ]
+    ],
+    "OA": 0.9385926988389757,
+    "kappa": 0.652190767243347,
+    "kappa_change": null,
+    "F1_macro": 0.4194895802292261,
+    "mIoU": 0.4194895802292261,
+    "F1_change": 0.2526089488063779,
+    "IoU_change": 0.14456349002922028,
+    "precision_change": 0.2634283045305932,
+    "recall_change": 0.24264326277749096,
+    "Omission": 0.7573567372225091,
+    "Commission": 0.7365716954694068,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7031690466568967,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.29086448722734787,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.05201342281879195,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9684627712077825,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131537,
+      466,
+      752,
+      6168
+     ],
+     [
+      1756,
+      698,
+      1,
+      902
+     ],
+     [
+      3100,
+      0,
+      3955,
+      3265
+     ],
+     [
+      181547,
+      6207,
+      696,
+      2214854
+     ]
+    ],
+    "OA": 0.9198483198116987,
+    "kappa": 0.5409371283334242,
+    "kappa_change": null,
+    "F1_macro": 0.43190204662476195,
+    "mIoU": 0.43190204662476195,
+    "F1_change": 0.3518070467261455,
+    "IoU_change": 0.21345015826414054,
+    "precision_change": 0.3642270058708415,
+    "recall_change": 0.3402061855670103,
+    "Omission": 0.6597938144329897,
+    "Commission": 0.6357729941291586,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5758268890236241,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.13012677106636839,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.5030526583566522,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9570518957250232,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      53928,
+      52,
+      7534,
+      13680
+     ],
+     [
+      1104,
+      193,
+      121,
+      2033
+     ],
+     [
+      4952,
+      0,
+      15375,
+      17829
+     ],
+     [
+      9092,
+      108,
+      5442,
+      1441421
+     ]
+    ],
+    "OA": 0.9606151580810547,
+    "kappa": 0.6954994694519542,
+    "kappa_change": null,
+    "F1_macro": 0.479503766984825,
+    "mIoU": 0.479503766984825,
+    "F1_change": 0.4420717855520218,
+    "IoU_change": 0.28375619714202394,
+    "precision_change": 0.5400867302688638,
+    "recall_change": 0.3741678083014877,
+    "Omission": 0.6258321916985123,
+    "Commission": 0.4599132697311362,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7475982532751092,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.10147213459516298,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.46151768025454765,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9835607053639237,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.528,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      76676,
+      2025,
+      20,
+      5616
+     ],
+     [
+      2386,
+      3335,
+      0,
+      2742
+     ],
+     [
+      1494,
+      17,
+      41,
+      1607
+     ],
+     [
+      107434,
+      15747,
+      47,
+      960461
+     ]
+    ],
+    "OA": 0.8820537990993924,
+    "kappa": 0.493261949004074,
+    "kappa_change": null,
+    "F1_macro": 0.3524654844511339,
+    "mIoU": 0.3524654844511339,
+    "F1_change": 0.20551531016010227,
+    "IoU_change": 0.1145260872515096,
+    "precision_change": 0.15900527505651846,
+    "recall_change": 0.29048356565135086,
+    "Omission": 0.7095164343486491,
+    "Commission": 0.8409947249434815,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5631171349150103,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2254368472640011,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.02509947964493419,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9351579634051648,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132708,
+      945,
+      225,
+      5045
+     ],
+     [
+      1845,
+      790,
+      1,
+      721
+     ],
+     [
+      4049,
+      3,
+      3070,
+      3198
+     ],
+     [
+      179162,
+      2243,
+      873,
+      2221026
+     ]
+    ],
+    "OA": 0.9224110138721955,
+    "kappa": 0.5510927213593404,
+    "kappa_change": null,
+    "F1_macro": 0.4299594776741268,
+    "mIoU": 0.4299594776741268,
+    "F1_change": 0.3536903834700142,
+    "IoU_change": 0.21483831468803918,
+    "precision_change": 0.4736196319018405,
+    "recall_change": 0.28222563427652264,
+    "Omission": 0.7177743657234774,
+    "Commission": 0.5263803680981596,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.58117704248205,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2153175252112292,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.423769756366899,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9587243978042403,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      56903,
+      165,
+      3026,
+      15100
+     ],
+     [
+      1052,
+      333,
+      69,
+      1997
+     ],
+     [
+      6016,
+      3,
+      7693,
+      24444
+     ],
+     [
+      11441,
+      414,
+      2715,
+      1441493
+     ]
+    ],
+    "OA": 0.957757314046224,
+    "kappa": 0.6610541556852616,
+    "kappa_change": null,
+    "F1_macro": 0.45683688056344096,
+    "mIoU": 0.45683688056344096,
+    "F1_change": 0.28651494868362337,
+    "IoU_change": 0.16721181691285236,
+    "precision_change": 0.5566652795117215,
+    "recall_change": 0.19290023313384766,
+    "Omission": 0.8070997668661524,
+    "Commission": 0.4433347204882785,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7556538252128069,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.15254237288135594,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.297837743665189,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9809087621129892,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.528,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      71435,
+      1377,
+      0,
+      11525
+     ],
+     [
+      1990,
+      2163,
+      0,
+      4310
+     ],
+     [
+      967,
+      13,
+      0,
+      2179
+     ],
+     [
+      35789,
+      2609,
+      0,
+      1045291
+     ]
+    ],
+    "OA": 0.9484939575195312,
+    "kappa": 0.6882820793506185,
+    "kappa_change": null,
+    "F1_macro": 0.425686000411119,
+    "mIoU": 0.425686000411119,
+    "F1_change": 0.2432523616734143,
+    "IoU_change": 0.13846744766660266,
+    "precision_change": 0.3510223953261928,
+    "recall_change": 0.18611254517294787,
+    "Omission": 0.8138874548270522,
+    "Commission": 0.6489776046738072,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7344821558930279,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2957948717948718,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9737251245229377,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      127176,
+      353,
+      0,
+      11394
+     ],
+     [
+      1668,
+      442,
+      0,
+      1247
+     ],
+     [
+      2948,
+      20,
+      0,
+      7352
+     ],
+     [
+      53758,
+      694,
+      0,
+      2348852
+     ]
+    ],
+    "OA": 0.9689213679387019,
+    "kappa": 0.7505239721359509,
+    "kappa_change": null,
+    "F1_macro": 0.4284451742982472,
+    "mIoU": 0.4284451742982472,
+    "F1_change": 0.058211510601870145,
+    "IoU_change": 0.029978296256104178,
+    "precision_change": 0.292909211398277,
+    "recall_change": 0.03231702858814067,
+    "Omission": 0.9676829714118593,
+    "Commission": 0.707090788601723,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7838926505441131,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1816687217427045,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9844001098875999,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      43320,
+      452,
+      0,
+      31422
+     ],
+     [
+      626,
+      184,
+      0,
+      2641
+     ],
+     [
+      2935,
+      51,
+      0,
+      35170
+     ],
+     [
+      5659,
+      321,
+      0,
+      1450083
+     ]
+    ],
+    "OA": 0.9495970408121744,
+    "kappa": 0.5161863013858743,
+    "kappa_change": null,
+    "F1_macro": 0.37672888086233075,
+    "mIoU": 0.37672888086233075,
+    "F1_change": 0.008635456998709375,
+    "IoU_change": 0.004336452122269096,
+    "precision_change": 0.18253968253968253,
+    "recall_change": 0.004422332780541736,
+    "Omission": 0.9955776672194583,
+    "Commission": 0.8174603174603174,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6782845601014609,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.08252971518277641,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.0,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.974721539676122,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.528,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74019,
+      1789,
+      3,
+      8526
+     ],
+     [
+      1932,
+      3062,
+      0,
+      3469
+     ],
+     [
+      1137,
+      5,
+      16,
+      2001
+     ],
+     [
+      24506,
+      2052,
+      13,
+      1057118
+     ]
+    ],
+    "OA": 0.9614859686957465,
+    "kappa": 0.7587858577504117,
+    "kappa_change": null,
+    "F1_macro": 0.46956179343190385,
+    "mIoU": 0.46956179343190385,
+    "F1_change": 0.3316452968430126,
+    "IoU_change": 0.19878584345130457,
+    "precision_change": 0.4435158501440922,
+    "recall_change": 0.26484254001032526,
+    "Omission": 0.7351574599896747,
+    "Commission": 0.5564841498559078,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7961985897994417,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.39841259514670485,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.010028204324663115,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9811736850190017,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132440,
+      1307,
+      388,
+      4788
+     ],
+     [
+      1728,
+      825,
+      0,
+      804
+     ],
+     [
+      3674,
+      1,
+      3153,
+      3492
+     ],
+     [
+      103835,
+      2023,
+      252,
+      2297194
+     ]
+    ],
+    "OA": 0.9521531325120193,
+    "kappa": 0.673160477813386,
+    "kappa_change": null,
+    "F1_macro": 0.47424366576170485,
+    "mIoU": 0.47424366576170485,
+    "F1_change": 0.36789050217330993,
+    "IoU_change": 0.22540797824116046,
+    "precision_change": 0.5004403069568499,
+    "recall_change": 0.29085325729326605,
+    "Omission": 0.709146742706734,
+    "Commission": 0.49955969304315007,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6959537572254335,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.21961932650073207,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.44682207893431586,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9755405044439188,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      57159,
+      168,
+      1482,
+      16385
+     ],
+     [
+      999,
+      314,
+      22,
+      2116
+     ],
+     [
+      6460,
+      1,
+      8520,
+      23175
+     ],
+     [
+      11889,
+      401,
+      1233,
+      1442540
+     ]
+    ],
+    "OA": 0.9590994517008463,
+    "kappa": 0.6699847159872405,
+    "kappa_change": null,
+    "F1_macro": 0.4635430488582285,
+    "mIoU": 0.4635430488582285,
+    "F1_change": 0.32871920815658257,
+    "IoU_change": 0.19668700182571136,
+    "precision_change": 0.7276171649781731,
+    "recall_change": 0.2123200423005744,
+    "Omission": 0.7876799576994256,
+    "Commission": 0.2723828350218269,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7535744655605434,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.14486735870818915,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.34484852164410174,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9812266114882295,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.528,
+   "_epochs": 100
+  }
+ },
+ "unet_msa": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75160,
+      246,
+      91,
+      8840
+     ],
+     [
+      2873,
+      634,
+      20,
+      4936
+     ],
+     [
+      1185,
+      6,
+      78,
+      1890
+     ],
+     [
+      89217,
+      466,
+      234,
+      993772
+     ]
+    ],
+    "OA": 0.9067484537760416,
+    "kappa": 0.542165777194518,
+    "kappa_change": null,
+    "F1_macro": 0.35461116943306065,
+    "mIoU": 0.35461116943306065,
+    "F1_change": 0.10629245353437337,
+    "IoU_change": 0.05612928655892787,
+    "precision_change": 0.40112676056338026,
+    "recall_change": 0.061263121665806226,
+    "Omission": 0.9387368783341937,
+    "Commission": 0.5988732394366197,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5946861202981343,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.12919001528273052,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.04355108877721943,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9495572891659225,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      130092,
+      166,
+      1127,
+      7538
+     ],
+     [
+      2210,
+      64,
+      24,
+      1059
+     ],
+     [
+      2360,
+      22,
+      2833,
+      5105
+     ],
+     [
+      196784,
+      360,
+      1218,
+      2204942
+     ]
+    ],
+    "OA": 0.9147178454276843,
+    "kappa": 0.5174244409038924,
+    "kappa_change": null,
+    "F1_macro": 0.3835568114217942,
+    "mIoU": 0.3835568114217942,
+    "F1_change": 0.29726540454568773,
+    "IoU_change": 0.1745811739182837,
+    "precision_change": 0.4982800137598899,
+    "recall_change": 0.21181545660598083,
+    "Omission": 0.7881845433940191,
+    "Commission": 0.50171998624011,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.5531486981497505,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.03224993701184178,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.36503027960314394,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9541180471956846,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      49098,
+      305,
+      5083,
+      20708
+     ],
+     [
+      958,
+      44,
+      81,
+      2368
+     ],
+     [
+      3783,
+      89,
+      2833,
+      31451
+     ],
+     [
+      7944,
+      348,
+      2376,
+      1445395
+     ]
+    ],
+    "OA": 0.952002207438151,
+    "kappa": 0.5831807995450368,
+    "kappa_change": null,
+    "F1_macro": 0.3970079377386586,
+    "mIoU": 0.3970079377386586,
+    "F1_change": 0.10904749270363491,
+    "IoU_change": 0.05766802301108461,
+    "precision_change": 0.25781880096782867,
+    "recall_change": 0.06914701853053573,
+    "Omission": 0.9308529814694643,
+    "Commission": 0.7421811990321714,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7168794761164283,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.02076941232003776,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.11675493004183066,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9779447459983728,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.18,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      71759,
+      1309,
+      15,
+      11254
+     ],
+     [
+      1920,
+      2582,
+      0,
+      3961
+     ],
+     [
+      966,
+      4,
+      14,
+      2175
+     ],
+     [
+      29701,
+      2723,
+      13,
+      1051252
+     ]
+    ],
+    "OA": 0.9541888766818576,
+    "kappa": 0.7162122504964629,
+    "kappa_change": null,
+    "F1_macro": 0.4448599831462761,
+    "mIoU": 0.4448599831462761,
+    "F1_change": 0.28399518652226236,
+    "IoU_change": 0.16549789621318373,
+    "precision_change": 0.3897897897897898,
+    "recall_change": 0.22336947169161933,
+    "Omission": 0.7766305283083806,
+    "Commission": 0.6102102102102103,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7606302634577572,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3424176115642199,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.008747266479225243,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9768497503404449,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131515,
+      468,
+      270,
+      6670
+     ],
+     [
+      1738,
+      609,
+      0,
+      1010
+     ],
+     [
+      3237,
+      0,
+      1826,
+      5257
+     ],
+     [
+      81062,
+      1298,
+      61,
+      2320883
+     ]
+    ],
+    "OA": 0.9604558700170273,
+    "kappa": 0.7108853005564783,
+    "kappa_change": null,
+    "F1_macro": 0.45886614220585875,
+    "mIoU": 0.45886614220585875,
+    "F1_change": 0.26745016200779836,
+    "IoU_change": 0.15436794725497655,
+    "precision_change": 0.5372903795233892,
+    "recall_change": 0.17803611903195146,
+    "Omission": 0.8219638809680485,
+    "Commission": 0.4627096204766108,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7378638053159408,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.21249127704117238,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.2926985653602629,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9798700646214876,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      54878,
+      74,
+      744,
+      19498
+     ],
+     [
+      1066,
+      198,
+      18,
+      2169
+     ],
+     [
+      5722,
+      1,
+      2009,
+      30424
+     ],
+     [
+      10176,
+      314,
+      766,
+      1444807
+     ]
+    ],
+    "OA": 0.9548772176106771,
+    "kappa": 0.6134509245501804,
+    "kappa_change": null,
+    "F1_macro": 0.4139154411028856,
+    "mIoU": 0.4139154411028856,
+    "F1_change": 0.09652095952417397,
+    "IoU_change": 0.05070765554636522,
+    "precision_change": 0.5351600387972842,
+    "recall_change": 0.05304395894921528,
+    "Omission": 0.9469560410507847,
+    "Commission": 0.46483996120271576,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7464566500720912,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09806835066864784,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.09637109346892764,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9785479726958805,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.18,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      71160,
+      1956,
+      4,
+      11217
+     ],
+     [
+      1603,
+      3034,
+      0,
+      3826
+     ],
+     [
+      1047,
+      6,
+      33,
+      2073
+     ],
+     [
+      16318,
+      2110,
+      28,
+      1065233
+     ]
+    ],
+    "OA": 0.9659322102864584,
+    "kappa": 0.7752958025677881,
+    "kappa_change": null,
+    "F1_macro": 0.47722584225122533,
+    "mIoU": 0.47722584225122533,
+    "F1_change": 0.32639812696216675,
+    "IoU_change": 0.19502734325321125,
+    "precision_change": 0.42769488216427276,
+    "recall_change": 0.26389605919807263,
+    "Omission": 0.7361039408019274,
+    "Commission": 0.5723051178357272,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8157510102312785,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.38974885991393154,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.020471464019851116,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9835773887623394,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      126646,
+      1164,
+      732,
+      10381
+     ],
+     [
+      1317,
+      736,
+      0,
+      1304
+     ],
+     [
+      2562,
+      0,
+      2558,
+      5200
+     ],
+     [
+      37097,
+      592,
+      48,
+      2365567
+     ]
+    ],
+    "OA": 0.97636961325621,
+    "kappa": 0.8029901499230365,
+    "kappa_change": null,
+    "F1_macro": 0.5139529607654987,
+    "mIoU": 0.5139529607654987,
+    "F1_change": 0.3377249192597529,
+    "IoU_change": 0.20317029544192933,
+    "precision_change": 0.565008576329331,
+    "recall_change": 0.2408422899758719,
+    "Omission": 0.7591577100241281,
+    "Commission": 0.434991423670669,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8262799915183742,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.25166695161566077,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.37457900131790894,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.988586547245618,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      39705,
+      165,
+      3549,
+      31775
+     ],
+     [
+      591,
+      198,
+      34,
+      2628
+     ],
+     [
+      2329,
+      0,
+      1732,
+      34095
+     ],
+     [
+      4297,
+      74,
+      1306,
+      1450386
+     ]
+    ],
+    "OA": 0.9486014048258463,
+    "kappa": 0.5081575083640566,
+    "kappa_change": null,
+    "F1_macro": 0.3817586567544774,
+    "mIoU": 0.3817586567544774,
+    "F1_change": 0.07931778485564574,
+    "IoU_change": 0.04129667272921793,
+    "precision_change": 0.27344856899971665,
+    "recall_change": 0.04638642536111712,
+    "Omission": 0.9536135746388829,
+    "Commission": 0.7265514310002834,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6502833371548364,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.10185185185185185,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.07736114523081046,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9750667827023473,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.18,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      75565,
+      1331,
+      373,
+      7068
+     ],
+     [
+      2418,
+      2578,
+      18,
+      3449
+     ],
+     [
+      1306,
+      4,
+      194,
+      1655
+     ],
+     [
+      36103,
+      1216,
+      506,
+      1045864
+     ]
+    ],
+    "OA": 0.9529969957139757,
+    "kappa": 0.7219153638940475,
+    "kappa_change": null,
+    "F1_macro": 0.46121571848888565,
+    "mIoU": 0.46121571848888565,
+    "F1_change": 0.31072749691738594,
+    "IoU_change": 0.18394160583941604,
+    "precision_change": 0.4456591639871383,
+    "recall_change": 0.23851316468766134,
+    "Omission": 0.7614868353123386,
+    "Commission": 0.5543408360128617,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7566752950247585,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3793407886992348,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.09129411764705882,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9766557331123277,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132091,
+      982,
+      894,
+      4956
+     ],
+     [
+      1861,
+      685,
+      9,
+      802
+     ],
+     [
+      3127,
+      0,
+      3782,
+      3411
+     ],
+     [
+      63631,
+      2561,
+      1314,
+      2335798
+     ]
+    ],
+    "OA": 0.9673117613181089,
+    "kappa": 0.7542734124672213,
+    "kappa_change": null,
+    "F1_macro": 0.5014034991814478,
+    "mIoU": 0.5014034991814478,
+    "F1_change": 0.3737449799196787,
+    "IoU_change": 0.22981941657663219,
+    "precision_change": 0.43678498093282486,
+    "recall_change": 0.3266067119982452,
+    "Omission": 0.6733932880017548,
+    "Commission": 0.5632150190671752,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7778454979345352,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1806196440342782,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.46350879343097,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9838520168709831,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      56258,
+      64,
+      7122,
+      11750
+     ],
+     [
+      1101,
+      190,
+      222,
+      1938
+     ],
+     [
+      5869,
+      0,
+      6227,
+      26060
+     ],
+     [
+      10903,
+      251,
+      5801,
+      1439108
+     ]
+    ],
+    "OA": 0.9548079172770182,
+    "kappa": 0.6442622460307692,
+    "kappa_change": null,
+    "F1_macro": 0.43460360792909053,
+    "mIoU": 0.43460360792909053,
+    "F1_change": 0.20873723245071887,
+    "IoU_change": 0.11653077160549875,
+    "precision_change": 0.3228354379433516,
+    "recall_change": 0.15422885572139303,
+    "Omission": 0.845771144278607,
+    "Commission": 0.6771645620566484,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7534974049891177,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09605662285136501,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.21648588513419553,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9806798756626673,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.18,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74193,
+      569,
+      69,
+      9506
+     ],
+     [
+      2342,
+      1652,
+      8,
+      4461
+     ],
+     [
+      1079,
+      1,
+      71,
+      2008
+     ],
+     [
+      35663,
+      1077,
+      173,
+      1046776
+     ]
+    ],
+    "OA": 0.9517178005642362,
+    "kappa": 0.7082529043645546,
+    "kappa_change": null,
+    "F1_macro": 0.4343181682025031,
+    "mIoU": 0.4343181682025031,
+    "F1_change": 0.2260858155097756,
+    "IoU_change": 0.12745025519639028,
+    "precision_change": 0.4759668508287293,
+    "recall_change": 0.1482533126828429,
+    "Omission": 0.8517466873171571,
+    "Commission": 0.5240331491712706,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7508880949730282,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.2809046080598538,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.04080459770114943,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.975360131193977,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129783,
+      127,
+      959,
+      8054
+     ],
+     [
+      1875,
+      312,
+      0,
+      1170
+     ],
+     [
+      2598,
+      0,
+      3298,
+      4424
+     ],
+     [
+      70872,
+      402,
+      1044,
+      2330986
+     ]
+    ],
+    "OA": 0.9641907520783253,
+    "kappa": 0.73087543819395,
+    "kappa_change": null,
+    "F1_macro": 0.47951349570445545,
+    "mIoU": 0.47951349570445545,
+    "F1_change": 0.36429688682577327,
+    "IoU_change": 0.22271577518662472,
+    "precision_change": 0.5877564311299251,
+    "recall_change": 0.26394677195291366,
+    "Omission": 0.7360532280470864,
+    "Commission": 0.41224356887007485,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7544404753946362,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.14864221057646498,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4222520965367134,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9818940348420725,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      44125,
+      8,
+      5442,
+      25619
+     ],
+     [
+      679,
+      65,
+      97,
+      2610
+     ],
+     [
+      2565,
+      0,
+      2385,
+      33206
+     ],
+     [
+      5983,
+      10,
+      2080,
+      1447990
+     ]
+    ],
+    "OA": 0.9502188364664713,
+    "kappa": 0.5467117074708956,
+    "kappa_change": null,
+    "F1_macro": 0.38692843183943926,
+    "mIoU": 0.38692843183943926,
+    "F1_change": 0.09478856346964831,
+    "IoU_change": 0.04975225408171554,
+    "precision_change": 0.24288688410825815,
+    "recall_change": 0.05888432234960463,
+    "Omission": 0.9411156776503954,
+    "Commission": 0.7571131158917419,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6865246682121575,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.03678551216751556,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.09904485049833887,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9765610246947551,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 3.18,
+   "_epochs": 100
+  }
+ },
+ "unet": {
+  "2026": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      69951,
+      3383,
+      31,
+      10972
+     ],
+     [
+      1444,
+      3305,
+      0,
+      3714
+     ],
+     [
+      1008,
+      30,
+      35,
+      2086
+     ],
+     [
+      19091,
+      3166,
+      19,
+      1061413
+     ]
+    ],
+    "OA": 0.9619004991319444,
+    "kappa": 0.7538071800168781,
+    "kappa_change": null,
+    "F1_macro": 0.4639511626986491,
+    "mIoU": 0.4639511626986491,
+    "F1_change": 0.30938817099717475,
+    "IoU_change": 0.1830036710317243,
+    "precision_change": 0.3350386197211355,
+    "recall_change": 0.28738599208397864,
+    "Omission": 0.7126140079160214,
+    "Commission": 0.6649613802788645,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7956617433785851,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.36027688450427864,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.02157829839704069,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9819378927726593,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      129521,
+      1458,
+      417,
+      7527
+     ],
+     [
+      1436,
+      898,
+      0,
+      1023
+     ],
+     [
+      2900,
+      2,
+      2606,
+      4812
+     ],
+     [
+      51249,
+      2858,
+      206,
+      2348991
+     ]
+    ],
+    "OA": 0.9710912459935898,
+    "kappa": 0.7723117983048909,
+    "kappa_change": null,
+    "F1_macro": 0.4982583138731267,
+    "mIoU": 0.4982583138731267,
+    "F1_change": 0.316788717114185,
+    "IoU_change": 0.1882049629390912,
+    "precision_change": 0.41492007104795736,
+    "recall_change": 0.25619653432770345,
+    "Omission": 0.7438034656722965,
+    "Commission": 0.5850799289520426,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7994407907934167,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.20949492593024613,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.38467783600265704,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9857994396155662,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      53158,
+      396,
+      2140,
+      19500
+     ],
+     [
+      869,
+      346,
+      39,
+      2197
+     ],
+     [
+      5318,
+      6,
+      8177,
+      24655
+     ],
+     [
+      8447,
+      326,
+      1417,
+      1445873
+     ]
+    ],
+    "OA": 0.9584770202636719,
+    "kappa": 0.6524637615667189,
+    "kappa_change": null,
+    "F1_macro": 0.45819578743052713,
+    "mIoU": 0.45819578743052713,
+    "F1_change": 0.31303485510706286,
+    "IoU_change": 0.18556095012083343,
+    "precision_change": 0.6634233673231105,
+    "recall_change": 0.20484533852476747,
+    "Omission": 0.7951546614752325,
+    "Commission": 0.33657663267688953,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7435413257241967,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1529281767955801,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.327545114061968,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9808220906505741,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.524,
+   "_epochs": 100
+  },
+  "2027": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      72698,
+      1861,
+      10,
+      9768
+     ],
+     [
+      2001,
+      2653,
+      0,
+      3809
+     ],
+     [
+      1041,
+      6,
+      39,
+      2073
+     ],
+     [
+      69307,
+      4546,
+      51,
+      1009785
+     ]
+    ],
+    "OA": 0.9199142456054688,
+    "kappa": 0.5841715870539309,
+    "kappa_change": null,
+    "F1_macro": 0.39324090145614443,
+    "mIoU": 0.39324090145614443,
+    "F1_change": 0.25899557436982873,
+    "IoU_change": 0.14876215738284704,
+    "precision_change": 0.29369408684267945,
+    "recall_change": 0.23162966787127862,
+    "Omission": 0.7683703321287214,
+    "Commission": 0.7063059131573206,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6338541485020751,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3026983855325461,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.023933722000613684,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9575397179113224,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      132670,
+      1100,
+      377,
+      4776
+     ],
+     [
+      1735,
+      769,
+      0,
+      853
+     ],
+     [
+      3607,
+      0,
+      3130,
+      3583
+     ],
+     [
+      115686,
+      2626,
+      243,
+      2284749
+     ]
+    ],
+    "OA": 0.9473430926983173,
+    "kappa": 0.6505106071173857,
+    "kappa_change": null,
+    "F1_macro": 0.46302029992684013,
+    "mIoU": 0.46302029992684013,
+    "F1_change": 0.35571571936867075,
+    "IoU_change": 0.2163346834600233,
+    "precision_change": 0.47289266221952697,
+    "recall_change": 0.28507713679900565,
+    "Omission": 0.7149228632009943,
+    "Commission": 0.527107337780473,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.675817136627944,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.19587366276107998,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4449182658137882,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.972799703657341,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      53305,
+      69,
+      1601,
+      20219
+     ],
+     [
+      970,
+      174,
+      34,
+      2273
+     ],
+     [
+      5230,
+      0,
+      2150,
+      30776
+     ],
+     [
+      11091,
+      51,
+      1401,
+      1443520
+     ]
+    ],
+    "OA": 0.9531332651774088,
+    "kappa": 0.5987778583421061,
+    "kappa_change": null,
+    "F1_macro": 0.4084203552253295,
+    "mIoU": 0.4084203552253295,
+    "F1_change": 0.09871089685051075,
+    "IoU_change": 0.05191787860509796,
+    "precision_change": 0.4240875912408759,
+    "recall_change": 0.05585598577162497,
+    "Omission": 0.944144014228375,
+    "Commission": 0.5759124087591241,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7312572878798271,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09292389853137517,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.09921092704536016,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9777127257690957,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.524,
+   "_epochs": 100
+  },
+  "2028": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      73419,
+      1424,
+      0,
+      9494
+     ],
+     [
+      1892,
+      2590,
+      0,
+      3981
+     ],
+     [
+      1234,
+      1,
+      7,
+      1917
+     ],
+     [
+      15057,
+      1512,
+      1,
+      1067119
+     ]
+    ],
+    "OA": 0.9690475463867188,
+    "kappa": 0.7955664794112777,
+    "kappa_change": null,
+    "F1_macro": 0.47911767617416323,
+    "mIoU": 0.47911767617416323,
+    "F1_change": 0.30273357813137497,
+    "IoU_change": 0.17836538461538462,
+    "precision_change": 0.4691960252935863,
+    "recall_change": 0.22345551540182412,
+    "Omission": 0.7765444845981759,
+    "Commission": 0.5308039747064137,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.8345960815964624,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.37026447462473194,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.004420587306599305,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9852451297202475,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131757,
+      878,
+      151,
+      6137
+     ],
+     [
+      1668,
+      697,
+      0,
+      992
+     ],
+     [
+      3762,
+      0,
+      2784,
+      3774
+     ],
+     [
+      62452,
+      1544,
+      456,
+      2338852
+     ]
+    ],
+    "OA": 0.9679901905548878,
+    "kappa": 0.7561953733314115,
+    "kappa_change": null,
+    "F1_macro": 0.4953212768595733,
+    "mIoU": 0.4953212768595733,
+    "F1_change": 0.3448754148709566,
+    "IoU_change": 0.20836825092781036,
+    "precision_change": 0.534715821812596,
+    "recall_change": 0.25451487899393144,
+    "Omission": 0.7454851210060686,
+    "Commission": 0.465284178187404,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7783330675031457,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.21525633106856085,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4060972941433885,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9841459994500383,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      55609,
+      121,
+      1329,
+      18135
+     ],
+     [
+      1021,
+      244,
+      13,
+      2173
+     ],
+     [
+      5694,
+      1,
+      8476,
+      23985
+     ],
+     [
+      9937,
+      315,
+      683,
+      1445128
+     ]
+    ],
+    "OA": 0.9596869150797526,
+    "kappa": 0.6668692786394947,
+    "kappa_change": null,
+    "F1_macro": 0.46058797026645,
+    "mIoU": 0.46058797026645,
+    "F1_change": 0.3303718577733998,
+    "IoU_change": 0.19787151966234767,
+    "precision_change": 0.7798247182972634,
+    "recall_change": 0.2095801187300214,
+    "Omission": 0.7904198812699786,
+    "Commission": 0.2201752817027366,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7542504492896138,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.1181026137463698,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.3483979694596872,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9812499405870139,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.524,
+   "_epochs": 100
+  },
+  "2029": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      74282,
+      920,
+      15,
+      9120
+     ],
+     [
+      2319,
+      2500,
+      0,
+      3644
+     ],
+     [
+      1016,
+      0,
+      50,
+      2093
+     ],
+     [
+      43797,
+      1083,
+      32,
+      1038777
+     ]
+    ],
+    "OA": 0.9457134670681424,
+    "kappa": 0.6845516681171635,
+    "kappa_change": null,
+    "F1_macro": 0.44126810782892767,
+    "mIoU": 0.44126810782892767,
+    "F1_change": 0.31438786832696336,
+    "IoU_change": 0.18651258045640726,
+    "precision_change": 0.5543478260869565,
+    "recall_change": 0.21941146102219927,
+    "Omission": 0.7805885389778007,
+    "Commission": 0.44565217391304346,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7220572439502116,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3856239395341663,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.030712530712530713,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9720355790865489,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      131832,
+      373,
+      743,
+      5975
+     ],
+     [
+      1905,
+      552,
+      0,
+      900
+     ],
+     [
+      2983,
+      0,
+      3173,
+      4164
+     ],
+     [
+      158565,
+      1737,
+      427,
+      2242575
+     ]
+    ],
+    "OA": 0.9304465269431089,
+    "kappa": 0.5775088278673296,
+    "kappa_change": null,
+    "F1_macro": 0.43549119802162295,
+    "mIoU": 0.43549119802162295,
+    "F1_change": 0.3602166134803211,
+    "IoU_change": 0.21967329126614377,
+    "precision_change": 0.5317630264097074,
+    "recall_change": 0.2723550486217738,
+    "Omission": 0.7276449513782262,
+    "Commission": 0.4682369735902926,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6072297147910679,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.18341917262003654,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4327900156857396,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9631155197493277,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      54041,
+      44,
+      3468,
+      17641
+     ],
+     [
+      1099,
+      182,
+      55,
+      2115
+     ],
+     [
+      5329,
+      0,
+      2879,
+      29948
+     ],
+     [
+      9009,
+      113,
+      2225,
+      1444716
+     ]
+    ],
+    "OA": 0.9548301696777344,
+    "kappa": 0.617802483907779,
+    "kappa_change": null,
+    "F1_macro": 0.41793714235255286,
+    "mIoU": 0.41793714235255286,
+    "F1_change": 0.12105273564945722,
+    "IoU_change": 0.06442582926418589,
+    "precision_change": 0.3414008476466652,
+    "recall_change": 0.07356935131107746,
+    "Omission": 0.9264306486889226,
+    "Commission": 0.6585991523533348,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7470830568458305,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.09604221635883906,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.12307889618023642,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.979308133617445,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.524,
+   "_epochs": 100
+  },
+  "2030": {
+   "within": {
+    "n_pixels": 1179648,
+    "cm": [
+     [
+      76370,
+      1319,
+      230,
+      6418
+     ],
+     [
+      2520,
+      2487,
+      7,
+      3449
+     ],
+     [
+      1485,
+      2,
+      122,
+      1550
+     ],
+     [
+      71067,
+      2758,
+      310,
+      1009554
+     ]
+    ],
+    "OA": 0.9227608574761285,
+    "kappa": 0.6053104990302604,
+    "kappa_change": null,
+    "F1_macro": 0.4080433286486075,
+    "mIoU": 0.4080433286486075,
+    "F1_change": 0.276714217531951,
+    "IoU_change": 0.16057360905957657,
+    "precision_change": 0.36060815480304076,
+    "recall_change": 0.22448803992428154,
+    "Omission": 0.7755119600757184,
+    "Commission": 0.6393918451969592,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6478100254899716,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.3309601437221372,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.06374085684430512,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9593511541056513,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "beilunhe": {
+    "n_pixels": 2555904,
+    "cm": [
+     [
+      133591,
+      679,
+      450,
+      4203
+     ],
+     [
+      1857,
+      743,
+      1,
+      756
+     ],
+     [
+      3892,
+      0,
+      3290,
+      3138
+     ],
+     [
+      143629,
+      1730,
+      1045,
+      2256900
+     ]
+    ],
+    "OA": 0.9368599133613782,
+    "kappa": 0.607094150528094,
+    "kappa_change": null,
+    "F1_macro": 0.4516492858694233,
+    "mIoU": 0.4516492858694233,
+    "F1_change": 0.37316678232708766,
+    "IoU_change": 0.2293823228301672,
+    "precision_change": 0.5080624842529604,
+    "recall_change": 0.29487460700446005,
+    "Omission": 0.7051253929955399,
+    "Commission": 0.4919375157470396,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.6332947768623249,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.22829927792287602,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4355885078776645,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9669042334673792,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "zhanjiang": {
+    "n_pixels": 1572864,
+    "cm": [
+     [
+      61903,
+      56,
+      4511,
+      8724
+     ],
+     [
+      1273,
+      217,
+      150,
+      1811
+     ],
+     [
+      7844,
+      0,
+      13701,
+      16611
+     ],
+     [
+      16277,
+      124,
+      7392,
+      1432270
+     ]
+    ],
+    "OA": 0.9588184356689453,
+    "kappa": 0.7015417022560849,
+    "kappa_change": null,
+    "F1_macro": 0.47842752960107593,
+    "mIoU": 0.47842752960107593,
+    "F1_change": 0.4108149591192184,
+    "IoU_change": 0.2585066864784547,
+    "precision_change": 0.5322167412336049,
+    "recall_change": 0.33451101978032544,
+    "Omission": 0.6654889802196746,
+    "Commission": 0.46778325876639515,
+    "per_class": {
+     "stable_mangrove": {
+      "F1": 0.7619252758614323,
+      "precision": null,
+      "recall": null
+     },
+     "loss": {
+      "F1": 0.11278586278586279,
+      "precision": null,
+      "recall": null
+     },
+     "gain": {
+      "F1": 0.4287591926146143,
+      "precision": null,
+      "recall": null
+     },
+     "stable_background": {
+      "F1": 0.9825280854363897,
+      "precision": null,
+      "recall": null
+     }
+    }
+   },
+   "_params_M": 2.524,
+   "_epochs": 100
+  }
+ }
+}

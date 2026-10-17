@@ -1,0 +1,821 @@
+{
+ "config": {
+  "region": "vietnam",
+  "block_px": 512,
+  "patch_px": 512,
+  "stride_px": 256,
+  "separation": "Chebyshev >= 2 blocks",
+  "n_train_blocks": 10,
+  "val_blocks": 2,
+  "test_blocks": 2,
+  "pool": 60,
+  "isolated_sizes": [
+   40,
+   10,
+   10
+  ]
+ },
+ "block_sizes": {
+  "(0, 3)": 2,
+  "(0, 4)": 1,
+  "(1, 3)": 1,
+  "(1, 6)": 2,
+  "(1, 7)": 4,
+  "(2, 3)": 1,
+  "(2, 4)": 2,
+  "(2, 6)": 2,
+  "(2, 7)": 2,
+  "(3, 3)": 2,
+  "(3, 4)": 2,
+  "(3, 6)": 2,
+  "(3, 7)": 2,
+  "(4, 3)": 1,
+  "(4, 4)": 1,
+  "(4, 6)": 2,
+  "(4, 7)": 4,
+  "(5, 3)": 1,
+  "(5, 4)": 2,
+  "(6, 4)": 2,
+  "(7, 2)": 2,
+  "(7, 3)": 3,
+  "(7, 4)": 1,
+  "(8, 1)": 2,
+  "(8, 2)": 4,
+  "(9, 0)": 3,
+  "(9, 1)": 2,
+  "(10, 0)": 4,
+  "(10, 1)": 1
+ },
+ "draws": [
+  {
+   "seed": 12,
+   "sizes": [
+    19,
+    5,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true,
+   "matched_honest_prev_gap": 0.012026468912760418,
+   "block_test_prev": 0.029024759928385418,
+   "matched_honest": {
+    "sizes": [
+     19,
+     5,
+     3
+    ],
+    "zero_overlap": true
+   },
+   "written": "vietnam_{train,val,test}_blk12.json + _hon12.json"
+  },
+  {
+   "seed": 17,
+   "sizes": [
+    25,
+    4,
+    2
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 2,
+   "n_test": 2,
+   "interleaved": true,
+   "matched_honest_prev_gap": 0.0069751739501953125,
+   "block_test_prev": 0.024747848510742188,
+   "matched_honest": {
+    "sizes": [
+     25,
+     4,
+     2
+    ],
+    "zero_overlap": true
+   },
+   "written": "vietnam_{train,val,test}_blk17.json + _hon17.json"
+  },
+  {
+   "seed": 38,
+   "sizes": [
+    23,
+    5,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true,
+   "matched_honest_prev_gap": 0.012026468912760418,
+   "block_test_prev": 0.029024759928385418,
+   "matched_honest": {
+    "sizes": [
+     23,
+     5,
+     3
+    ],
+    "zero_overlap": true
+   },
+   "written": "vietnam_{train,val,test}_blk38.json + _hon38.json"
+  },
+  {
+   "seed": 62,
+   "sizes": [
+    20,
+    4,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true,
+   "matched_honest_prev_gap": 1.2715657552089116e-06,
+   "block_test_prev": 0.01383209228515625,
+   "matched_honest": {
+    "sizes": [
+     20,
+     4,
+     6
+    ],
+    "zero_overlap": true
+   },
+   "written": "vietnam_{train,val,test}_blk62.json + _hon62.json"
+  },
+  {
+   "seed": 82,
+   "sizes": [
+    24,
+    4,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 97,
+   "sizes": [
+    24,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 125,
+   "sizes": [
+    20,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 129,
+   "sizes": [
+    21,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 141,
+   "sizes": [
+    21,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 162,
+   "sizes": [
+    18,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 165,
+   "sizes": [
+    20,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 167,
+   "sizes": [
+    20,
+    6,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 190,
+   "sizes": [
+    17,
+    4,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 217,
+   "sizes": [
+    26,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 229,
+   "sizes": [
+    17,
+    3,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 256,
+   "sizes": [
+    18,
+    5,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 265,
+   "sizes": [
+    22,
+    4,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 297,
+   "sizes": [
+    21,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 313,
+   "sizes": [
+    20,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 316,
+   "sizes": [
+    23,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 323,
+   "sizes": [
+    20,
+    5,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 342,
+   "sizes": [
+    22,
+    6,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 352,
+   "sizes": [
+    22,
+    5,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 369,
+   "sizes": [
+    24,
+    3,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 378,
+   "sizes": [
+    25,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 379,
+   "sizes": [
+    21,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 387,
+   "sizes": [
+    24,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 397,
+   "sizes": [
+    23,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 425,
+   "sizes": [
+    22,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 440,
+   "sizes": [
+    28,
+    3,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 452,
+   "sizes": [
+    22,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 456,
+   "sizes": [
+    20,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 470,
+   "sizes": [
+    22,
+    2,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 481,
+   "sizes": [
+    22,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 508,
+   "sizes": [
+    21,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 523,
+   "sizes": [
+    21,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 531,
+   "sizes": [
+    23,
+    7,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 539,
+   "sizes": [
+    19,
+    4,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 545,
+   "sizes": [
+    22,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 551,
+   "sizes": [
+    22,
+    3,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 556,
+   "sizes": [
+    22,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 571,
+   "sizes": [
+    21,
+    2,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 574,
+   "sizes": [
+    17,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 581,
+   "sizes": [
+    17,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 598,
+   "sizes": [
+    23,
+    3,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 610,
+   "sizes": [
+    19,
+    4,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 617,
+   "sizes": [
+    21,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 621,
+   "sizes": [
+    20,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 646,
+   "sizes": [
+    23,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 676,
+   "sizes": [
+    19,
+    5,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 692,
+   "sizes": [
+    24,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 703,
+   "sizes": [
+    18,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 717,
+   "sizes": [
+    23,
+    6,
+    2
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 2,
+   "n_test": 2,
+   "interleaved": true
+  },
+  {
+   "seed": 727,
+   "sizes": [
+    20,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 730,
+   "sizes": [
+    21,
+    5,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 731,
+   "sizes": [
+    17,
+    6,
+    3
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 3,
+   "n_test": 3,
+   "interleaved": true
+  },
+  {
+   "seed": 735,
+   "sizes": [
+    19,
+    3,
+    4
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 4,
+   "n_test": 4,
+   "interleaved": true
+  },
+  {
+   "seed": 798,
+   "sizes": [
+    21,
+    3,
+    5
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 5,
+   "n_test": 5,
+   "interleaved": true
+  },
+  {
+   "seed": 800,
+   "sizes": [
+    20,
+    4,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  },
+  {
+   "seed": 802,
+   "sizes": [
+    22,
+    3,
+    6
+   ],
+   "zero_overlap": true,
+   "test_patches_inside_train_bbox": 6,
+   "n_test": 6,
+   "interleaved": true
+  }
+ ],
+ "emitted": [
+  12,
+  17,
+  38,
+  62
+ ]
+}

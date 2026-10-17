@@ -1,0 +1,16 @@
+# core geospatial
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+shapely
+geopandas
+rasterio
+pyproj
+requests
+# deep learning (install CPU torch separately)
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+torchvision>=0.15
+torchmetrics

@@ -1,0 +1,101 @@
+{
+  "vietnam": {
+    "source_agreement_vs_ts2019": 0.8154,
+    "source_agreement_vs_ts2024": 0.7361,
+    "IoU_vs_ts2019": 0.7556,
+    "IoU_vs_ts2024": 0.6775,
+    "models": {
+      "unet": {
+        "presence_acc": 0.7936,
+        "precision": 0.8299,
+        "recall": 0.9477
+      },
+      "unet_cbam": {
+        "presence_acc": 0.649,
+        "precision": 0.6887,
+        "recall": 0.9184
+      },
+      "unet_cbam_msa": {
+        "presence_acc": 0.6552,
+        "precision": 0.6647,
+        "recall": 0.9786
+      },
+      "deeplabv3plus": {
+        "presence_acc": 0.5636,
+        "precision": 0.5808,
+        "recall": 0.9501
+      },
+      "temporal_unet": {
+        "presence_acc": 0.5889,
+        "precision": 0.595,
+        "recall": 0.983
+      }
+    }
+  },
+  "beilunhe": {
+    "source_agreement_vs_ts2019": 0.8921,
+    "source_agreement_vs_ts2024": 0.8498,
+    "IoU_vs_ts2019": 0.8236,
+    "IoU_vs_ts2024": 0.7907,
+    "models": {
+      "unet": {
+        "presence_acc": 0.8251,
+        "precision": 0.8724,
+        "recall": 0.9384
+      },
+      "unet_cbam": {
+        "presence_acc": 0.6485,
+        "precision": 0.7219,
+        "recall": 0.8645
+      },
+      "unet_cbam_msa": {
+        "presence_acc": 0.7589,
+        "precision": 0.7785,
+        "recall": 0.9679
+      },
+      "deeplabv3plus": {
+        "presence_acc": 0.6003,
+        "precision": 0.628,
+        "recall": 0.9314
+      },
+      "temporal_unet": {
+        "presence_acc": 0.6834,
+        "precision": 0.6932,
+        "recall": 0.9797
+      }
+    }
+  },
+  "zhanjiang": {
+    "source_agreement_vs_ts2019": 0.7413,
+    "source_agreement_vs_ts2024": 0.573,
+    "IoU_vs_ts2019": 0.589,
+    "IoU_vs_ts2024": 0.5079,
+    "models": {
+      "unet": {
+        "presence_acc": 0.5796,
+        "precision": 0.8874,
+        "recall": 0.6256
+      },
+      "unet_cbam": {
+        "presence_acc": 0.4477,
+        "precision": 0.9191,
+        "recall": 0.4661
+      },
+      "unet_cbam_msa": {
+        "presence_acc": 0.6174,
+        "precision": 0.8373,
+        "recall": 0.7016
+      },
+      "deeplabv3plus": {
+        "presence_acc": 0.3916,
+        "precision": 0.7578,
+        "recall": 0.4477
+      },
+      "temporal_unet": {
+        "presence_acc": 0.6277,
+        "precision": 0.6933,
+        "recall": 0.869
+      }
+    }
+  }
+}

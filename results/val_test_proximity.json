@@ -1,0 +1,86 @@
+{
+  "config": {
+    "patch_px": 512,
+    "step_px": 256,
+    "region": "vietnam"
+  },
+  "rr": {
+    "1": {
+      "n_test": 10,
+      "n_overlap": 5,
+      "frac_overlap": 0.5,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "2": {
+      "n_test": 10,
+      "n_overlap": 5,
+      "frac_overlap": 0.5,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "3": {
+      "n_test": 10,
+      "n_overlap": 5,
+      "frac_overlap": 0.5,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "4": {
+      "n_test": 10,
+      "n_overlap": 6,
+      "frac_overlap": 0.6,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "5": {
+      "n_test": 10,
+      "n_overlap": 7,
+      "frac_overlap": 0.7,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "6": {
+      "n_test": 10,
+      "n_overlap": 6,
+      "frac_overlap": 0.6,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "7": {
+      "n_test": 10,
+      "n_overlap": 5,
+      "frac_overlap": 0.5,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "8": {
+      "n_test": 10,
+      "n_overlap": 7,
+      "frac_overlap": 0.7,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "9": {
+      "n_test": 10,
+      "n_overlap": 6,
+      "frac_overlap": 0.6,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    },
+    "10": {
+      "n_test": 10,
+      "n_overlap": 3,
+      "frac_overlap": 0.3,
+      "median_min_dist_km": 0.0,
+      "min_dist_km": 0.0
+    }
+  },
+  "aggregate": {
+    "n_test": 100,
+    "n_overlap": 55,
+    "frac_overlap": 0.55,
+    "median_min_dist_km": 0.0,
+    "frac_dist_zero": 0.85
+  }
+}

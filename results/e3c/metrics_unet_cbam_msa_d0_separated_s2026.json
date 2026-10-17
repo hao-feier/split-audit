@@ -1,0 +1,33 @@
+{
+  "model": "unet_cbam_msa",
+  "draw": 0,
+  "arm": "separated",
+  "seed": 2026,
+  "region": "vietnam_p128",
+  "n_train": 40,
+  "n_val": 10,
+  "n_test": 10,
+  "epochs_run": 94,
+  "best_val_miou": 0.5537,
+  "test": {
+    "F1_change": 0.5756,
+    "IoU_change": 0.4041,
+    "precision_change": 0.6361,
+    "recall_change": 0.5256,
+    "kappa_change": 0.5551,
+    "Omission": 0.4744,
+    "Commission": 0.3639
+  },
+  "train_F1_change": 0.563,
+  "test_scores": {
+    "roc_auc": 0.9462,
+    "ap": 0.5986,
+    "prevalence": 0.05104,
+    "max_p_change": 0.9998,
+    "mean_p_change": 0.05448
+  },
+  "test_4class": {
+    "OA": 0.9295,
+    "mIoU": 0.5559
+  }
+}

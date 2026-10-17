@@ -1,0 +1,129 @@
+model,region,class,F1,IoU
+U-Net (Exp0),within,stable_mangrove,0.7905±0.0789,0.6591±0.1058
+U-Net (Exp0),within,loss,0.3512±0.0235,0.2132±0.0171
+U-Net (Exp0),within,gain,0.1590±0.0234,0.0865±0.0138
+U-Net (Exp0),within,stable_background,0.9682±0.0163,0.9387±0.0305
+U-Net (Exp0),beilunhe,stable_mangrove,0.8366±0.0683,0.7238±0.0991
+U-Net (Exp0),beilunhe,loss,0.2670±0.0535,0.1550±0.0359
+U-Net (Exp0),beilunhe,gain,0.4467±0.0906,0.2912±0.0770
+U-Net (Exp0),beilunhe,stable_background,0.9798±0.0117,0.9605±0.0224
+U-Net (Exp0),zhanjiang,stable_mangrove,0.6464±0.0850,0.4820±0.0870
+U-Net (Exp0),zhanjiang,loss,0.1231±0.0198,0.0657±0.0112
+U-Net (Exp0),zhanjiang,gain,0.3038±0.0784,0.1811±0.0542
+U-Net (Exp0),zhanjiang,stable_background,0.9740±0.0038,0.9493±0.0071
+U-Net+CBAM (Exp1),within,stable_mangrove,0.7491±0.0542,0.6013±0.0708
+U-Net+CBAM (Exp1),within,loss,0.3043±0.0762,0.1814±0.0522
+U-Net+CBAM (Exp1),within,gain,0.1587±0.0198,0.0863±0.0116
+U-Net+CBAM (Exp1),within,stable_background,0.9585±0.0091,0.9204±0.0167
+U-Net+CBAM (Exp1),beilunhe,stable_mangrove,0.7639±0.0454,0.6197±0.0593
+U-Net+CBAM (Exp1),beilunhe,loss,0.2433±0.0565,0.1395±0.0367
+U-Net+CBAM (Exp1),beilunhe,gain,0.4495±0.0803,0.2925±0.0635
+U-Net+CBAM (Exp1),beilunhe,stable_background,0.9691±0.0083,0.9401±0.0155
+U-Net+CBAM (Exp1),zhanjiang,stable_mangrove,0.6475±0.0770,0.4825±0.0826
+U-Net+CBAM (Exp1),zhanjiang,loss,0.1299±0.0362,0.0698±0.0209
+U-Net+CBAM (Exp1),zhanjiang,gain,0.3318±0.0653,0.2003±0.0462
+U-Net+CBAM (Exp1),zhanjiang,stable_background,0.9758±0.0016,0.9527±0.0031
+U-Net+MSA (ablation),within,stable_mangrove,0.7772±0.0472,0.6373±0.0635
+U-Net+MSA (ablation),within,loss,0.2536±0.0619,0.1462±0.0410
+U-Net+MSA (ablation),within,gain,0.1434±0.0225,0.0773±0.0131
+U-Net+MSA (ablation),within,stable_background,0.9616±0.0051,0.9260±0.0094
+U-Net+MSA (ablation),beilunhe,stable_mangrove,0.7422±0.0766,0.5940±0.0986
+U-Net+MSA (ablation),beilunhe,loss,0.2305±0.0626,0.1312±0.0392
+U-Net+MSA (ablation),beilunhe,gain,0.5465±0.0179,0.3762±0.0169
+U-Net+MSA (ablation),beilunhe,stable_background,0.9644±0.0148,0.9315±0.0277
+U-Net+MSA (ablation),zhanjiang,stable_mangrove,0.7213±0.0055,0.5641±0.0067
+U-Net+MSA (ablation),zhanjiang,loss,0.1636±0.0055,0.0891±0.0032
+U-Net+MSA (ablation),zhanjiang,gain,0.2980±0.1164,0.1789±0.0829
+U-Net+MSA (ablation),zhanjiang,stable_background,0.9776±0.0021,0.9563±0.0040
+"U-Net+CBAM+MSA (Exp2, proposed)",within,stable_mangrove,0.8071±0.0323,0.6776±0.0470
+"U-Net+CBAM+MSA (Exp2, proposed)",within,loss,0.2857±0.0555,0.1676±0.0374
+"U-Net+CBAM+MSA (Exp2, proposed)",within,gain,0.1425±0.0391,0.0771±0.0225
+"U-Net+CBAM+MSA (Exp2, proposed)",within,stable_background,0.9700±0.0058,0.9418±0.0109
+"U-Net+CBAM+MSA (Exp2, proposed)",beilunhe,stable_mangrove,0.8585±0.0381,0.7536±0.0597
+"U-Net+CBAM+MSA (Exp2, proposed)",beilunhe,loss,0.2951±0.0485,0.1738±0.0328
+"U-Net+CBAM+MSA (Exp2, proposed)",beilunhe,gain,0.5106±0.0497,0.3441±0.0451
+"U-Net+CBAM+MSA (Exp2, proposed)",beilunhe,stable_background,0.9837±0.0055,0.9680±0.0107
+"U-Net+CBAM+MSA (Exp2, proposed)",zhanjiang,stable_mangrove,0.6811±0.0506,0.5182±0.0571
+"U-Net+CBAM+MSA (Exp2, proposed)",zhanjiang,loss,0.1442±0.0571,0.0785±0.0320
+"U-Net+CBAM+MSA (Exp2, proposed)",zhanjiang,gain,0.2993±0.1134,0.1801±0.0778
+"U-Net+CBAM+MSA (Exp2, proposed)",zhanjiang,stable_background,0.9761±0.0016,0.9533±0.0031
+DeepLabv3+,within,stable_mangrove,0.7691±0.0470,0.6268±0.0637
+DeepLabv3+,within,loss,0.3401±0.0211,0.2050±0.0154
+DeepLabv3+,within,gain,0.0713±0.0411,0.0373±0.0222
+DeepLabv3+,within,stable_background,0.9654±0.0092,0.9333±0.0173
+DeepLabv3+,beilunhe,stable_mangrove,0.8029±0.0741,0.6759±0.1048
+DeepLabv3+,beilunhe,loss,0.1892±0.0404,0.1049±0.0248
+DeepLabv3+,beilunhe,gain,0.4618±0.0882,0.3035±0.0723
+DeepLabv3+,beilunhe,stable_background,0.9756±0.0118,0.9525±0.0225
+DeepLabv3+,zhanjiang,stable_mangrove,0.6526±0.0608,0.4867±0.0644
+DeepLabv3+,zhanjiang,loss,0.1132±0.0458,0.0605±0.0256
+DeepLabv3+,zhanjiang,gain,0.3154±0.0968,0.1903±0.0668
+DeepLabv3+,zhanjiang,stable_background,0.9717±0.0040,0.9449±0.0075
+Temporal-UNet,within,stable_mangrove,0.7796±0.0408,0.6403±0.0556
+Temporal-UNet,within,loss,0.2713±0.0675,0.1583±0.0452
+Temporal-UNet,within,gain,0.1391±0.0375,0.0751±0.0211
+Temporal-UNet,within,stable_background,0.9653±0.0105,0.9332±0.0198
+Temporal-UNet,beilunhe,stable_mangrove,0.8159±0.0496,0.6914±0.0707
+Temporal-UNet,beilunhe,loss,0.2225±0.0627,0.1263±0.0395
+Temporal-UNet,beilunhe,gain,0.5431±0.0825,0.3761±0.0736
+Temporal-UNet,beilunhe,stable_background,0.9782±0.0094,0.9575±0.0180
+Temporal-UNet,zhanjiang,stable_mangrove,0.7131±0.0522,0.5560±0.0600
+Temporal-UNet,zhanjiang,loss,0.1654±0.0402,0.0906±0.0239
+Temporal-UNet,zhanjiang,gain,0.3596±0.1032,0.2230±0.0753
+Temporal-UNet,zhanjiang,stable_background,0.9782±0.0019,0.9573±0.0037
+Temporal-UNet (GroupNorm),within,stable_mangrove,0.8269±0.0254,0.7056±0.0372
+Temporal-UNet (GroupNorm),within,loss,0.2730±0.0378,0.1586±0.0254
+Temporal-UNet (GroupNorm),within,gain,0.1633±0.0408,0.0894±0.0240
+Temporal-UNet (GroupNorm),within,stable_background,0.9731±0.0072,0.9478±0.0137
+Temporal-UNet (GroupNorm),beilunhe,stable_mangrove,0.8097±0.0681,0.6849±0.1018
+Temporal-UNet (GroupNorm),beilunhe,loss,0.1409±0.0591,0.0767±0.0350
+Temporal-UNet (GroupNorm),beilunhe,gain,0.4789±0.0418,0.3156±0.0354
+Temporal-UNet (GroupNorm),beilunhe,stable_background,0.9738±0.0119,0.9492±0.0228
+Temporal-UNet (GroupNorm),zhanjiang,stable_mangrove,0.7213±0.0230,0.5645±0.0276
+Temporal-UNet (GroupNorm),zhanjiang,loss,0.1656±0.0352,0.0906±0.0206
+Temporal-UNet (GroupNorm),zhanjiang,gain,0.3850±0.0575,0.2396±0.0439
+Temporal-UNet (GroupNorm),zhanjiang,stable_background,0.9797±0.0008,0.9602±0.0016
+FC-Siam (SOTA baseline),within,stable_mangrove,0.8366±0.0356,0.7204±0.0516
+FC-Siam (SOTA baseline),within,loss,0.3231±0.0534,0.1936±0.0369
+FC-Siam (SOTA baseline),within,gain,0.1688±0.0238,0.0923±0.0142
+FC-Siam (SOTA baseline),within,stable_background,0.9765±0.0084,0.9541±0.0159
+FC-Siam (SOTA baseline),beilunhe,stable_mangrove,0.8489±0.0544,0.7405±0.0827
+FC-Siam (SOTA baseline),beilunhe,loss,0.2283±0.0674,0.1301±0.0426
+FC-Siam (SOTA baseline),beilunhe,gain,0.4440±0.1122,0.2903±0.0859
+FC-Siam (SOTA baseline),beilunhe,stable_background,0.9847±0.0087,0.9701±0.0167
+FC-Siam (SOTA baseline),zhanjiang,stable_mangrove,0.5744±0.1467,0.4145±0.1417
+FC-Siam (SOTA baseline),zhanjiang,loss,0.1184±0.0860,0.0647±0.0493
+FC-Siam (SOTA baseline),zhanjiang,gain,0.3807±0.0592,0.2364±0.0447
+FC-Siam (SOTA baseline),zhanjiang,stable_background,0.9737±0.0015,0.9488±0.0029
+ChangeFormer-style (Transformer),within,stable_mangrove,0.6197±0.1611,0.4644±0.1659
+ChangeFormer-style (Transformer),within,loss,0.0926±0.1266,0.0524±0.0718
+ChangeFormer-style (Transformer),within,gain,0.0093±0.0182,0.0047±0.0093
+ChangeFormer-style (Transformer),within,stable_background,0.9223±0.0580,0.8598±0.0959
+ChangeFormer-style (Transformer),beilunhe,stable_mangrove,0.6583±0.1462,0.5039±0.1526
+ChangeFormer-style (Transformer),beilunhe,loss,0.0078±0.0095,0.0039±0.0048
+ChangeFormer-style (Transformer),beilunhe,gain,0.0719±0.1550,0.0433±0.0940
+ChangeFormer-style (Transformer),beilunhe,stable_background,0.9387±0.0457,0.8872±0.0773
+ChangeFormer-style (Transformer),zhanjiang,stable_mangrove,0.3825±0.1384,0.2436±0.1048
+ChangeFormer-style (Transformer),zhanjiang,loss,0.0148±0.0192,0.0075±0.0098
+ChangeFormer-style (Transformer),zhanjiang,gain,0.0578±0.1167,0.0330±0.0674
+ChangeFormer-style (Transformer),zhanjiang,stable_background,0.9475±0.0355,0.9018±0.0614
+DeepLabv3+ (ImageNet-pretrained),within,stable_mangrove,0.7238±0.0707,0.5709±0.0855
+DeepLabv3+ (ImageNet-pretrained),within,loss,0.3084±0.0311,0.1826±0.0217
+DeepLabv3+ (ImageNet-pretrained),within,gain,0.0443±0.0226,0.0227±0.0119
+DeepLabv3+ (ImageNet-pretrained),within,stable_background,0.9550±0.0169,0.9142±0.0307
+DeepLabv3+ (ImageNet-pretrained),beilunhe,stable_mangrove,0.7748±0.0696,0.6367±0.0951
+DeepLabv3+ (ImageNet-pretrained),beilunhe,loss,0.1797±0.0431,0.0992±0.0259
+DeepLabv3+ (ImageNet-pretrained),beilunhe,gain,0.4962±0.0204,0.3302±0.0181
+DeepLabv3+ (ImageNet-pretrained),beilunhe,stable_background,0.9710±0.0115,0.9439±0.0218
+DeepLabv3+ (ImageNet-pretrained),zhanjiang,stable_mangrove,0.6882±0.0036,0.5246±0.0042
+DeepLabv3+ (ImageNet-pretrained),zhanjiang,loss,0.1089±0.0200,0.0577±0.0112
+DeepLabv3+ (ImageNet-pretrained),zhanjiang,gain,0.3083±0.0643,0.1836±0.0447
+DeepLabv3+ (ImageNet-pretrained),zhanjiang,stable_background,0.9739±0.0007,0.9492±0.0014
+Random Forest (pixel),beilunhe,stable_mangrove,0.7522,0.6028
+Random Forest (pixel),beilunhe,loss,0.1996,0.1109
+Random Forest (pixel),beilunhe,gain,0.1716,0.0939
+Random Forest (pixel),beilunhe,stable_background,0.9688,0.9395
+Random Forest (pixel),zhanjiang,stable_mangrove,0.6571,0.4893
+Random Forest (pixel),zhanjiang,loss,0.0727,0.0377
+Random Forest (pixel),zhanjiang,gain,0.0087,0.0043
+Random Forest (pixel),zhanjiang,stable_background,0.9720,0.9455

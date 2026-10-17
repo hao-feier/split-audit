@@ -1,0 +1,92 @@
+{
+  "model": "unet_cbam_msa",
+  "tag": "nested_f1_inv",
+  "params_M": 3.183,
+  "seed": 2026,
+  "in_ch": 27,
+  "hyperparams": {
+    "epochs": 100,
+    "batch_size": 8,
+    "lr": 0.001,
+    "patience": 15,
+    "seed": 2026,
+    "cw_mode": "sqrt",
+    "deterministic": false,
+    "tag": "nested_f1_inv"
+  },
+  "val": {
+    "n_pixels": 1310720,
+    "confusion_matrix": [
+      [
+        43010,
+        9967,
+        312,
+        3834
+      ],
+      [
+        6880,
+        33990,
+        65,
+        2795
+      ],
+      [
+        2151,
+        372,
+        397,
+        2171
+      ],
+      [
+        22031,
+        33480,
+        1008,
+        1148257
+      ]
+    ],
+    "class_names": [
+      "stable_mangrove",
+      "loss",
+      "gain",
+      "stable_background"
+    ],
+    "OA": 0.9350997924804687,
+    "kappa": 0.6475490128165529,
+    "mIoU": 0.47086102400476915,
+    "F1_macro": 0.5757150803029802,
+    "per_class": {
+      "stable_mangrove": {
+        "support": 57123,
+        "PA": 0.7529366454843058,
+        "UA": 0.5806512582352306,
+        "IoU": 0.4877246697284119,
+        "F1": 0.6556652311444796
+      },
+      "loss": {
+        "support": 43730,
+        "PA": 0.7772696089640979,
+        "UA": 0.4368389260882417,
+        "IoU": 0.38823972860912176,
+        "F1": 0.559326635894651
+      },
+      "gain": {
+        "support": 5091,
+        "PA": 0.07798075034374387,
+        "UA": 0.22278338945005613,
+        "IoU": 0.061303273625694876,
+        "F1": 0.1155245162229012
+      },
+      "stable_background": {
+        "support": 1204776,
+        "PA": 0.953087544904613,
+        "UA": 0.9923944974188825,
+        "IoU": 0.9461764240558481,
+        "F1": 0.9723439379498889
+      }
+    },
+    "CD_Accuracy_changed": 0.9551666259765625,
+    "Omission_Error": 0.28670039532168534,
+    "Commission_Error": 0.03547589783334482
+  },
+  "test_within_region": null,
+  "independent_test": {},
+  "elapsed_h": 0.03
+}

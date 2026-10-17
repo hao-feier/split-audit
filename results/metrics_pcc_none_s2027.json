@@ -1,0 +1,80 @@
+{
+  "model": "pcc",
+  "seed": 2027,
+  "binary": true,
+  "hyperparams": {
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "epochs": 100,
+    "batch_size": 8,
+    "lr": 0.001,
+    "patience": 15,
+    "cw_mode": "none"
+  },
+  "val": null,
+  "test_within_region": {
+    "OA": 0.969485855102539,
+    "F1_change": 0.220094574172476,
+    "IoU_change": 0.12365520716930695,
+    "precision_change": 0.1620717383188306,
+    "recall_change": 0.3428302402575707,
+    "Omission": 0.6571697597424293,
+    "Commission": 0.8379282616811694,
+    "cm": [
+      [
+        2530162,
+        58355
+      ],
+      [
+        21636,
+        11287
+      ]
+    ],
+    "n_patches": 10
+  },
+  "independent_test": {
+    "beilunhe": {
+      "OA": 0.9773044586181641,
+      "F1_change": 0.31380514529202574,
+      "IoU_change": 0.18610253993828754,
+      "precision_change": 0.20773348490375562,
+      "recall_change": 0.6412223735204776,
+      "Omission": 0.3587776264795224,
+      "Commission": 0.7922665150962444,
+      "cm": [
+        [
+          4587014,
+          93390
+        ],
+        [
+          13701,
+          24487
+        ]
+      ],
+      "n_patches": 18
+    },
+    "zhanjiang": {
+      "OA": 0.9487091064453125,
+      "F1_change": 0.40186838281087817,
+      "IoU_change": 0.2514613805824738,
+      "precision_change": 0.2906581668110956,
+      "recall_change": 0.6509203750672508,
+      "Omission": 0.3490796249327492,
+      "Commission": 0.7093418331889044,
+      "cm": [
+        [
+          3662723,
+          165349
+        ],
+        [
+          36335,
+          67753
+        ]
+      ],
+      "n_patches": 15
+    }
+  }
+}

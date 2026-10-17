@@ -1,0 +1,158 @@
+{
+ "rule": {
+  "min_test": 5,
+  "n_candidates": 26,
+  "n_target": 16,
+  "rng_seed": 20261001,
+  "tolerance_pp": 0.2,
+  "max_prev_residual_pp": 0.5,
+  "selection": "DOUBLE stratification, no random draw: keep every candidate with n_test >= MIN_TEST and achievable prevalence-match residual <= max_prev_residual_pp. Zero selection freedom, so no split list can be accused of being outcome-informed. RNG seed retained only for reproducibility of the enumeration order.",
+  "sort_order_is_deterministic": true
+ },
+ "splits": [
+  {
+   "split_seed": 62,
+   "n_train": 20,
+   "n_val": 4,
+   "n_test": 6,
+   "block_test_prev_pct": 1.383209228515625,
+   "matched_test_prev_pct": 1.383336385091146,
+   "prev_residual_pp": 0.00012715657552089116
+  },
+  {
+   "split_seed": 165,
+   "n_train": 20,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.3544718424479165,
+   "matched_test_prev_pct": 1.3544718424479165,
+   "prev_residual_pp": 0.0
+  },
+  {
+   "split_seed": 265,
+   "n_train": 22,
+   "n_val": 4,
+   "n_test": 6,
+   "block_test_prev_pct": 1.7258961995442708,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.1734415690104166
+  },
+  {
+   "split_seed": 316,
+   "n_train": 23,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.877276102701823,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.3248214721679689
+  },
+  {
+   "split_seed": 3479,
+   "n_train": 19,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.6768137613932292,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.12435913085937517
+  },
+  {
+   "split_seed": 6001,
+   "n_train": 19,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.5940348307291667,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.041580200195312673
+  },
+  {
+   "split_seed": 10856,
+   "n_train": 21,
+   "n_val": 4,
+   "n_test": 6,
+   "block_test_prev_pct": 2.0135243733723955,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.46106974283854163
+  },
+  {
+   "split_seed": 11289,
+   "n_train": 23,
+   "n_val": 2,
+   "n_test": 6,
+   "block_test_prev_pct": 1.2825647989908853,
+   "matched_test_prev_pct": 1.2825647989908853,
+   "prev_residual_pp": 0.0
+  },
+  {
+   "split_seed": 12557,
+   "n_train": 22,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.552454630533854,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.0
+  },
+  {
+   "split_seed": 13832,
+   "n_train": 21,
+   "n_val": 3,
+   "n_test": 6,
+   "block_test_prev_pct": 1.7469406127929688,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.19448598225911465
+  },
+  {
+   "split_seed": 15671,
+   "n_train": 21,
+   "n_val": 6,
+   "n_test": 6,
+   "block_test_prev_pct": 1.9474029541015625,
+   "matched_test_prev_pct": 1.552454630533854,
+   "prev_residual_pp": 0.39494832356770837
+  },
+  {
+   "split_seed": 798,
+   "n_train": 21,
+   "n_val": 3,
+   "n_test": 5,
+   "block_test_prev_pct": 1.8363189697265625,
+   "matched_test_prev_pct": 1.6064453125,
+   "prev_residual_pp": 0.22987365722656264
+  },
+  {
+   "split_seed": 821,
+   "n_train": 22,
+   "n_val": 7,
+   "n_test": 5,
+   "block_test_prev_pct": 1.752166748046875,
+   "matched_test_prev_pct": 1.6064453125,
+   "prev_residual_pp": 0.145721435546875
+  },
+  {
+   "split_seed": 6819,
+   "n_train": 24,
+   "n_val": 5,
+   "n_test": 5,
+   "block_test_prev_pct": 1.8360137939453125,
+   "matched_test_prev_pct": 1.6064453125,
+   "prev_residual_pp": 0.22956848144531256
+  },
+  {
+   "split_seed": 7295,
+   "n_train": 25,
+   "n_val": 3,
+   "n_test": 5,
+   "block_test_prev_pct": 1.9201660156250002,
+   "matched_test_prev_pct": 1.6064453125,
+   "prev_residual_pp": 0.3137207031250002
+  },
+  {
+   "split_seed": 19040,
+   "n_train": 24,
+   "n_val": 5,
+   "n_test": 5,
+   "block_test_prev_pct": 1.6432189941406252,
+   "matched_test_prev_pct": 1.6064453125,
+   "prev_residual_pp": 0.03677368164062521
+  }
+ ]
+}

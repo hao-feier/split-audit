@@ -1,0 +1,188 @@
+{
+  "per_region": {
+    "vietnam": {
+      "tiles_t1": 4,
+      "tiles_t2": 4,
+      "bands": {
+        "B02": {
+          "pif_gain": 0.833,
+          "pif_offset": 32.5,
+          "pif_r": 0.5028,
+          "water_pct_t1": 818.1,
+          "water_pct_t2": 858.9
+        },
+        "B03": {
+          "pif_gain": 0.7094,
+          "pif_offset": 178.4,
+          "pif_r": 0.4673,
+          "water_pct_t1": 1024.0,
+          "water_pct_t2": 1063.0
+        },
+        "B04": {
+          "pif_gain": 0.7348,
+          "pif_offset": 180.3,
+          "pif_r": 0.5035,
+          "water_pct_t1": 1045.1,
+          "water_pct_t2": 1132.5
+        },
+        "B08": {
+          "pif_gain": 0.834,
+          "pif_offset": 355.5,
+          "pif_r": 0.7652,
+          "water_pct_t1": 2665.8,
+          "water_pct_t2": 2657.6
+        },
+        "B11": {
+          "pif_gain": 0.9423,
+          "pif_offset": 284.7,
+          "pif_r": 0.7681,
+          "water_pct_t1": 1892.9,
+          "water_pct_t2": 2128.5
+        },
+        "B12": {
+          "pif_gain": 0.9151,
+          "pif_offset": 211.4,
+          "pif_r": 0.7173,
+          "water_pct_t1": 1432.1,
+          "water_pct_t2": 1601.2
+        }
+      },
+      "n_land_pixels": 2490266,
+      "pif_ndvi_threshold_t1": 6793.128,
+      "pif_ndvi_threshold_t2": 6453.7315,
+      "n_pif_pixels": 319274,
+      "n_water_pixels": 2490266,
+      "pif_gain_range": [
+        0.709,
+        0.942
+      ],
+      "pif_gain_mean_abs_dev_from_1": 0.172
+    },
+    "beilunhe": {
+      "tiles_t1": 4,
+      "tiles_t2": 4,
+      "bands": {
+        "B02": {
+          "pif_gain": 0.4366,
+          "pif_offset": 112.5,
+          "pif_r": 0.3468,
+          "water_pct_t1": 985.5,
+          "water_pct_t2": 893.1
+        },
+        "B03": {
+          "pif_gain": 0.5089,
+          "pif_offset": 199.6,
+          "pif_r": 0.4376,
+          "water_pct_t1": 1244.4,
+          "water_pct_t2": 1110.4
+        },
+        "B04": {
+          "pif_gain": 0.4689,
+          "pif_offset": 182.9,
+          "pif_r": 0.4286,
+          "water_pct_t1": 1284.2,
+          "water_pct_t2": 1130.9
+        },
+        "B08": {
+          "pif_gain": 0.7665,
+          "pif_offset": 669.8,
+          "pif_r": 0.6906,
+          "water_pct_t1": 3032.2,
+          "water_pct_t2": 3058.0
+        },
+        "B11": {
+          "pif_gain": 0.723,
+          "pif_offset": 532.1,
+          "pif_r": 0.657,
+          "water_pct_t1": 1997.9,
+          "water_pct_t2": 2056.4
+        },
+        "B12": {
+          "pif_gain": 0.632,
+          "pif_offset": 350.0,
+          "pif_r": 0.6001,
+          "water_pct_t1": 1454.9,
+          "water_pct_t2": 1403.8
+        }
+      },
+      "n_land_pixels": 10161351,
+      "pif_ndvi_threshold_t1": 8053.9519,
+      "pif_ndvi_threshold_t2": 8161.8977,
+      "n_pif_pixels": 1759662,
+      "n_water_pixels": 10161351,
+      "pif_gain_range": [
+        0.437,
+        0.766
+      ],
+      "pif_gain_mean_abs_dev_from_1": 0.411
+    },
+    "zhanjiang": {
+      "tiles_t1": 2,
+      "tiles_t2": 2,
+      "bands": {
+        "B02": {
+          "pif_gain": 0.4669,
+          "pif_offset": 140.0,
+          "pif_r": 0.4173,
+          "water_pct_t1": 1067.0,
+          "water_pct_t2": 869.8
+        },
+        "B03": {
+          "pif_gain": 0.6213,
+          "pif_offset": 197.4,
+          "pif_r": 0.6258,
+          "water_pct_t1": 1393.0,
+          "water_pct_t2": 1157.0
+        },
+        "B04": {
+          "pif_gain": 0.3403,
+          "pif_offset": 235.4,
+          "pif_r": 0.3729,
+          "water_pct_t1": 1651.0,
+          "water_pct_t2": 1411.5
+        },
+        "B08": {
+          "pif_gain": 0.6017,
+          "pif_offset": 1648.9,
+          "pif_r": 0.4961,
+          "water_pct_t1": 3902.5,
+          "water_pct_t2": 4321.0
+        },
+        "B11": {
+          "pif_gain": 0.4186,
+          "pif_offset": 1130.2,
+          "pif_r": 0.3901,
+          "water_pct_t1": 3224.0,
+          "water_pct_t2": 3208.8
+        },
+        "B12": {
+          "pif_gain": 0.4255,
+          "pif_offset": 520.7,
+          "pif_r": 0.4087,
+          "water_pct_t1": 2443.8,
+          "water_pct_t2": 2375.2
+        }
+      },
+      "n_land_pixels": 4702124,
+      "pif_ndvi_threshold_t1": 8585.0815,
+      "pif_ndvi_threshold_t2": 8748.9162,
+      "n_pif_pixels": 431134,
+      "n_water_pixels": 4702124,
+      "pif_gain_range": [
+        0.34,
+        0.621
+      ],
+      "pif_gain_mean_abs_dev_from_1": 0.521
+    }
+  },
+  "bands": [
+    "B02",
+    "B03",
+    "B04",
+    "B08",
+    "B11",
+    "B12"
+  ],
+  "pif_definition": "stable targets: top 3% NDVI in t1 with NDWI in the lower 40% (persistent vegetation, not water), and high NDVI in t2 as well; regressed per band as t2 = gain * t1 + offset. Water targets: bottom 3% NDVI with top 3% NDWI.",
+  "interpretation": "gain near 1 and offset near 0 means the two epochs are radiometrically comparable without harmonisation; a gain far from 1 would mean the observed change confounds reflectance with sensor/processing"
+}

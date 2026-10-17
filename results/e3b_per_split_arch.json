@@ -1,0 +1,97 @@
+{
+  "feasible_splits": [
+    62,
+    265,
+    316,
+    798,
+    821,
+    3479,
+    6001,
+    6819,
+    7295,
+    10856,
+    13832,
+    15671,
+    19040
+  ],
+  "infeasible_splits": [
+    165,
+    11289,
+    12557
+  ],
+  "per_split": {
+    "62": {
+      "within": -7.62,
+      "between": -27.34
+    },
+    "265": {
+      "within": -9.83,
+      "between": -12.67
+    },
+    "316": {
+      "within": 7.18,
+      "between": -4.46
+    },
+    "798": {
+      "within": -9.03,
+      "between": -29.53
+    },
+    "821": {
+      "within": -8.77,
+      "between": -9.85
+    },
+    "3479": {
+      "within": -15.12,
+      "between": -7.88
+    },
+    "6001": {
+      "within": -9.4,
+      "between": -7.14
+    },
+    "6819": {
+      "within": -13.14,
+      "between": -25.59
+    },
+    "7295": {
+      "within": -12.62,
+      "between": -6.59
+    },
+    "10856": {
+      "within": -5.39,
+      "between": -11.37
+    },
+    "13832": {
+      "within": -19.17,
+      "between": -26.01
+    },
+    "15671": {
+      "within": -5.03,
+      "between": 3.75
+    },
+    "19040": {
+      "within": -13.78,
+      "between": -13.85
+    }
+  },
+  "per_architecture": {
+    "U-Net": {
+      "within": -8.34,
+      "between": -17.67
+    },
+    "U-Net+CBAM+MSA": {
+      "within": -8.63,
+      "between": -9.51
+    },
+    "Temporal U-Net": {
+      "within": -11.12,
+      "between": -14.02
+    }
+  },
+  "_all_within_negative": false,
+  "_all_between_negative": false,
+  "_all_arch_within_negative": true,
+  "_all_arch_between_negative": true,
+  "_pooled_within_13": -9.36,
+  "_pooled_between_13": -13.73,
+  "_n_splits": 13
+}

@@ -1,0 +1,308 @@
+{
+  "model": "temporal_unet_gn",
+  "tag": null,
+  "params_M": 2.281,
+  "seed": 2027,
+  "in_ch": 9,
+  "hyperparams": {
+    "epochs": 100,
+    "batch_size": 2,
+    "lr": 0.001,
+    "patience": 15,
+    "seed": 2027,
+    "cw_mode": "none",
+    "deterministic": false,
+    "tag": null
+  },
+  "val": {
+    "n_pixels": 2621440,
+    "confusion_matrix": [
+      [
+        136900,
+        0,
+        0,
+        40066
+      ],
+      [
+        14889,
+        0,
+        0,
+        16416
+      ],
+      [
+        2913,
+        0,
+        0,
+        8990
+      ],
+      [
+        35981,
+        0,
+        0,
+        2365285
+      ]
+    ],
+    "class_names": [
+      "stable_mangrove",
+      "loss",
+      "gain",
+      "stable_background"
+    ],
+    "OA": 0.9545078277587891,
+    "kappa": 0.687788896928348,
+    "mIoU": 0.38803923486907616,
+    "F1_macro": 0.430934024968326,
+    "per_class": {
+      "stable_mangrove": {
+        "support": 176966,
+        "PA": 0.773594927839246,
+        "UA": 0.7179454906834905,
+        "IoU": 0.5932853446818838,
+        "F1": 0.744732067814682
+      },
+      "loss": {
+        "support": 31305,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "gain": {
+        "support": 11903,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "stable_background": {
+        "support": 2401266,
+        "PA": 0.9850158208211834,
+        "UA": 0.9730651809292331,
+        "IoU": 0.9588715947944209,
+        "F1": 0.9790040320586221
+      }
+    },
+    "CD_Accuracy_changed": 0.9835174560546875,
+    "Omission_Error": 1.0,
+    "Commission_Error": 0.0
+  },
+  "test_within_region": {
+    "n_pixels": 2621440,
+    "confusion_matrix": [
+      [
+        222157,
+        0,
+        0,
+        48529
+      ],
+      [
+        8044,
+        0,
+        0,
+        15615
+      ],
+      [
+        2398,
+        0,
+        0,
+        6866
+      ],
+      [
+        33107,
+        0,
+        0,
+        2284724
+      ]
+    ],
+    "class_names": [
+      "stable_mangrove",
+      "loss",
+      "gain",
+      "stable_background"
+    ],
+    "OA": 0.9562992095947266,
+    "kappa": 0.7758602122550553,
+    "mIoU": 0.4158481320132616,
+    "F1_macro": 0.45151509399441825,
+    "per_class": {
+      "stable_mangrove": {
+        "support": 270686,
+        "PA": 0.8207184708481414,
+        "UA": 0.8361008031433238,
+        "IoU": 0.7069772622400433,
+        "F1": 0.8283382302495191
+      },
+      "loss": {
+        "support": 23659,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "gain": {
+        "support": 9264,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "stable_background": {
+        "support": 2317831,
+        "PA": 0.985716387432906,
+        "UA": 0.969856528793149,
+        "IoU": 0.9564152658130031,
+        "F1": 0.977722145728154
+      }
+    },
+    "CD_Accuracy_changed": 0.9874408721923829,
+    "Omission_Error": 1.0,
+    "Commission_Error": 0.0
+  },
+  "independent_test": {
+    "beilunhe": {
+      "n_pixels": 4718592,
+      "confusion_matrix": [
+        [
+          386878,
+          0,
+          0,
+          34018
+        ],
+        [
+          5836,
+          0,
+          0,
+          3478
+        ],
+        [
+          5601,
+          0,
+          0,
+          23273
+        ],
+        [
+          37288,
+          0,
+          0,
+          4222220
+        ]
+      ],
+      "class_names": [
+        "stable_mangrove",
+        "loss",
+        "gain",
+        "stable_background"
+      ],
+      "OA": 0.9767951965332031,
+      "kappa": 0.8653956192474829,
+      "mIoU": 0.4502780155252437,
+      "F1_macro": 0.4729788011710986,
+      "per_class": {
+        "stable_mangrove": {
+          "support": 420896,
+          "PA": 0.9191771839124154,
+          "UA": 0.8881435619130263,
+          "IoU": 0.8238089863954124,
+          "F1": 0.9033939327424785
+        },
+        "loss": {
+          "support": 9314,
+          "PA": 0.0,
+          "UA": 0.0,
+          "IoU": 0.0,
+          "F1": 0.0
+        },
+        "gain": {
+          "support": 28874,
+          "PA": 0.0,
+          "UA": 0.0,
+          "IoU": 0.0,
+          "F1": 0.0
+        },
+        "stable_background": {
+          "support": 4259508,
+          "PA": 0.9912459373242168,
+          "UA": 0.9858115442276411,
+          "IoU": 0.9773030757055624,
+          "F1": 0.9885212719419159
+        }
+      },
+      "CD_Accuracy_changed": 0.9919069078233507,
+      "Omission_Error": 1.0,
+      "Commission_Error": 0.0
+    },
+    "zhanjiang": {
+      "n_pixels": 3932160,
+      "confusion_matrix": [
+        [
+          152261,
+          0,
+          0,
+          65811
+        ],
+        [
+          3014,
+          0,
+          0,
+          6550
+        ],
+        [
+          15787,
+          0,
+          0,
+          78737
+        ],
+        [
+          18240,
+          0,
+          0,
+          3591760
+        ]
+      ],
+      "class_names": [
+        "stable_mangrove",
+        "loss",
+        "gain",
+        "stable_background"
+      ],
+      "OA": 0.9521537780761719,
+      "kappa": 0.6124474430733923,
+      "mIoU": 0.3879534813925017,
+      "F1_macro": 0.4311235398477386,
+      "per_class": {
+        "stable_mangrove": {
+          "support": 218072,
+          "PA": 0.6982143512234491,
+          "UA": 0.8043285332431775,
+          "IoU": 0.5968374798618651,
+          "F1": 0.7475243879088994
+        },
+        "loss": {
+          "support": 9564,
+          "PA": 0.0,
+          "UA": 0.0,
+          "IoU": 0.0,
+          "F1": 0.0
+        },
+        "gain": {
+          "support": 94524,
+          "PA": 0.0,
+          "UA": 0.0,
+          "IoU": 0.0,
+          "F1": 0.0
+        },
+        "stable_background": {
+          "support": 3610000,
+          "PA": 0.9949473684210526,
+          "UA": 0.9596303145884776,
+          "IoU": 0.9549764457081417,
+          "F1": 0.976969771482055
+        }
+      },
+      "CD_Accuracy_changed": 0.973529052734375,
+      "Omission_Error": 1.0,
+      "Commission_Error": 0.0
+    }
+  },
+  "elapsed_h": 0.04
+}

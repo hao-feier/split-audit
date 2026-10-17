@@ -1,0 +1,180 @@
+{
+  "config": {
+    "region": "vietnam",
+    "n_patches": 26,
+    "n_models": 5,
+    "n_obs_pooled": 130,
+    "cell_px": 1024,
+    "n_cells": 6,
+    "cell_sizes": [
+      1,
+      4,
+      13,
+      5,
+      1,
+      2
+    ],
+    "spec": "F1ch ~ 1 + distance_km + true_change_frac",
+    "cluster_definitions": {
+      "patch": "one cluster per evaluation patch (G=26); the level at which the regressors actually vary",
+      "model": "one cluster per architecture (G=5)",
+      "cell": "one cluster per 1024-px spatial cell of the patch grid (G=6); the paper's resampling unit in the LOCO / cluster-bootstrap analyses"
+    },
+    "note": "A patch random intercept is not identified for this specification because distance_km is patch-constant, so a patch effect absorbs the regressor; cluster-robust SEs are the identified alternative. Inference only, no training, no test-region selection."
+  },
+  "variants": {
+    "naive_G130": {
+      "G": 130,
+      "n": 130,
+      "beta": [
+        0.277502706227455,
+        -0.005260611621596172,
+        3.3877334831696557
+      ],
+      "se": [
+        0.01913831768349608,
+        0.0018807680040984999,
+        0.6503861619207884
+      ],
+      "t": [
+        14.499848461955427,
+        -2.7970550382250456,
+        5.208803141144097
+      ]
+    },
+    "patch_clustered_G26": {
+      "G": 26,
+      "n": 130,
+      "beta": [
+        0.277502706227455,
+        -0.005260611621596172,
+        3.3877334831696557
+      ],
+      "se": [
+        0.031813928597853015,
+        0.0039558169841413665,
+        1.0473369707097528
+      ],
+      "t": [
+        8.722679607892955,
+        -1.3298420130874733,
+        3.234616534995301
+      ]
+    },
+    "model_clustered_G5": {
+      "G": 5,
+      "n": 130,
+      "beta": [
+        0.277502706227455,
+        -0.005260611621596172,
+        3.3877334831696557
+      ],
+      "se": [
+        0.013912966065718142,
+        0.0015215829643274803,
+        0.23497574681563768
+      ],
+      "t": [
+        19.94561798804554,
+        -3.457328154249738,
+        14.417375108196492
+      ]
+    },
+    "cell_clustered_G6": {
+      "G": 6,
+      "n": 130,
+      "beta": [
+        0.277502706227455,
+        -0.005260611621596172,
+        3.3877334831696557
+      ],
+      "se": [
+        0.04610087302153548,
+        0.006904880058776361,
+        1.519031893174291
+      ],
+      "t": [
+        6.01946748595895,
+        -0.7618686460613806,
+        2.230192465604113
+      ]
+    },
+    "cell_level_n6": {
+      "G": null,
+      "n": 6,
+      "beta": [
+        0.28773031637838353,
+        -0.010748139361474219,
+        3.369548788393504
+      ],
+      "se": [
+        0.03693376745394875,
+        0.003177340163008344,
+        1.347150995969956
+      ],
+      "t": [
+        7.79044046175747,
+        -3.382747458584274,
+        2.501240617030766
+      ],
+      "r2": 0.9163806063498319
+    }
+  },
+  "summary": {
+    "naive_G130": {
+      "n": 130,
+      "G": 130,
+      "r2": 0.2900097659552908,
+      "distance_coef": -0.005260611621596172,
+      "distance_se": 0.0018807680040984999,
+      "distance_t": -2.7970550382250456,
+      "change_frac_coef": 3.3877334831696557,
+      "change_frac_t": 5.208803141144097
+    },
+    "patch_clustered_G26": {
+      "n": 130,
+      "G": 26,
+      "r2": 0.2900097659552908,
+      "distance_coef": -0.005260611621596172,
+      "distance_se": 0.0039558169841413665,
+      "distance_t": -1.3298420130874733,
+      "change_frac_coef": 3.3877334831696557,
+      "change_frac_t": 3.234616534995301
+    },
+    "model_clustered_G5": {
+      "n": 130,
+      "G": 5,
+      "r2": 0.2900097659552908,
+      "distance_coef": -0.005260611621596172,
+      "distance_se": 0.0015215829643274803,
+      "distance_t": -3.457328154249738,
+      "change_frac_coef": 3.3877334831696557,
+      "change_frac_t": 14.417375108196492
+    },
+    "cell_clustered_G6": {
+      "n": 130,
+      "G": 6,
+      "r2": 0.2900097659552908,
+      "distance_coef": -0.005260611621596172,
+      "distance_se": 0.006904880058776361,
+      "distance_t": -0.7618686460613806,
+      "change_frac_coef": 3.3877334831696557,
+      "change_frac_t": 2.230192465604113
+    },
+    "cell_level_n6": {
+      "n": 6,
+      "G": null,
+      "r2": 0.9163806063498319,
+      "distance_coef": -0.010748139361474219,
+      "distance_se": 0.003177340163008344,
+      "distance_t": -3.382747458584274,
+      "change_frac_coef": 3.369548788393504,
+      "change_frac_t": 2.501240617030766
+    }
+  },
+  "terms": [
+    "intercept",
+    "distance_km",
+    "true_change_frac"
+  ]
+}

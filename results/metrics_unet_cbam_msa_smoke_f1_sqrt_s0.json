@@ -1,0 +1,92 @@
+{
+  "model": "unet_cbam_msa",
+  "tag": "smoke_f1_sqrt",
+  "params_M": 3.183,
+  "seed": 0,
+  "in_ch": 27,
+  "hyperparams": {
+    "epochs": 2,
+    "batch_size": 8,
+    "lr": 0.001,
+    "patience": 99,
+    "seed": 0,
+    "cw_mode": "sqrt",
+    "deterministic": false,
+    "tag": "smoke_f1_sqrt"
+  },
+  "val": {
+    "n_pixels": 1310720,
+    "confusion_matrix": [
+      [
+        57123,
+        0,
+        0,
+        0
+      ],
+      [
+        43730,
+        0,
+        0,
+        0
+      ],
+      [
+        5091,
+        0,
+        0,
+        0
+      ],
+      [
+        1204776,
+        0,
+        0,
+        0
+      ]
+    ],
+    "class_names": [
+      "stable_mangrove",
+      "loss",
+      "gain",
+      "stable_background"
+    ],
+    "OA": 0.043581390380859376,
+    "kappa": 0.0,
+    "mIoU": 0.010895347595214844,
+    "F1_macro": 0.02088068586818809,
+    "per_class": {
+      "stable_mangrove": {
+        "support": 57123,
+        "PA": 1.0,
+        "UA": 0.043581390380859376,
+        "IoU": 0.043581390380859376,
+        "F1": 0.08352274347275236
+      },
+      "loss": {
+        "support": 43730,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "gain": {
+        "support": 5091,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      },
+      "stable_background": {
+        "support": 1204776,
+        "PA": 0.0,
+        "UA": 0.0,
+        "IoU": 0.0,
+        "F1": 0.0
+      }
+    },
+    "CD_Accuracy_changed": 0.9627525329589843,
+    "Omission_Error": 1.0,
+    "Commission_Error": 0.0
+  },
+  "test_within_region": null,
+  "independent_test": {},
+  "elapsed_h": 0.0
+}

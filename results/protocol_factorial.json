@@ -1,0 +1,118 @@
+{
+ "design": {
+  "estimand": "Delta = mean over the K independent spatial partitions of [mean_panel F1ch(random_test) - mean_panel F1ch(isolated_test)]; the panel (model x seed) is a fixed average",
+  "inference": "95% t interval on the mean (df = K-1) and MDE@80% from the same small-sample t quantiles; the t (not the z) is used because K is small",
+  "guardrail": "single scene / sensor / biome; the interval reflects partition-to-partition variation WITHIN this scene, not cross-scene generalisation; not a universal spatial-inflation constant",
+  "n_partitions": 10,
+  "representative_model": "temporal_unet",
+  "classes": {
+   "change": [
+    "loss",
+    "gain"
+   ],
+   "non_change": [
+    "stable_mangrove",
+    "stable_background"
+   ]
+  }
+ },
+ "primary": {
+  "delta_pp": 25.199,
+  "ci95_pp": [
+   23.209,
+   27.19
+  ],
+  "ci_method": "95% t interval on the mean, df = 9",
+  "se_pp": 0.88,
+  "sd_pp": 2.783,
+  "mde_80_pp": 2.768,
+  "mde_method": "MDE@80% = (t_0.975 + t_0.80) * SE, df = 9",
+  "power_note": "the interval excludes 0 and the effect exceeds the MDE",
+  "per_partition_pp": {
+   "random_split_k1": 22.535,
+   "random_split_k10": 20.965,
+   "random_split_k2": 28.331,
+   "random_split_k3": 26.169,
+   "random_split_k4": 22.338,
+   "random_split_k5": 24.346,
+   "random_split_k6": 26.579,
+   "random_split_k7": 23.999,
+   "random_split_k8": 27.467,
+   "random_split_k9": 29.264
+  },
+  "per_partition_n_modelseed": {
+   "random_split_k1": 15,
+   "random_split_k10": 15,
+   "random_split_k2": 15,
+   "random_split_k3": 15,
+   "random_split_k4": 15,
+   "random_split_k5": 15,
+   "random_split_k6": 15,
+   "random_split_k7": 15,
+   "random_split_k8": 15,
+   "random_split_k9": 15
+  },
+  "representative_model_pp": {
+   "random_split_k1": 21.019,
+   "random_split_k10": 21.546,
+   "random_split_k2": 28.031,
+   "random_split_k3": 26.279,
+   "random_split_k4": 22.566,
+   "random_split_k5": 24.805,
+   "random_split_k6": 26.368,
+   "random_split_k7": 24.544,
+   "random_split_k8": 27.815,
+   "random_split_k9": 30.337
+  }
+ },
+ "prevalence_strata_pp": {
+  "loss": {
+   "leaky": 55.503,
+   "honest": 38.419,
+   "delta": 17.084
+  },
+  "gain": {
+   "leaky": 61.867,
+   "honest": 14.219,
+   "delta": 47.648
+  }
+ },
+ "reference_axis": {
+  "source": "boundary_tolerance.json, dualsource_subset.json (predictions fixed)",
+  "boundary_perturb_max_abs_shift_F1ch": 0.1356,
+  "label_source_agreement_shift_F1ch": {
+   "min": -0.0106,
+   "max": 0.0551,
+   "n": 24
+  }
+ },
+ "buffer_axis": {
+  "source": "buffer_sensitivity.json (nominal -> realised grid gap)",
+  "nominal_settings": 3,
+  "distinct_realised_gaps_km": [
+   2.56,
+   5.12
+  ],
+  "collapse": 1,
+  "realised_map": {
+   "B=1": 2.56,
+   "B=2": 2.56,
+   "B=4": 5.12
+  }
+ },
+ "provenance": {
+  "partitions": [
+   "random_split_k1",
+   "random_split_k10",
+   "random_split_k2",
+   "random_split_k3",
+   "random_split_k4",
+   "random_split_k5",
+   "random_split_k6",
+   "random_split_k7",
+   "random_split_k8",
+   "random_split_k9"
+  ],
+  "read_from": "results/random_split_k*/metrics_*.json (random_test + isolated_test CMs), boundary_tolerance.json, dualsource_subset.json, buffer_sensitivity.json"
+ }
+}

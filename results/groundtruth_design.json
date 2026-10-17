@@ -1,0 +1,47 @@
+{
+  "vietnam": {
+    "n_points": 800,
+    "allocation": {
+      "stable_background": 400,
+      "stable_mangrove": 200,
+      "loss": 100,
+      "gain": 100
+    },
+    "stratum_px_available": {
+      "stable_background": 7716440,
+      "stable_mangrove": 610777,
+      "loss": 126368,
+      "gain": 66095
+    }
+  },
+  "beilunhe": {
+    "n_points": 800,
+    "allocation": {
+      "stable_background": 400,
+      "stable_mangrove": 200,
+      "loss": 100,
+      "gain": 100
+    },
+    "stratum_px_available": {
+      "stable_background": 2403304,
+      "stable_mangrove": 138923,
+      "loss": 3357,
+      "gain": 10320
+    }
+  },
+  "zhanjiang": {
+    "n_points": 800,
+    "allocation": {
+      "stable_background": 400,
+      "stable_mangrove": 200,
+      "loss": 100,
+      "gain": 100
+    },
+    "stratum_px_available": {
+      "stable_background": 1456063,
+      "stable_mangrove": 75194,
+      "loss": 3451,
+      "gain": 38156
+    }
+  }
+}

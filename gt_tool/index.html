@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GT Interpretation Workbench — mangrove presence t1 / t2</title>
+<style>
+:root{
+  --bg:#14181d; --panel:#1d232b; --panel2:#232b35; --edge:#313c49;
+  --fg:#e8edf2; --dim:#93a1b0; --acc:#4da3ff; --ok:#38c172; --bad:#e35d6a;
+  --unsure:#e0a83e; --no:#5b6b7c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--acc)}
+header{display:flex;align-items:center;gap:16px;padding:10px 16px;background:var(--panel);
+  border-bottom:1px solid var(--edge);flex-wrap:wrap}
+header h1{font-size:15px;margin:0;font-weight:600}
+.prog{flex:1;min-width:220px;height:10px;background:var(--panel2);border-radius:5px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--acc);width:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:var(--panel2);border:1px solid var(--edge);border-radius:12px;
+  padding:2px 10px;font-size:12px;color:var(--dim);white-space:nowrap}
+.chip b{color:var(--fg)}
+.controls{display:flex;gap:10px;align-items:center;padding:10px 16px;background:var(--panel);
+  border-bottom:1px solid var(--edge);flex-wrap:wrap}
+select,input[type=text]{background:var(--panel2);color:var(--fg);border:1px solid var(--edge);
+  border-radius:6px;padding:5px 8px;font-size:13px}
+button{background:var(--panel2);color:var(--fg);border:1px solid var(--edge);border-radius:6px;
+  padding:5px 10px;font-size:13px;cursor:pointer}
+button:hover{border-color:var(--acc)}
+button.warn{border-color:var(--bad);color:var(--bad)}
+main{display:flex;gap:14px;padding:14px 16px;align-items:flex-start}
+.card{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:14px;flex:1;min-width:0}
+.side{width:330px;flex-shrink:0;display:flex;flex-direction:column;gap:14px}
+.pt-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
+.pt-head .id{font-weight:600;font-size:15px}
+.pt-head .meta{color:var(--dim);font-size:12px}
+.epochs{display:flex;gap:14px}
+.ep{flex:1;background:var(--panel2);border:1px solid var(--edge);border-radius:10px;padding:12px;text-align:center}
+.ep h3{margin:0 0 8px;font-size:13px;font-weight:600}
+.ep h3 small{color:var(--dim);font-weight:400}
+.ep img{width:232px;height:232px;image-rendering:pixelated;border-radius:6px;background:#000;
+  border:1px solid var(--edge)}
+.ep .hint{color:var(--dim);font-size:11px;margin:6px 0 10px;min-height:14px}
+.lab{display:flex;gap:8px;justify-content:center}
+.lab button{min-width:74px;padding:8px 6px;font-size:13px;border-radius:8px}
+.lab button .k{display:block;font-size:10px;color:var(--dim)}
+.lab button.s0.on{background:var(--no);border-color:var(--no);color:#fff}
+.lab button.s1.on{background:var(--ok);border-color:var(--ok);color:#04220f}
+.lab button.s2.on{background:var(--unsure);border-color:var(--unsure);color:#241703}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.links button{font-size:12px}
+.gmw{margin-top:12px;padding:10px 12px;border:1px dashed var(--edge);border-radius:8px;
+  font-size:13px;color:var(--dim);display:none}
+.gmw.show{display:block}
+.gmw b{color:var(--fg)}
+kbd{background:var(--panel2);border:1px solid var(--edge);border-bottom-width:2px;border-radius:4px;
+  padding:1px 5px;font:11px/1.4 ui-monospace,monospace}
+.legend{color:var(--dim);font-size:12px;margin-top:12px}
+.side .card h2{font-size:13px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em;color:var(--dim)}
+table.ct{border-collapse:collapse;width:100%;font-size:12px}
+table.ct th,table.ct td{border:1px solid var(--edge);padding:3px 6px;text-align:center}
+table.ct th{color:var(--dim);font-weight:600}
+table.ct td.r{text-align:left;color:var(--dim)}
+table.ct td.hot{background:var(--panel2);font-weight:600}
+.rc{font-size:12px;color:var(--dim);display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.rc b{color:var(--fg)}
+.footer{padding:8px 16px;color:var(--dim);font-size:11px;border-top:1px solid var(--edge)}
+.dim{color:var(--dim)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Mangrove GT workbench <span class="dim">(800 pts / region, presence at t1 &amp; t2)</span></h1>
+  <div class="prog"><i id="pbar"></i></div>
+  <span id="ptotal" class="chip"><b>0/0</b> decided</span>
+  <span class="chip" id="c_vietnam"></span>
+  <span class="chip" id="c_beilunhe"></span>
+  <span class="chip" id="c_zhanjiang"></span>
+</header>
+<div class="controls">
+  <label>region <select id="fRegion">
+    <option value="all">all</option><option value="vietnam">vietnam</option>
+    <option value="beilunhe">beilunhe</option><option value="zhanjiang">zhanjiang</option>
+  </select></label>
+  <label>status <select id="fStatus">
+    <option value="incomplete" selected>to label (unlabeled+partial)</option>
+    <option value="all">all</option>
+    <option value="unlabeled">unlabeled</option>
+    <option value="partial">partial</option>
+    <option value="complete">complete</option>
+    <option value="has_unsure">contains unsure</option>
+  </select></label>
+  <input type="text" id="jump" placeholder="jump to point id, e.g. vietnam_0_1234" size="28">
+  <span class="chip" id="navpos"></span>
+  <span style="flex:1"></span>
+  <button id="bExport">Export interpretation.json</button>
+  <button id="bImport">Import…</button>
+  <input type="file" id="fImport" accept=".json" style="display:none">
+  <button class="warn" id="bReset">Reset all</button>
+</div>
+<main>
+  <div class="card" id="ptcard">
+    <div class="pt-head">
+      <span class="id" id="pId"></span>
+      <span class="meta" id="pMeta"></span>
+    </div>
+    <div class="epochs">
+      <div class="ep" id="epT1">
+        <h3>t1 <small>2019-12-01 – 2020-01-31</small></h3>
+        <img id="imgT1" alt="t1 context">
+        <div class="hint">use Google Earth <b>historical</b> imagery (time slider → Dec 2019–Jan 2020)</div>
+        <div class="lab" data-epoch="t1">
+          <button class="s0" data-v="0">no mng <span class="k">1</span></button>
+          <button class="s1" data-v="1">mangrove <span class="k">2</span></button>
+          <button class="s2" data-v="2">unsure <span class="k">3</span></button>
+        </div>
+      </div>
+      <div class="ep" id="epT2">
+        <h3>t2 <small>2024-12-01 – 2025-01-31</small></h3>
+        <img id="imgT2" alt="t2 context">
+        <div class="hint">current imagery (time slider → Dec 2024–Jan 2025, or default)</div>
+        <div class="lab" data-epoch="t2">
+          <button class="s0" data-v="0">no mng <span class="k">4</span></button>
+          <button class="s1" data-v="1">mangrove <span class="k">5</span></button>
+          <button class="s2" data-v="2">unsure <span class="k">6</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <button data-link="ge">⊕ Google Earth (high-res + historical)</button>
+      <button data-link="gm">Google Maps</button>
+      <button data-link="osm">OpenStreetMap (context only)</button>
+    </div>
+    <div class="gmw" id="gmwBox"></div>
+    <div class="legend">
+      <kbd>←</kbd>/<kbd>→</kbd> prev / next &nbsp;
+      <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> t1: no / mng / unsure &nbsp;
+      <kbd>4</kbd><kbd>5</kbd><kbd>6</kbd> t2: no / mng / unsure &nbsp;
+      <kbd>⌫</kbd> clear point &nbsp;— auto-advances when both epochs are decided
+    </div>
+  </div>
+  <div class="side">
+    <div class="card">
+      <h2>Progress (all regions)</h2>
+      <div class="rc" id="rcProg"></div>
+    </div>
+    <div class="card">
+      <h2>QC: GMW stratum × interpreted class</h2>
+      <table class="ct" id="ctab">
+        <thead><tr><th>GMW \ interp</th><th>stable mng</th><th>loss</th><th>gain</th><th>stable bg</th><th>unsure</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div class="dim" style="font-size:11px;margin-top:6px">
+        Interpreted class from (t1,t2): 11 stable mng · 10 loss · 01 gain · 00 stable bg.
+        "unsure" = at least one epoch marked unsure (excluded from the Olofsson estimator).
+      </div>
+    </div>
+  </div>
+</main>
+<div class="footer">
+  Thumbnails are 480 m × 480 m S2 (10 m) context — <b>not</b> the evidence. Judge presence from the
+  high-resolution basemap; t1 requires Google Earth historical imagery (Dec 2019–Jan 2020).
+  Progress auto-saves in this browser (localStorage). Export regularly.
+</div>
+<script>
+"use strict";
+const LS_KEY = "gt_workbench_v1";
+const REGIONS = ["vietnam", "beilunhe", "zhanjiang"];
+const CLASS_NAMES = ["stable_mangrove", "loss", "gain", "stable_background"];
+let POINTS = [];            // from points.json
+let labels = {};            // id -> {t1, t2, ts}
+let view = [];              // filtered point ids (current filter)
+let navIdx = 0;
+
+function loadState() {
+  try { labels = JSON.parse(localStorage.getItem(LS_KEY) || "{}").labels || {}; }
+  catch (e) { labels = {}; }
+}
+function saveState() { localStorage.setItem(LS_KEY, JSON.stringify({ labels })); }
+function lab(id) { return labels[id] || null; }
+function decided(p) { const l = lab(p.id); return !!l && l.t1 != null && l.t2 != null; }
+function usable(p) { const l = lab(p.id); return !!l && [0,1].includes(l.t1) && [0,1].includes(l.t2); }
+function unsure(p)  { const l = lab(p.id); return !!l && (l.t1 === 2 || l.t2 === 2); }
+
+function interpClassOf(l) {
+  if (l.t1 === 2 || l.t2 === 2) return "unsure";
+  if (l.t1 === 1 && l.t2 === 1) return 0;
+  if (l.t1 === 1 && l.t2 === 0) return 1;
+  if (l.t1 === 0 && l.t2 === 1) return 2;
+  return 3;
+}
+
+function statusOf(p) {
+  const l = lab(p.id);
+  if (!l || (l.t1 == null && l.t2 == null)) return "unlabeled";
+  if (l.t1 != null && l.t2 != null) return "complete";
+  return "partial";
+}
+
+function applyFilter() {
+  const r = document.getElementById("fRegion").value;
+  const s = document.getElementById("fStatus").value;
+  view = POINTS.filter(p => {
+    if (r !== "all" && p.region !== r) return false;
+    if (s === "all") return true;
+    if (s === "incomplete") return statusOf(p) !== "complete";
+    if (s === "has_unsure") return unsure(p);
+    return statusOf(p) === s;
+  }).map(p => p.id);
+}
+
+function current() { return view.length ? POINTS_BY_ID[view[navIdx]] : null; }
+
+function linkFor(p, kind) {
+  const a = p.lat.toFixed(6), o = p.lon.toFixed(6);
+  if (kind === "ge")  return `https://earth.google.com/web/@${a},${o},250a,20d,0h,0t,0r`;
+  if (kind === "gm")  return `https://www.google.com/maps/@${a},${o}/18z`;
+  return `https://www.openstreetmap.org/?mlat=${a}&mlon=${o}#map=17/${a}/${o}`;
+}
+
+function render() {
+  const p = current();
+  const pbar = document.getElementById("pbar");
+  const nDec = POINTS.filter(decided).length, nUs = POINTS.filter(usable).length;
+  pbar.style.width = (100 * nDec / Math.max(POINTS.length, 1)) + "%";
+  document.getElementById("ptotal").innerHTML =
+    `<b>${nDec}/${POINTS.length}</b> decided · <b>${nUs}</b> usable`;
+  for (const r of REGIONS) {
+    const rr = POINTS.filter(x => x.region === r);
+    document.getElementById("c_" + r).innerHTML =
+      `<b>${rr.filter(decided).length}/${rr.length}</b> ${r}`;
+  }
+  document.getElementById("rcProg").innerHTML = REGIONS.map(r => {
+    const rr = POINTS.filter(x => x.region === r);
+    return `<div>${r}<br><b>${rr.filter(usable).length}</b> usable · ${rr.filter(unsure).length} unsure</div>`;
+  }).join("") + `<div colspan=2 class="dim" style="grid-column:1/3">total usable: <b>${nUs}</b> (both epochs 0/1)</div>`;
+
+  // cross-tab (global)
+  const tb = document.querySelector("#ctab tbody");
+  tb.innerHTML = "";
+  for (let g = 0; g < 4; g++) {
+    const row = POINTS.filter(x => x.gmw_class === g);
+    const cell = [0,0,0,0,0];
+    for (const x of row) { if (lab(x.id)) cell[interpClassOf(lab(x.id))]++; }
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td class="r">${CLASS_NAMES[g]} <span class="dim">(${row.length})</span></td>` +
+      cell.map((v, i) => `<td class="${v ? "hot" : ""}">${v || ""}</td>`).join("");
+    tb.appendChild(tr);
+  }
+
+  if (!p) {
+    document.getElementById("pId").textContent = "—";
+    document.getElementById("pMeta").textContent =
+      view.length ? "" : "nothing left in this filter — done, or switch status to 'all' to review";
+    document.getElementById("navpos").textContent = "";
+    ["imgT1","imgT2"].forEach(id => document.getElementById(id).removeAttribute("src"));
+    setButtons(p);
+    document.getElementById("gmwBox").classList.remove("show");
+    return;
+  }
+  document.getElementById("pId").textContent = p.id;
+  document.getElementById("pMeta").textContent =
+    `${p.region} · ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)} (UTM ${Math.round(p.x)}, ${Math.round(p.y)}) · ` +
+    `GMW stratum hidden until both epochs are labeled`;
+  document.getElementById("navpos").textContent = `${navIdx + 1} / ${view.length}`;
+  const t1 = `thumbs/${p.id}_t1.jpg`, t2 = `thumbs/${p.id}_t2.jpg`;
+  const i1 = document.getElementById("imgT1"), i2 = document.getElementById("imgT2");
+  i1.onerror = () => i1.style.opacity = .25; i2.onerror = () => i2.style.opacity = .25;
+  i1.src = t1; i2.src = t2;
+  setButtons(p);
+  const g = document.getElementById("gmwBox");
+  if (decided(p)) {
+    const l = lab(p.id), ic = interpClassOf(l);
+    g.innerHTML = `GMW reference (shown after labeling): stratum <b>${CLASS_NAMES[p.gmw_class]}</b> ` +
+      `(t1_mng=${p.t1_mng}, t2_mng=${p.t2_mng}) · interpreted: <b>${ic === "unsure" ? "unsure" : CLASS_NAMES[ic]}</b>`;
+    g.classList.add("show");
+  } else g.classList.remove("show");
+}
+
+function setButtons(p) {
+  for (const ep of ["t1", "t2"]) {
+    const l = p ? lab(p.id) : null;
+    document.querySelectorAll(`.lab[data-epoch="${ep}"] button`).forEach(b => {
+      b.classList.toggle("on", !!l && l[ep] == +b.dataset.v);
+    });
+  }
+}
+
+function setLabel(id, epoch, v) {
+  const l = lab(id) || {};
+  l[epoch] = v; l.ts = new Date().toISOString();
+  labels[id] = l; saveState();
+  const wasComplete = decidedById(id);
+  applyFilter();
+  if (wasComplete || (lab(id).t1 != null && lab(id).t2 != null)) {
+    // point left the "to label" view: advance to the next one
+    const pos = view.indexOf(id);
+    if (pos === -1) navIdx = Math.min(navIdx, Math.max(view.length - 1, 0));
+    else navIdx = pos;
+  }
+  render();
+}
+function decidedById(id) { const l = labels[id]; return !!l && l.t1 != null && l.t2 != null; }
+
+function clearPoint() {
+  const p = current(); if (!p) return;
+  delete labels[p.id]; saveState(); applyFilter();
+  const pos = view.indexOf(p.id); if (pos >= 0) navIdx = pos;
+  render();
+}
+
+function step(d) {
+  if (!view.length) return;
+  navIdx = (navIdx + d + view.length) % view.length;
+  render();
+}
+
+function jump() {
+  const v = document.getElementById("jump").value.trim().toLowerCase();
+  if (!v) return;
+  const idx = POINTS.findIndex(p => p.id.toLowerCase().startsWith(v));
+  if (idx === -1) { alert("no point id starting with: " + v); return; }
+  // make sure the point is visible in the current filter
+  if (statusOf(POINTS[idx]) === "complete" && document.getElementById("fStatus").value !== "all") {
+    document.getElementById("fStatus").value = "all"; applyFilter();
+  }
+  const pos = view.indexOf(POINTS[idx].id);
+  if (pos >= 0) { navIdx = pos; render(); }
+  document.getElementById("jump").value = "";
+  document.getElementById("jump").blur();
+}
+
+function exportJSON() {
+  const n = Object.keys(labels).length;
+  if (!n) { alert("nothing labeled yet"); return; }
+  const out = { tool: "gt_workbench", version: 1, exported: new Date().toISOString(),
+                n_labeled: n, labels };
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
+  a.download = "interpretation.json"; a.click(); URL.revokeObjectURL(a.href);
+}
+function importJSON(file) {
+  const rd = new FileReader();
+  rd.onload = () => {
+    try {
+      const d = JSON.parse(rd.result);
+      const inc = d.labels || d;
+      let n = 0;
+      for (const id of Object.keys(inc)) {
+        if (POINTS_BY_ID[id] && inc[id] && inc[id].t1 != null && inc[id].t2 != null) {
+          labels[id] = inc[id]; n++;
+        }
+      }
+      saveState(); applyFilter(); render();
+      alert(`imported ${n} complete point(s)`);
+    } catch (e) { alert("import failed: " + e); }
+  };
+  rd.readAsText(file);
+}
+
+let POINTS_BY_ID = {};
+
+async function init() {
+  loadState();
+  const r = await fetch("points.json");
+  POINTS = await r.json();
+  POINTS_BY_ID = {}; for (const p of POINTS) POINTS_BY_ID[p.id] = p;
+  applyFilter();
+  render();
+
+  document.getElementById("fRegion").onchange = () => { applyFilter(); navIdx = 0; render(); };
+  document.getElementById("fStatus").onchange = () => { applyFilter(); navIdx = 0; render(); };
+  document.getElementById("jump").addEventListener("keydown", e => {
+    if (e.key === "Enter") jump(); e.stopPropagation();
+  });
+  document.getElementById("bExport").onclick = exportJSON;
+  document.getElementById("bImport").onclick = () => document.getElementById("fImport").click();
+  document.getElementById("fImport").onchange = e => { if (e.target.files[0]) importJSON(e.target.files[0]); };
+  document.getElementById("bReset").onclick = () => {
+    if (!confirm("Reset ALL labels in this browser? (export first!)")) return;
+    if (!confirm("Really reset? This cannot be undone.")) return;
+    labels = {}; saveState(); applyFilter(); navIdx = 0; render();
+  };
+  document.querySelectorAll(".lab button").forEach(b => b.onclick = () => {
+    const p = current(); if (p) setLabel(p.id, b.closest(".lab").dataset.epoch, +b.dataset.v);
+  });
+  document.querySelectorAll(".links button").forEach(b => b.onclick = () => {
+    const p = current(); if (p) window.open(linkFor(p, b.dataset.link), "_blank");
+  });
+  document.addEventListener("keydown", e => {
+    const t = e.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "SELECT" || t.tagName === "TEXTAREA")) return;
+    if (e.key === "ArrowRight") step(1);
+    else if (e.key === "ArrowLeft") step(-1);
+    else if (e.key === "Backspace") { e.preventDefault(); clearPoint(); }
+    else {
+      const p = current(); if (!p) return;
+      if (e.key === "1") setLabel(p.id, "t1", 0);
+      else if (e.key === "2") setLabel(p.id, "t1", 1);
+      else if (e.key === "3") setLabel(p.id, "t1", 2);
+      else if (e.key === "4") setLabel(p.id, "t2", 0);
+      else if (e.key === "5") setLabel(p.id, "t2", 1);
+      else if (e.key === "6") setLabel(p.id, "t2", 2);
+    }
+  });
+}
+init();
+</script>
+</body>
+</html>

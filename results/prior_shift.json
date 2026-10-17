@@ -1,0 +1,368 @@
+{
+  "prevalence": {
+    "vietnam": {
+      "train": 0.0385,
+      "val": 0.0165,
+      "test": 0.0126
+    },
+    "beilunhe": {
+      "test": 0.0081
+    },
+    "zhanjiang": {
+      "test": 0.0265
+    }
+  },
+  "per_model": {
+    "unet": {
+      "s2026": {
+        "tau_star_val": 0.3806,
+        "f1ch_val_at_tau": 0.3538,
+        "f1ch_val_at_0.5": 0.3449,
+        "beilunhe": {
+          "F1ch_0.5": 0.3796,
+          "F1ch_tau": 0.4028,
+          "delta_F1": 0.0232,
+          "omission_0.5": 0.7062,
+          "omission_tau": 0.6554,
+          "commission_0.5": 0.4641,
+          "commission_tau": 0.5154
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.258,
+          "F1ch_tau": 0.3275,
+          "delta_F1": 0.0695,
+          "omission_0.5": 0.8432,
+          "omission_tau": 0.7581,
+          "commission_0.5": 0.2737,
+          "commission_tau": 0.4931
+        }
+      },
+      "s2027": {
+        "tau_star_val": 0.3622,
+        "f1ch_val_at_tau": 0.2888,
+        "f1ch_val_at_0.5": 0.2379,
+        "beilunhe": {
+          "F1ch_0.5": 0.4311,
+          "F1ch_tau": 0.4443,
+          "delta_F1": 0.0132,
+          "omission_0.5": 0.6579,
+          "omission_tau": 0.5905,
+          "commission_0.5": 0.4175,
+          "commission_tau": 0.5145
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.1055,
+          "F1ch_tau": 0.1661,
+          "delta_F1": 0.0606,
+          "omission_0.5": 0.9407,
+          "omission_tau": 0.8861,
+          "commission_0.5": 0.5247,
+          "commission_tau": 0.6934
+        }
+      },
+      "s2028": {
+        "tau_star_val": 0.2337,
+        "f1ch_val_at_tau": 0.3291,
+        "f1ch_val_at_0.5": 0.2427,
+        "beilunhe": {
+          "F1ch_0.5": 0.4183,
+          "F1ch_tau": 0.433,
+          "delta_F1": 0.0147,
+          "omission_0.5": 0.6915,
+          "omission_tau": 0.5877,
+          "commission_0.5": 0.3506,
+          "commission_tau": 0.5441
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.2882,
+          "F1ch_tau": 0.3715,
+          "delta_F1": 0.0832,
+          "omission_0.5": 0.8239,
+          "omission_tau": 0.6613,
+          "commission_0.5": 0.2067,
+          "commission_tau": 0.5888
+        }
+      },
+      "s2029": {
+        "tau_star_val": 0.252,
+        "f1ch_val_at_tau": 0.3495,
+        "f1ch_val_at_0.5": 0.2737,
+        "beilunhe": {
+          "F1ch_0.5": 0.4228,
+          "F1ch_tau": 0.4808,
+          "delta_F1": 0.058,
+          "omission_0.5": 0.6911,
+          "omission_tau": 0.539,
+          "commission_0.5": 0.3305,
+          "commission_tau": 0.4977
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.0878,
+          "F1ch_tau": 0.2387,
+          "delta_F1": 0.151,
+          "omission_0.5": 0.9497,
+          "omission_tau": 0.7711,
+          "commission_0.5": 0.6537,
+          "commission_tau": 0.7506
+        }
+      },
+      "s2030": {
+        "tau_star_val": 0.399,
+        "f1ch_val_at_tau": 0.2978,
+        "f1ch_val_at_0.5": 0.2499,
+        "beilunhe": {
+          "F1ch_0.5": 0.4442,
+          "F1ch_tau": 0.4332,
+          "delta_F1": -0.0111,
+          "omission_0.5": 0.6592,
+          "omission_tau": 0.5726,
+          "commission_0.5": 0.3621,
+          "commission_tau": 0.5609
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.3665,
+          "F1ch_tau": 0.3931,
+          "delta_F1": 0.0266,
+          "omission_0.5": 0.7279,
+          "omission_tau": 0.5674,
+          "commission_0.5": 0.4388,
+          "commission_tau": 0.6397
+        }
+      }
+    },
+    "unet_cbam_msa": {
+      "s2026": {
+        "tau_star_val": 0.3071,
+        "f1ch_val_at_tau": 0.3272,
+        "f1ch_val_at_0.5": 0.2875,
+        "beilunhe": {
+          "F1ch_0.5": 0.3875,
+          "F1ch_tau": 0.404,
+          "delta_F1": 0.0165,
+          "omission_0.5": 0.6977,
+          "omission_tau": 0.6221,
+          "commission_0.5": 0.4604,
+          "commission_tau": 0.566
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.1394,
+          "F1ch_tau": 0.2238,
+          "delta_F1": 0.0844,
+          "omission_0.5": 0.9147,
+          "omission_tau": 0.8052,
+          "commission_0.5": 0.6192,
+          "commission_tau": 0.737
+        }
+      },
+      "s2027": {
+        "tau_star_val": 0.3622,
+        "f1ch_val_at_tau": 0.3084,
+        "f1ch_val_at_0.5": 0.2804,
+        "beilunhe": {
+          "F1ch_0.5": 0.4491,
+          "F1ch_tau": 0.4623,
+          "delta_F1": 0.0132,
+          "omission_0.5": 0.6569,
+          "omission_tau": 0.5922,
+          "commission_0.5": 0.3504,
+          "commission_tau": 0.4664
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.0971,
+          "F1ch_tau": 0.1619,
+          "delta_F1": 0.0648,
+          "omission_0.5": 0.9456,
+          "omission_tau": 0.8852,
+          "commission_0.5": 0.552,
+          "commission_tau": 0.7255
+        }
+      },
+      "s2028": {
+        "tau_star_val": 0.2888,
+        "f1ch_val_at_tau": 0.3108,
+        "f1ch_val_at_0.5": 0.2385,
+        "beilunhe": {
+          "F1ch_0.5": 0.4107,
+          "F1ch_tau": 0.43,
+          "delta_F1": 0.0192,
+          "omission_0.5": 0.6835,
+          "omission_tau": 0.5649,
+          "commission_0.5": 0.4151,
+          "commission_tau": 0.575
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.0164,
+          "F1ch_tau": 0.0882,
+          "delta_F1": 0.0718,
+          "omission_0.5": 0.9915,
+          "omission_tau": 0.9391,
+          "commission_0.5": 0.7758,
+          "commission_tau": 0.8402
+        }
+      },
+      "s2029": {
+        "tau_star_val": 0.4724,
+        "f1ch_val_at_tau": 0.2469,
+        "f1ch_val_at_0.5": 0.2244,
+        "beilunhe": {
+          "F1ch_0.5": 0.082,
+          "F1ch_tau": 0.1874,
+          "delta_F1": 0.1053,
+          "omission_0.5": 0.9541,
+          "omission_tau": 0.8578,
+          "commission_0.5": 0.6129,
+          "commission_tau": 0.7253
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.0311,
+          "F1ch_tau": 0.128,
+          "delta_F1": 0.0968,
+          "omission_0.5": 0.9839,
+          "omission_tau": 0.9103,
+          "commission_0.5": 0.5529,
+          "commission_tau": 0.777
+        }
+      },
+      "s2030": {
+        "tau_star_val": 0.2704,
+        "f1ch_val_at_tau": 0.2979,
+        "f1ch_val_at_0.5": 0.2669,
+        "beilunhe": {
+          "F1ch_0.5": 0.3869,
+          "F1ch_tau": 0.4336,
+          "delta_F1": 0.0467,
+          "omission_0.5": 0.7364,
+          "omission_tau": 0.6179,
+          "commission_0.5": 0.2725,
+          "commission_tau": 0.4989
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.165,
+          "F1ch_tau": 0.2611,
+          "delta_F1": 0.0961,
+          "omission_0.5": 0.9057,
+          "omission_tau": 0.8013,
+          "commission_0.5": 0.3404,
+          "commission_tau": 0.6196
+        }
+      }
+    },
+    "fc_siam": {
+      "s2026": {
+        "tau_star_val": 0.4724,
+        "f1ch_val_at_tau": 0.2649,
+        "f1ch_val_at_0.5": 0.2654,
+        "beilunhe": {
+          "F1ch_0.5": 0.4833,
+          "F1ch_tau": 0.4647,
+          "delta_F1": -0.0186,
+          "omission_0.5": 0.4947,
+          "omission_tau": 0.4633,
+          "commission_0.5": 0.5368,
+          "commission_tau": 0.5903
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.4446,
+          "F1ch_tau": 0.4336,
+          "delta_F1": -0.0109,
+          "omission_0.5": 0.3937,
+          "omission_tau": 0.3603,
+          "commission_0.5": 0.6491,
+          "commission_tau": 0.672
+        }
+      },
+      "s2027": {
+        "tau_star_val": 0.4724,
+        "f1ch_val_at_tau": 0.1996,
+        "f1ch_val_at_0.5": 0.1916,
+        "beilunhe": {
+          "F1ch_0.5": 0.4152,
+          "F1ch_tau": 0.4088,
+          "delta_F1": -0.0065,
+          "omission_0.5": 0.6595,
+          "omission_tau": 0.6009,
+          "commission_0.5": 0.468,
+          "commission_tau": 0.581
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.3511,
+          "F1ch_tau": 0.3675,
+          "delta_F1": 0.0164,
+          "omission_0.5": 0.741,
+          "omission_tau": 0.6718,
+          "commission_0.5": 0.4549,
+          "commission_tau": 0.5824
+        }
+      },
+      "s2028": {
+        "tau_star_val": 0.2337,
+        "f1ch_val_at_tau": 0.275,
+        "f1ch_val_at_0.5": 0.2135,
+        "beilunhe": {
+          "F1ch_0.5": 0.377,
+          "F1ch_tau": 0.3676,
+          "delta_F1": -0.0095,
+          "omission_0.5": 0.7035,
+          "omission_tau": 0.576,
+          "commission_0.5": 0.4822,
+          "commission_tau": 0.6756
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.4426,
+          "F1ch_tau": 0.4861,
+          "delta_F1": 0.0435,
+          "omission_0.5": 0.6972,
+          "omission_tau": 0.512,
+          "commission_0.5": 0.1777,
+          "commission_tau": 0.5158
+        }
+      },
+      "s2029": {
+        "tau_star_val": 0.3806,
+        "f1ch_val_at_tau": 0.2554,
+        "f1ch_val_at_0.5": 0.2225,
+        "beilunhe": {
+          "F1ch_0.5": 0.4997,
+          "F1ch_tau": 0.4693,
+          "delta_F1": -0.0304,
+          "omission_0.5": 0.5768,
+          "omission_tau": 0.4683,
+          "commission_0.5": 0.3899,
+          "commission_tau": 0.58
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.4829,
+          "F1ch_tau": 0.4475,
+          "delta_F1": -0.0354,
+          "omission_0.5": 0.5314,
+          "omission_tau": 0.3982,
+          "commission_0.5": 0.502,
+          "commission_tau": 0.6438
+        }
+      },
+      "s2030": {
+        "tau_star_val": 0.399,
+        "f1ch_val_at_tau": 0.1974,
+        "f1ch_val_at_0.5": 0.1688,
+        "beilunhe": {
+          "F1ch_0.5": 0.1551,
+          "F1ch_tau": 0.0931,
+          "delta_F1": -0.0621,
+          "omission_0.5": 0.4988,
+          "omission_tau": 0.3042,
+          "commission_0.5": 0.9082,
+          "commission_tau": 0.9501
+        },
+        "zhanjiang": {
+          "F1ch_0.5": 0.3626,
+          "F1ch_tau": 0.3163,
+          "delta_F1": -0.0463,
+          "omission_0.5": 0.4409,
+          "omission_tau": 0.2539,
+          "commission_0.5": 0.7317,
+          "commission_tau": 0.7993
+        }
+      }
+    }
+  }
+}

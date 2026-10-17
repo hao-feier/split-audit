@@ -1,0 +1,26 @@
+{
+  "model": "temporal_unet",
+  "draw": 0,
+  "arm": "separated",
+  "seed": 2028,
+  "region": "vietnam_p128",
+  "n_train": 40,
+  "n_val": 10,
+  "n_test": 10,
+  "epochs_run": 25,
+  "best_val_miou": 0.4296,
+  "test": {
+    "F1_change": 0.4577,
+    "IoU_change": 0.2968,
+    "precision_change": 0.4249,
+    "recall_change": 0.496,
+    "kappa_change": 0.4261,
+    "Omission": 0.504,
+    "Commission": 0.5751
+  },
+  "train_F1_change": 0.3567,
+  "test_4class": {
+    "OA": 0.902,
+    "mIoU": 0.4347
+  }
+}

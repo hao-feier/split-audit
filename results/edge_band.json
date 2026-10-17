@@ -1,0 +1,86 @@
+{
+ "U-Net+CBAM+MSA (proposed) | vietnam": {
+  "pred_change": {
+   "n_mean": 5821,
+   "within_1px": 0.47885038359660537,
+   "within_2px": 0.6642632520879802,
+   "within_3px": 0.7688901373026048
+  },
+  "false_change": {
+   "n_mean": 4602,
+   "within_1px": 0.4441839253335877,
+   "within_2px": 0.6402506554319968,
+   "within_3px": 0.7542780877684158
+  }
+ },
+ "U-Net+CBAM+MSA (proposed) | beilunhe": {
+  "pred_change": {
+   "n_mean": 3002,
+   "within_1px": 0.44132401556979106,
+   "within_2px": 0.612473655500528,
+   "within_3px": 0.7019002084825244
+  },
+  "false_change": {
+   "n_mean": 1855,
+   "within_1px": 0.43834687127253097,
+   "within_2px": 0.6285515967246963,
+   "within_3px": 0.7145753633060524
+  }
+ },
+ "U-Net+CBAM+MSA (proposed) | zhanjiang": {
+  "pred_change": {
+   "n_mean": 8999,
+   "within_1px": 0.6464316975233516,
+   "within_2px": 0.8332348139181557,
+   "within_3px": 0.9121829062438622
+  },
+  "false_change": {
+   "n_mean": 7031,
+   "within_1px": 0.636096828945898,
+   "within_2px": 0.8442553133614736,
+   "within_3px": 0.9330679562921618
+  }
+ },
+ "U-Net | vietnam": {
+  "pred_change": {
+   "n_mean": 3818,
+   "within_1px": 0.5249279281751303,
+   "within_2px": 0.7249060620891957,
+   "within_3px": 0.8325488403199467
+  },
+  "false_change": {
+   "n_mean": 2744,
+   "within_1px": 0.48402036394258735,
+   "within_2px": 0.6981107039175679,
+   "within_3px": 0.8192881159319753
+  }
+ },
+ "U-Net | beilunhe": {
+  "pred_change": {
+   "n_mean": 3516,
+   "within_1px": 0.42408089257252124,
+   "within_2px": 0.5839326748927552,
+   "within_3px": 0.6847959698327176
+  },
+  "false_change": {
+   "n_mean": 2368,
+   "within_1px": 0.4112779685484346,
+   "within_2px": 0.5831770521907257,
+   "within_3px": 0.6792407399117915
+  }
+ },
+ "U-Net | zhanjiang": {
+  "pred_change": {
+   "n_mean": 14626,
+   "within_1px": 0.5928861497979642,
+   "within_2px": 0.7782009216413682,
+   "within_3px": 0.8662089241268375
+  },
+  "false_change": {
+   "n_mean": 10891,
+   "within_1px": 0.5804651312643633,
+   "within_2px": 0.79171254849635,
+   "within_3px": 0.8921047273199768
+  }
+ }
+}

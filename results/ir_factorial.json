@@ -1,0 +1,91 @@
+{
+ "config": {
+  "k": [
+   1,
+   2,
+   3
+  ],
+  "seeds": [
+   2026,
+   2027,
+   2028,
+   2029,
+   2030
+  ],
+  "models": [
+   "unet",
+   "unet_cbam",
+   "unet_cbam_msa",
+   "deeplabv3plus",
+   "temporal_unet"
+  ],
+  "note": "excl_collapse blocks exclude all-background-collapse runs (test F1ch < 0.05); II unchanged (main sweep)"
+ },
+ "per_model": {
+  "unet": {
+   "n_runs": 15,
+   "II": 0.303,
+   "IR": 0.3206,
+   "IR_std": 0.0244,
+   "RI": 0.3435,
+   "RR": 0.5877,
+   "isolated_test_mean": 0.2748,
+   "sanity_gap_vs_II": -0.0282,
+   "dTrain_pp": 4.05,
+   "dTest_pp": 1.76,
+   "dInt_pp": 22.66
+  },
+  "unet_cbam": {
+   "n_runs": 15,
+   "II": 0.235,
+   "IR": 0.3317,
+   "IR_std": 0.024,
+   "RI": 0.3512,
+   "RR": 0.5965,
+   "isolated_test_mean": 0.2752,
+   "sanity_gap_vs_II": 0.0402,
+   "dTrain_pp": 11.62,
+   "dTest_pp": 9.67,
+   "dInt_pp": 14.86
+  },
+  "unet_cbam_msa": {
+   "n_runs": 15,
+   "II": 0.2684,
+   "IR": 0.3532,
+   "IR_std": 0.06,
+   "RI": 0.3501,
+   "RR": 0.5973,
+   "isolated_test_mean": 0.227,
+   "sanity_gap_vs_II": -0.0414,
+   "dTrain_pp": 8.17,
+   "dTest_pp": 8.48,
+   "dInt_pp": 16.24
+  },
+  "deeplabv3plus": {
+   "n_runs": 15,
+   "II": 0.2701,
+   "IR": 0.385,
+   "IR_std": 0.0301,
+   "RI": 0.3153,
+   "RR": 0.5853,
+   "isolated_test_mean": 0.2792,
+   "sanity_gap_vs_II": 0.0091,
+   "dTrain_pp": 4.52,
+   "dTest_pp": 11.5,
+   "dInt_pp": 15.5
+  },
+  "temporal_unet": {
+   "n_runs": 15,
+   "II": 0.2221,
+   "IR": 0.3833,
+   "IR_std": 0.0274,
+   "RI": 0.338,
+   "RR": 0.5913,
+   "isolated_test_mean": 0.26,
+   "sanity_gap_vs_II": 0.0379,
+   "dTrain_pp": 11.59,
+   "dTest_pp": 16.12,
+   "dInt_pp": 9.21
+  }
+ }
+}

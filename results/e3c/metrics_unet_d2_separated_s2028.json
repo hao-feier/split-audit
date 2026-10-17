@@ -1,0 +1,33 @@
+{
+  "model": "unet",
+  "draw": 2,
+  "arm": "separated",
+  "seed": 2028,
+  "region": "vietnam_p128",
+  "n_train": 40,
+  "n_val": 10,
+  "n_test": 10,
+  "epochs_run": 27,
+  "best_val_miou": 0.4634,
+  "test": {
+    "F1_change": 0.518,
+    "IoU_change": 0.3496,
+    "precision_change": 0.5543,
+    "recall_change": 0.4862,
+    "kappa_change": 0.4865,
+    "Omission": 0.5138,
+    "Commission": 0.4457
+  },
+  "train_F1_change": 0.5227,
+  "test_scores": {
+    "roc_auc": 0.8622,
+    "ap": 0.488,
+    "prevalence": 0.06577,
+    "max_p_change": 0.9924,
+    "mean_p_change": 0.23898
+  },
+  "test_4class": {
+    "OA": 0.9095,
+    "mIoU": 0.5116
+  }
+}

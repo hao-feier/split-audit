@@ -1,0 +1,372 @@
+{
+ "config": {
+  "n_patches": 26,
+  "n_models": 5,
+  "n_obs": 130,
+  "note": "exploratory pooled OLS on per-patch binary change F1 (five-seed means per patch); covariates = true change fraction (mangrove fraction is r=0.71-collinear with it and boundary density is degenerate, frac=1.0 for every patch, so both are descriptive only); not a test-region selection"
+ },
+ "covariates": {
+  "change_vs_distance_r": -0.356,
+  "mangrove_vs_distance_r": 0.136,
+  "change_vs_mangrove_r": 0.713
+ },
+ "ols": {
+  "terms": [
+   "intercept",
+   "distance_km",
+   "true_change_frac"
+  ],
+  "beta": [
+   0.2775,
+   -0.0053,
+   3.3877
+  ],
+  "se": [
+   0.0191,
+   0.0019,
+   0.6504
+  ],
+  "t": [
+   14.5,
+   -2.8,
+   5.21
+  ],
+  "r2": 0.29
+ },
+ "per_model": {
+  "unet": {
+   "r_distance_plain": -0.173,
+   "r_distance_adj": -0.016
+  },
+  "unet_cbam": {
+   "r_distance_plain": -0.356,
+   "r_distance_adj": -0.226
+  },
+  "unet_cbam_msa": {
+   "r_distance_plain": -0.453,
+   "r_distance_adj": -0.338
+  },
+  "deeplabv3plus": {
+   "r_distance_plain": -0.361,
+   "r_distance_adj": -0.214
+  },
+  "temporal_unet": {
+   "r_distance_plain": -0.514,
+   "r_distance_adj": -0.414
+  }
+ },
+ "per_patch": {
+  "11": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0101,
+   "mangrove_frac": 0.0426,
+   "f1ch_by_model": {
+    "unet": 0.307,
+    "unet_cbam": 0.305,
+    "unet_cbam_msa": 0.319,
+    "deeplabv3plus": 0.329,
+    "temporal_unet": 0.314
+   }
+  },
+  "18": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0192,
+   "mangrove_frac": 0.041,
+   "f1ch_by_model": {
+    "unet": 0.449,
+    "unet_cbam": 0.433,
+    "unet_cbam_msa": 0.421,
+    "deeplabv3plus": 0.459,
+    "temporal_unet": 0.403
+   }
+  },
+  "19": {
+   "distance_km": 2.56,
+   "true_change_frac": 0.0116,
+   "mangrove_frac": 0.0725,
+   "f1ch_by_model": {
+    "unet": 0.321,
+    "unet_cbam": 0.333,
+    "unet_cbam_msa": 0.353,
+    "deeplabv3plus": 0.292,
+    "temporal_unet": 0.328
+   }
+  },
+  "20": {
+   "distance_km": 5.12,
+   "true_change_frac": 0.0173,
+   "mangrove_frac": 0.074,
+   "f1ch_by_model": {
+    "unet": 0.341,
+    "unet_cbam": 0.336,
+    "unet_cbam_msa": 0.371,
+    "deeplabv3plus": 0.342,
+    "temporal_unet": 0.382
+   }
+  },
+  "21": {
+   "distance_km": 7.68,
+   "true_change_frac": 0.0176,
+   "mangrove_frac": 0.0678,
+   "f1ch_by_model": {
+    "unet": 0.4,
+    "unet_cbam": 0.397,
+    "unet_cbam_msa": 0.442,
+    "deeplabv3plus": 0.437,
+    "temporal_unet": 0.449
+   }
+  },
+  "22": {
+   "distance_km": 10.24,
+   "true_change_frac": 0.0143,
+   "mangrove_frac": 0.0621,
+   "f1ch_by_model": {
+    "unet": 0.372,
+    "unet_cbam": 0.372,
+    "unet_cbam_msa": 0.409,
+    "deeplabv3plus": 0.398,
+    "temporal_unet": 0.4
+   }
+  },
+  "25": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0541,
+   "mangrove_frac": 0.1802,
+   "f1ch_by_model": {
+    "unet": 0.439,
+    "unet_cbam": 0.438,
+    "unet_cbam_msa": 0.467,
+    "deeplabv3plus": 0.509,
+    "temporal_unet": 0.499
+   }
+  },
+  "26": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0095,
+   "mangrove_frac": 0.0538,
+   "f1ch_by_model": {
+    "unet": 0.16,
+    "unet_cbam": 0.211,
+    "unet_cbam_msa": 0.275,
+    "deeplabv3plus": 0.186,
+    "temporal_unet": 0.32
+   }
+  },
+  "27": {
+   "distance_km": 2.56,
+   "true_change_frac": 0.0127,
+   "mangrove_frac": 0.0807,
+   "f1ch_by_model": {
+    "unet": 0.273,
+    "unet_cbam": 0.311,
+    "unet_cbam_msa": 0.327,
+    "deeplabv3plus": 0.252,
+    "temporal_unet": 0.312
+   }
+  },
+  "28": {
+   "distance_km": 5.12,
+   "true_change_frac": 0.0209,
+   "mangrove_frac": 0.0821,
+   "f1ch_by_model": {
+    "unet": 0.459,
+    "unet_cbam": 0.443,
+    "unet_cbam_msa": 0.465,
+    "deeplabv3plus": 0.431,
+    "temporal_unet": 0.467
+   }
+  },
+  "31": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0659,
+   "mangrove_frac": 0.2337,
+   "f1ch_by_model": {
+    "unet": 0.386,
+    "unet_cbam": 0.396,
+    "unet_cbam_msa": 0.434,
+    "deeplabv3plus": 0.447,
+    "temporal_unet": 0.456
+   }
+  },
+  "32": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0183,
+   "mangrove_frac": 0.0959,
+   "f1ch_by_model": {
+    "unet": 0.221,
+    "unet_cbam": 0.258,
+    "unet_cbam_msa": 0.312,
+    "deeplabv3plus": 0.26,
+    "temporal_unet": 0.323
+   }
+  },
+  "33": {
+   "distance_km": 2.56,
+   "true_change_frac": 0.0088,
+   "mangrove_frac": 0.0439,
+   "f1ch_by_model": {
+    "unet": 0.201,
+    "unet_cbam": 0.239,
+    "unet_cbam_msa": 0.272,
+    "deeplabv3plus": 0.18,
+    "temporal_unet": 0.275
+   }
+  },
+  "34": {
+   "distance_km": 5.12,
+   "true_change_frac": 0.0154,
+   "mangrove_frac": 0.0668,
+   "f1ch_by_model": {
+    "unet": 0.404,
+    "unet_cbam": 0.4,
+    "unet_cbam_msa": 0.425,
+    "deeplabv3plus": 0.412,
+    "temporal_unet": 0.436
+   }
+  },
+  "35": {
+   "distance_km": 7.68,
+   "true_change_frac": 0.0148,
+   "mangrove_frac": 0.0539,
+   "f1ch_by_model": {
+    "unet": 0.487,
+    "unet_cbam": 0.473,
+    "unet_cbam_msa": 0.485,
+    "deeplabv3plus": 0.501,
+    "temporal_unet": 0.506
+   }
+  },
+  "36": {
+   "distance_km": 10.24,
+   "true_change_frac": 0.008,
+   "mangrove_frac": 0.0519,
+   "f1ch_by_model": {
+    "unet": 0.361,
+    "unet_cbam": 0.304,
+    "unet_cbam_msa": 0.256,
+    "deeplabv3plus": 0.324,
+    "temporal_unet": 0.288
+   }
+  },
+  "37": {
+   "distance_km": 12.8,
+   "true_change_frac": 0.006,
+   "mangrove_frac": 0.0597,
+   "f1ch_by_model": {
+    "unet": 0.173,
+    "unet_cbam": 0.131,
+    "unet_cbam_msa": 0.14,
+    "deeplabv3plus": 0.13,
+    "temporal_unet": 0.095
+   }
+  },
+  "39": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0241,
+   "mangrove_frac": 0.0787,
+   "f1ch_by_model": {
+    "unet": 0.312,
+    "unet_cbam": 0.34,
+    "unet_cbam_msa": 0.368,
+    "deeplabv3plus": 0.337,
+    "temporal_unet": 0.364
+   }
+  },
+  "40": {
+   "distance_km": 0.0,
+   "true_change_frac": 0.0121,
+   "mangrove_frac": 0.0784,
+   "f1ch_by_model": {
+    "unet": 0.227,
+    "unet_cbam": 0.246,
+    "unet_cbam_msa": 0.275,
+    "deeplabv3plus": 0.264,
+    "temporal_unet": 0.298
+   }
+  },
+  "41": {
+   "distance_km": 2.56,
+   "true_change_frac": 0.0078,
+   "mangrove_frac": 0.0439,
+   "f1ch_by_model": {
+    "unet": 0.155,
+    "unet_cbam": 0.18,
+    "unet_cbam_msa": 0.205,
+    "deeplabv3plus": 0.19,
+    "temporal_unet": 0.236
+   }
+  },
+  "42": {
+   "distance_km": 7.68,
+   "true_change_frac": 0.0122,
+   "mangrove_frac": 0.0902,
+   "f1ch_by_model": {
+    "unet": 0.325,
+    "unet_cbam": 0.324,
+    "unet_cbam_msa": 0.316,
+    "deeplabv3plus": 0.318,
+    "temporal_unet": 0.331
+   }
+  },
+  "43": {
+   "distance_km": 10.24,
+   "true_change_frac": 0.0197,
+   "mangrove_frac": 0.2031,
+   "f1ch_by_model": {
+    "unet": 0.254,
+    "unet_cbam": 0.236,
+    "unet_cbam_msa": 0.202,
+    "deeplabv3plus": 0.21,
+    "temporal_unet": 0.215
+   }
+  },
+  "44": {
+   "distance_km": 12.8,
+   "true_change_frac": 0.0145,
+   "mangrove_frac": 0.1578,
+   "f1ch_by_model": {
+    "unet": 0.159,
+    "unet_cbam": 0.137,
+    "unet_cbam_msa": 0.151,
+    "deeplabv3plus": 0.093,
+    "temporal_unet": 0.092
+   }
+  },
+  "46": {
+   "distance_km": 7.68,
+   "true_change_frac": 0.0062,
+   "mangrove_frac": 0.0542,
+   "f1ch_by_model": {
+    "unet": 0.198,
+    "unet_cbam": 0.204,
+    "unet_cbam_msa": 0.209,
+    "deeplabv3plus": 0.171,
+    "temporal_unet": 0.204
+   }
+  },
+  "47": {
+   "distance_km": 10.24,
+   "true_change_frac": 0.0158,
+   "mangrove_frac": 0.1658,
+   "f1ch_by_model": {
+    "unet": 0.22,
+    "unet_cbam": 0.23,
+    "unet_cbam_msa": 0.218,
+    "deeplabv3plus": 0.179,
+    "temporal_unet": 0.213
+   }
+  },
+  "48": {
+   "distance_km": 12.8,
+   "true_change_frac": 0.0128,
+   "mangrove_frac": 0.1292,
+   "f1ch_by_model": {
+    "unet": 0.206,
+    "unet_cbam": 0.176,
+    "unet_cbam_msa": 0.193,
+    "deeplabv3plus": 0.16,
+    "temporal_unet": 0.14
+   }
+  }
+ }
+}

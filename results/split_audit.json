@@ -1,0 +1,150 @@
+{
+  "grid": {
+    "stride_km": 2.56,
+    "patch_side_km": 5.12,
+    "achievable_val_test_edge_distances_km": [
+      0.0,
+      2.56,
+      5.12,
+      7.68,
+      10.24
+    ],
+    "note": "requested buffer B snaps to the next achievable val-test edge distance; B=1 and B=2 give the identical split, B=8 leaves no valid val/test pair."
+  },
+  "splits": {
+    "v1": {
+      "n": {
+        "train": 40,
+        "val": 10,
+        "test": 11,
+        "buffer": 15
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 0.0
+    },
+    "v2": {
+      "n": {
+        "train": 40,
+        "val": 10,
+        "test": 10,
+        "buffer": 16
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 2.56
+    },
+    "buf1": {
+      "n": {
+        "train": 40,
+        "val": 10,
+        "test": 10,
+        "buffer": 16
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 2.56
+    },
+    "buf2": {
+      "n": {
+        "train": 40,
+        "val": 10,
+        "test": 10,
+        "buffer": 16
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 2.56
+    },
+    "buf4": {
+      "n": {
+        "train": 40,
+        "val": 6,
+        "test": 10,
+        "buffer": 20
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 5.12
+    },
+    "buf8": {
+      "n": {
+        "train": 27,
+        "val": 0,
+        "test": 12,
+        "buffer": 37
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 8.1,
+      "val_to_test_gap_km": null
+    },
+    "current": {
+      "n": {
+        "train": 40,
+        "val": 10,
+        "test": 10,
+        "buffer": 16
+      },
+      "train_cols_km": [
+        7.68,
+        28.16
+      ],
+      "vt_cols_km": [
+        38.4,
+        46.08
+      ],
+      "train_to_vt_gap_km": 5.12,
+      "val_to_test_gap_km": 2.56
+    }
+  },
+  "identical_sets": [
+    [
+      "v2",
+      "buf1",
+      "buf2",
+      "current"
+    ]
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "K_partitions": 10,
+  "partitions_present": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "n_runs_total": 300,
+  "n_noncollapse": 270,
+  "n_collapse": 30,
+  "collapse_threshold": 0.05,
+  "partitions_positive": 10,
+  "partitions_positive_of_n": "10/10",
+  "per_partition_mean_pp": {
+    "1": 26.86,
+    "2": 34.14,
+    "3": 27.56,
+    "4": 27.12,
+    "5": 27.71,
+    "6": 31.21,
+    "7": 27.96,
+    "8": 33.29,
+    "9": 35.37,
+    "10": 24.25
+  },
+  "per_partition_range_pp": {
+    "1": [
+      18.91,
+      32.55
+    ],
+    "2": [
+      8.64,
+      39.15
+    ],
+    "3": [
+      9.73,
+      32.36
+    ],
+    "4": [
+      22.59,
+      30.05
+    ],
+    "5": [
+      20.88,
+      30.24
+    ],
+    "6": [
+      10.98,
+      34.63
+    ],
+    "7": [
+      -1.44,
+      31.92
+    ],
+    "8": [
+      15.94,
+      35.76
+    ],
+    "9": [
+      24.61,
+      39.33
+    ],
+    "10": [
+      6.67,
+      27.5
+    ]
+  },
+  "per_partition_n": {
+    "1": 28,
+    "2": 28,
+    "3": 25,
+    "4": 26,
+    "5": 27,
+    "6": 27,
+    "7": 28,
+    "8": 28,
+    "9": 26,
+    "10": 27
+  },
+  "overall_mean_pp": 29.55,
+  "partition_level_se_pp": 1.17,
+  "t_crit": 2.2622,
+  "ci95_lo_pp": 26.91,
+  "ci95_hi_pp": 32.19,
+  "pooled_noncollapse_pp": 29.57,
+  "pooled_range_pp": [
+    -1.44,
+    39.33
+  ],
+  "small_pool_train_overlap": {
+    "n_pairs": 45,
+    "train_size": 40,
+    "overlap_min": 23,
+    "overlap_max": 30,
+    "overlap_frac_min": 0.575,
+    "overlap_frac_max": 0.75
+  },
+  "note": "interval = spread over K independent random partitions of this fixed small region; partitions share most training patches (see small_pool_train_overlap), so read as partition-sampling variability, not K spatially disjoint regions."
+}

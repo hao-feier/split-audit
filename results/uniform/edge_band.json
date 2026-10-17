@@ -1,0 +1,86 @@
+{
+ "U-Net+CBAM+MSA (proposed) | vietnam": {
+  "pred_change": {
+   "n_mean": 2667,
+   "within_1px": 0.3541106241219617,
+   "within_2px": 0.5201903429756218,
+   "within_3px": 0.6386182156982876
+  },
+  "false_change": {
+   "n_mean": 1939,
+   "within_1px": 0.30897020990034346,
+   "within_2px": 0.4665951551643629,
+   "within_3px": 0.5942337900490454
+  }
+ },
+ "U-Net+CBAM+MSA (proposed) | beilunhe": {
+  "pred_change": {
+   "n_mean": 1017,
+   "within_1px": 0.17857531108528057,
+   "within_2px": 0.26093190431775287,
+   "within_3px": 0.3436475377903332
+  },
+  "false_change": {
+   "n_mean": 437,
+   "within_1px": 0.15594893419989403,
+   "within_2px": 0.21677551965055697,
+   "within_3px": 0.28005003713193927
+  }
+ },
+ "U-Net+CBAM+MSA (proposed) | zhanjiang": {
+  "pred_change": {
+   "n_mean": 1283,
+   "within_1px": 0.5410071728101504,
+   "within_2px": 0.7124269124408567,
+   "within_3px": 0.8037430572849891
+  },
+  "false_change": {
+   "n_mean": 821,
+   "within_1px": 0.5834524325809346,
+   "within_2px": 0.7727789508304779,
+   "within_3px": 0.866717225566698
+  }
+ },
+ "U-Net | vietnam": {
+  "pred_change": {
+   "n_mean": 1896,
+   "within_1px": 0.3791125226351867,
+   "within_2px": 0.5649950114709225,
+   "within_3px": 0.6992395600851966
+  },
+  "false_change": {
+   "n_mean": 1197,
+   "within_1px": 0.331628119599862,
+   "within_2px": 0.5102157597763644,
+   "within_3px": 0.6592435670650658
+  }
+ },
+ "U-Net | beilunhe": {
+  "pred_change": {
+   "n_mean": 1196,
+   "within_1px": 0.19992964957982992,
+   "within_2px": 0.2876196529720923,
+   "within_3px": 0.3729070169283407
+  },
+  "false_change": {
+   "n_mean": 506,
+   "within_1px": 0.1583852862349772,
+   "within_2px": 0.226069904283747,
+   "within_3px": 0.29482802522030743
+  }
+ },
+ "U-Net | zhanjiang": {
+  "pred_change": {
+   "n_mean": 2232,
+   "within_1px": 0.5658230333490879,
+   "within_2px": 0.7341982044931097,
+   "within_3px": 0.8093398154797983
+  },
+  "false_change": {
+   "n_mean": 1061,
+   "within_1px": 0.6394938922686937,
+   "within_2px": 0.8434012800573379,
+   "within_3px": 0.9185232599806623
+  }
+ }
+}

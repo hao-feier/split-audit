@@ -1,0 +1,189 @@
+{
+  "strata": {
+    "fringe": "\u226430 m",
+    "near": "30\u2013100 m",
+    "interior": ">100 m"
+  },
+  "per_model": {
+    "unet": {
+      "beilunhe": {
+        "fringe_30m": {
+          "n_pixels": 278067,
+          "n_true_change": 27078,
+          "n_pred_change": 5622,
+          "F1ch": 0.233,
+          "omission": 0.8593,
+          "commission": 0.3225,
+          "frac_of_pred_change": 0.2501
+        },
+        "near_30_100m": {
+          "n_pixels": 397568,
+          "n_true_change": 8985,
+          "n_pred_change": 9200,
+          "F1ch": 0.7075,
+          "omission": 0.284,
+          "commission": 0.3008,
+          "frac_of_pred_change": 0.4093
+        },
+        "interior_100m": {
+          "n_pixels": 4042957,
+          "n_true_change": 2125,
+          "n_pred_change": 7657,
+          "F1ch": 0.3102,
+          "omission": 0.2861,
+          "commission": 0.8019,
+          "frac_of_pred_change": 0.3406
+        }
+      },
+      "zhanjiang": {
+        "fringe_30m": {
+          "n_pixels": 598682,
+          "n_true_change": 84178,
+          "n_pred_change": 17370,
+          "F1ch": 0.1303,
+          "omission": 0.9214,
+          "commission": 0.619,
+          "frac_of_pred_change": 0.5605
+        },
+        "near_30_100m": {
+          "n_pixels": 687126,
+          "n_true_change": 16354,
+          "n_pred_change": 10257,
+          "F1ch": 0.7285,
+          "omission": 0.4073,
+          "commission": 0.055,
+          "frac_of_pred_change": 0.331
+        },
+        "interior_100m": {
+          "n_pixels": 2646352,
+          "n_true_change": 3556,
+          "n_pred_change": 3365,
+          "F1ch": 0.8739,
+          "omission": 0.1496,
+          "commission": 0.1013,
+          "frac_of_pred_change": 0.1086
+        }
+      }
+    },
+    "unet_cbam_msa": {
+      "beilunhe": {
+        "fringe_30m": {
+          "n_pixels": 278067,
+          "n_true_change": 27078,
+          "n_pred_change": 5323,
+          "F1ch": 0.242,
+          "omission": 0.8552,
+          "commission": 0.2636,
+          "frac_of_pred_change": 0.2312
+        },
+        "near_30_100m": {
+          "n_pixels": 397568,
+          "n_true_change": 8985,
+          "n_pred_change": 8668,
+          "F1ch": 0.7479,
+          "omission": 0.2653,
+          "commission": 0.2385,
+          "frac_of_pred_change": 0.3765
+        },
+        "interior_100m": {
+          "n_pixels": 4042957,
+          "n_true_change": 2125,
+          "n_pred_change": 9030,
+          "F1ch": 0.256,
+          "omission": 0.328,
+          "commission": 0.8419,
+          "frac_of_pred_change": 0.3923
+        }
+      },
+      "zhanjiang": {
+        "fringe_30m": {
+          "n_pixels": 598682,
+          "n_true_change": 84178,
+          "n_pred_change": 26534,
+          "F1ch": 0.1203,
+          "omission": 0.9209,
+          "commission": 0.749,
+          "frac_of_pred_change": 0.8156
+        },
+        "near_30_100m": {
+          "n_pixels": 687126,
+          "n_true_change": 16354,
+          "n_pred_change": 3882,
+          "F1ch": 0.2993,
+          "omission": 0.8148,
+          "commission": 0.22,
+          "frac_of_pred_change": 0.1193
+        },
+        "interior_100m": {
+          "n_pixels": 2646352,
+          "n_true_change": 3556,
+          "n_pred_change": 2118,
+          "F1ch": 0.5026,
+          "omission": 0.599,
+          "commission": 0.3267,
+          "frac_of_pred_change": 0.0651
+        }
+      }
+    },
+    "fc_siam": {
+      "beilunhe": {
+        "fringe_30m": {
+          "n_pixels": 278067,
+          "n_true_change": 27078,
+          "n_pred_change": 30902,
+          "F1ch": 0.4053,
+          "omission": 0.5661,
+          "commission": 0.6198,
+          "frac_of_pred_change": 0.6765
+        },
+        "near_30_100m": {
+          "n_pixels": 397568,
+          "n_true_change": 8985,
+          "n_pred_change": 9991,
+          "F1ch": 0.7245,
+          "omission": 0.2349,
+          "commission": 0.312,
+          "frac_of_pred_change": 0.2187
+        },
+        "interior_100m": {
+          "n_pixels": 4042957,
+          "n_true_change": 2125,
+          "n_pred_change": 4785,
+          "F1ch": 0.3835,
+          "omission": 0.3765,
+          "commission": 0.7231,
+          "frac_of_pred_change": 0.1048
+        }
+      },
+      "zhanjiang": {
+        "fringe_30m": {
+          "n_pixels": 598682,
+          "n_true_change": 84178,
+          "n_pred_change": 171040,
+          "F1ch": 0.3696,
+          "omission": 0.4397,
+          "commission": 0.7242,
+          "frac_of_pred_change": 0.8734
+        },
+        "near_30_100m": {
+          "n_pixels": 687126,
+          "n_true_change": 16354,
+          "n_pred_change": 20160,
+          "F1ch": 0.8381,
+          "omission": 0.0644,
+          "commission": 0.241,
+          "frac_of_pred_change": 0.1029
+        },
+        "interior_100m": {
+          "n_pixels": 2646352,
+          "n_true_change": 3556,
+          "n_pred_change": 4630,
+          "F1ch": 0.8146,
+          "omission": 0.0624,
+          "commission": 0.2799,
+          "frac_of_pred_change": 0.0236
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+ "stage": 1,
+ "date": "2026-09-19",
+ "s2_scenes_final": 40,
+ "scene_selection": "2 scenes per tile-epoch, chosen by SCL clear-fraction over region window (mangrove-area median cf >= 0.6, region median cf >= 0.5)",
+ "scl_survey": "SCL-only survey of all low-cloud (<50% tile) scenes in both dry-season windows, 10 tiles x 2 epochs (results/scl_survey.json)",
+ "patches": {
+  "vietnam": {
+   "n_patches": 76,
+   "class_counts_px": {
+    "0": 1888749,
+    "1": 368956,
+    "2": 196250,
+    "3": 17468989
+   },
+   "cf_mean_t1_t2": [
+    0.9942188262939453,
+    0.7979827680085835
+   ],
+   "grid": [
+    7807,
+    5120
+   ],
+   "epsg": 32648
+  },
+  "beilunhe": {
+   "n_patches": 18,
+   "class_counts_px": {
+    "0": 420896,
+    "1": 9314,
+    "2": 28874,
+    "3": 4259508
+   },
+   "cf_mean_t1_t2": [
+    0.9919520682758756,
+    0.9960642755031586
+   ],
+   "grid": [
+    6543,
+    6333
+   ],
+   "epsg": 32649
+  },
+  "zhanjiang": {
+   "n_patches": 15,
+   "class_counts_px": {
+    "0": 218072,
+    "1": 9564,
+    "2": 94524,
+    "3": 3610000
+   },
+   "cf_mean_t1_t2": [
+    0.9116048177083333,
+    0.9999791463216146
+   ],
+   "grid": [
+    5506,
+    8321
+   ],
+   "epsg": 32649
+  }
+ }
+}

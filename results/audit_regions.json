@@ -1,0 +1,165 @@
+{
+  "regions": {
+    "vietnam": {
+      "epsg": 32648,
+      "grid_px": [
+        7807,
+        5120
+      ],
+      "grid_km2": 3997.184,
+      "lon_range": [
+        106.5,
+        107.0001
+      ],
+      "lat_range": [
+        20.4951,
+        21.2052
+      ],
+      "region_km2": {
+        "stable_mangrove": 64.061,
+        "loss": 13.3673,
+        "gain": 6.885,
+        "stable_background": 3912.8707
+      },
+      "region_change_frac": 0.0050666419159087995,
+      "union_km2": 851.968,
+      "avg_overlap_multiplicity": 2.3384615384615386,
+      "union_km2_by_class": {
+        "stable_mangrove": 61.0777,
+        "loss": 12.6368,
+        "gain": 6.6095,
+        "stable_background": 771.644
+      },
+      "union_change_frac": 0.02259040245643029,
+      "patchsum_px": {
+        "0": 1888749,
+        "1": 368956,
+        "2": 196250,
+        "3": 17468989
+      },
+      "patchsum_km2_equiv": {
+        "stable_mangrove": 188.8749,
+        "loss": 36.8956,
+        "gain": 19.625,
+        "stable_background": 1746.8989
+      },
+      "patchsum_change_frac": 0.028369602404142682
+    },
+    "beilunhe": {
+      "epsg": 32649,
+      "grid_px": [
+        6543,
+        6333
+      ],
+      "grid_km2": 4143.6819,
+      "lon_range": [
+        108.0883,
+        108.7093
+      ],
+      "lat_range": [
+        21.15,
+        21.75
+      ],
+      "region_km2": {
+        "stable_mangrove": 17.6666,
+        "loss": 0.5857,
+        "gain": 1.3776,
+        "stable_background": 4124.052
+      },
+      "region_change_frac": 0.00047380567509296503,
+      "union_km2": 255.5904,
+      "avg_overlap_multiplicity": 1.8461538461538463,
+      "union_km2_by_class": {
+        "stable_mangrove": 13.8923,
+        "loss": 0.3357,
+        "gain": 1.032,
+        "stable_background": 240.3304
+      },
+      "union_change_frac": 0.005351139948918269,
+      "patchsum_px": {
+        "0": 420896,
+        "1": 9314,
+        "2": 28874,
+        "3": 4259508
+      },
+      "patchsum_km2_equiv": {
+        "stable_mangrove": 42.0896,
+        "loss": 0.9314,
+        "gain": 2.8874,
+        "stable_background": 425.9508
+      },
+      "patchsum_change_frac": 0.008093092176649306
+    },
+    "zhanjiang": {
+      "epsg": 32649,
+      "grid_px": [
+        5506,
+        8321
+      ],
+      "grid_km2": 4581.5426,
+      "lon_range": [
+        110.0468,
+        110.8506
+      ],
+      "lat_range": [
+        21.0,
+        21.5001
+      ],
+      "region_km2": {
+        "stable_mangrove": 13.7013,
+        "loss": 0.8875,
+        "gain": 5.416,
+        "stable_background": 4561.5378
+      },
+      "region_change_frac": 0.00137584664169662,
+      "union_km2": 157.2864,
+      "avg_overlap_multiplicity": 2.5,
+      "union_km2_by_class": {
+        "stable_mangrove": 7.5194,
+        "loss": 0.3451,
+        "gain": 3.8156,
+        "stable_background": 145.6063
+      },
+      "union_change_frac": 0.026453018188476562,
+      "patchsum_px": {
+        "0": 218072,
+        "1": 9564,
+        "2": 94524,
+        "3": 3610000
+      },
+      "patchsum_km2_equiv": {
+        "stable_mangrove": 21.8072,
+        "loss": 0.9564,
+        "gain": 9.4524,
+        "stable_background": 361.0
+      },
+      "patchsum_change_frac": 0.026470947265625
+    }
+  },
+  "distances": {
+    "vietnam_to_beilunhe": {
+      "centroid_km": 183.5,
+      "nearest_edge_km": 113.0,
+      "lon_gap_deg": 1.0882,
+      "lat_gap_deg": 0
+    },
+    "vietnam_to_zhanjiang": {
+      "centroid_km": 386.4,
+      "nearest_edge_km": 316.5,
+      "lon_gap_deg": 3.0467,
+      "lat_gap_deg": 0
+    },
+    "beilunhe_to_zhanjiang": {
+      "centroid_km": 213.5,
+      "nearest_edge_km": 138.7,
+      "lon_gap_deg": 1.3375,
+      "lat_gap_deg": 0
+    }
+  },
+  "vietnam_zones_n": {
+    "train": 40,
+    "val": 10,
+    "test": 11,
+    "buffer": 15
+  }
+}

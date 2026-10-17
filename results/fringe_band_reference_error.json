@@ -1,0 +1,60 @@
+{
+ "region": "vietnam",
+ "fringe_band_m": 30.0,
+ "fringe_band_px": 3,
+ "mangrove_mask": "union of t1 and t2 GMW presence (change != stable_background)",
+ "change_definition": "loss (1) | gain (2)",
+ "honest": {
+  "split": "vietnam_test.json",
+  "change_pixels": 32923,
+  "fringe_change_pixels": 29565,
+  "fringe_change_frac": 0.8980044345898004,
+  "unique_change_pixels": 11622,
+  "unique_fringe_change_pixels": 10309,
+  "unique_fringe_change_frac": 0.8870246085011185
+ },
+ "leaky": {
+  "draws": {
+   "ir1": {
+    "split": "vietnam_test_ir1.json",
+    "change_pixels": 46476,
+    "fringe_change_pixels": 38000,
+    "fringe_change_frac": 0.8176263017471384,
+    "unique_change_pixels": 34951,
+    "unique_fringe_change_pixels": 28010,
+    "unique_fringe_change_frac": 0.801407685044777
+   },
+   "ir2": {
+    "split": "vietnam_test_ir2.json",
+    "change_pixels": 50092,
+    "fringe_change_pixels": 39950,
+    "fringe_change_frac": 0.7975325401261678,
+    "unique_change_pixels": 37093,
+    "unique_fringe_change_pixels": 29107,
+    "unique_fringe_change_frac": 0.7847033132936133
+   },
+   "ir3": {
+    "split": "vietnam_test_ir3.json",
+    "change_pixels": 37119,
+    "fringe_change_pixels": 32139,
+    "fringe_change_frac": 0.8658369029338074,
+    "unique_change_pixels": 28159,
+    "unique_fringe_change_pixels": 24075,
+    "unique_fringe_change_frac": 0.8549664405696225
+   }
+  },
+  "pooled": {
+   "change_pixels": 133687,
+   "fringe_change_pixels": 110089,
+   "fringe_change_frac": 0.823483210783397,
+   "unique_change_pixels": 45555,
+   "unique_fringe_change_pixels": 36918,
+   "unique_fringe_change_frac": 0.8104050049390846
+  }
+ },
+ "delta_pp": {
+  "patch_weighted": -7.452122380640336,
+  "unique": -7.66196035620339
+ },
+ "note": "Negative delta_pp: the leaky arm's change pixels are LESS fringe-concentrated than the honest arm's, so the reference-error channel cannot inflate the leaky arm's TPR; it acts at least as strongly on the honest arm."
+}
