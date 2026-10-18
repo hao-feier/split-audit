@@ -14,45 +14,62 @@
 
 \noindent\textbf{To:} The Editor-in-Chief\\
 \noindent\textbf{Journal:} \emph{Remote Sensing} (MDPI)\\
-\noindent\textbf{Date:} October 16, 2026
+\noindent\textbf{Date:} October 18, 2026
 
 \vspace{0.5cm}
 
 \noindent Dear Editor,
 
-We are pleased to submit our manuscript entitled ``The Split Is Part of the
-Measurement: Spatial-Interleaving Evaluation Bias in Change Detection,
-Quantified in Bi-Temporal Mangrove Mapping from Sentinel-2'' for
-consideration for publication in \emph{Remote Sensing}.
+We are pleased to submit our manuscript entitled ``When F1 and ROC-AUC
+Disagree: A 30-Point Metric Divergence Under Spatial Interleaving in
+Extreme-Imbalance Bi-Temporal Change Detection'' for consideration for
+publication in \emph{Remote Sensing}.
 
 This paper documents a spatial-evaluation failure mode in bi-temporal change
-detection: a spatially interleaved random split produces a 29.6-percentage-point
-higher change $F1$ than a buffer-separated test assignment, positive in all ten
-partitions, while the corresponding ROC-AUC difference is only $+1.9$\,pp. The
-audit quantifies this in a Sentinel-2 mangrove change-detection setting
-(0.8--2.6\% change prevalence), decomposes the gap into a small
-prevalence-arithmetic component ($+2.7$\,pp) and a dominant recall shift
-associated with the joint spatial configuration of training and test samples,
-and states the identification boundary of what the design can and cannot
-attribute.
+detection, measured in a single training region (Vietnam; ${\sim}60$
+eligible patches): a spatially interleaved random split produces a
+29.6-percentage-point higher change $F1$ than a buffer-separated test
+assignment, positive in all ten partitions, while the corresponding ROC-AUC
+difference is only $+1.9$\,pp. The audit quantifies this in a Sentinel-2
+mangrove change-detection setting (0.8--2.6\% change prevalence), decomposes
+the gap into a small prevalence-arithmetic component ($+2.7$\,pp) and a
+dominant recall shift associated with the joint spatial configuration of
+training and test samples, and states the identification boundary of what the
+design can and cannot attribute.
 
-We believe this work is well suited to \emph{Remote Sensing} because it
-addresses a methodological concern that affects a large share of change-detection
-studies: the evaluation protocol itself moves the reported score. The paper
-provides a quantified, reproducible demonstration of the effect size, a
-decomposition that separates prevalence arithmetic from the spatial-configuration
-component, and a ten-item reporting checklist for practitioners.
+Three contributions, corresponding to the abstract, are the quantified
+$F1$--ROC-AUC divergence under extreme imbalance; the $2\times2$
+train/test factorial bounding the prevalence-arithmetic contribution at
+${\sim}9\%$ with the training$\times$test interaction exceeding either main
+effect; and the demonstration that nine of 90 runs score near-zero $F1$ yet
+rank at ROC-AUC $0.77$--$0.97$, so a near-zero $F1$ under extreme imbalance
+does not imply an uninformative model.
 
-The manuscript is original, has not been published previously, and is not under
-consideration elsewhere. All authors have read and approved the submitted
-version. The full code base and results are deposited at
+Three scope limits are disclosed in the manuscript and we ask referees to
+read the claims within them: (i)~a single training region, so the effective
+number of independent spatial units is small (effective $n{=}2$--$5$ in the
+controls) and the magnitudes are region-specific; (ii)~a single GMW reference
+label, so all scores are agreement with a noisy reference rather than field
+accuracy, with source-to-source difference larger than the signal;
+(iii)~the checkpoint-selection channel of the interleaved arm (early stopping
+on a validation set proximate to its test set) is a component of the
+interleaved protocol by construction, and the fixed-epoch control that would
+bound it is deferred to a follow-up, as stated in the Limitations section.
+
+One further item is part of the submitted package: the square-root-weighting
+replication (150 result files) is listed in the experiment inventory of the
+accompanying repository.
+
+The manuscript is original, has not been published previously, and is not
+under consideration elsewhere. All authors have read and approved the
+submitted version. The full code base and results are deposited at
 \url{https://github.com/hao-feier/split-audit}.
 
 Thank you for your consideration.
 
 \vspace{1cm}
 
-\noindent Sincerely,\\
+\noindent Sincerely\\
 Junzhe Yuan\\
 School of Environment and Ecology, Hunan Agricultural University, Changsha, China\\
 \texttt{haofeier0613@gmail.com}\\[4pt]

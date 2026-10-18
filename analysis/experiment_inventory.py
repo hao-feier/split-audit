@@ -1,14 +1,13 @@
 """Full inventory of every experiment run for this study.
 
-Requested in review: a complete list of all executed experiments, not only the
-ones that made it into the paper. This walks the results tree, counts runs per
-experiment family, records which ones were superseded or invalidated, and emits
-both a JSON and a LaTeX table.
+ A complete list of all executed experiments, not only the ones that made it
+ into the paper. This walks the results tree, counts runs per experiment
+ family, records which ones were superseded or invalidated, and emits both a
+ JSON and a LaTeX table.
 
-Superseded / invalid entries are listed explicitly rather than deleted, because
-the branch history (E3 generation 1 -> E3-B; composition-penalty v0 -> v1) is
-part of the evidence and hiding it would make the pre-specified claims
-unfalsifiable.
+ Superseded / invalid entries are listed explicitly: the branch history
+ (E3 generation 1 -> E3-B; composition-penalty v0 -> v1) is part of the
+ evidence for the pre-specified claims.
 
 Writes results/experiment_inventory.json and prints the LaTeX block.
 """
@@ -100,7 +99,7 @@ def main():
     for r in rows:
         print(f"{r['family']} & {r['n_result_files']} & {r['status']} \\\\")
     print("\\midrule")
-    print(f"\\multicolumn{{2}}{{l}}{{\\emph{{superseded or invalid, retained as evidence}}}} \\\\")
+    print(f"\\multicolumn{{2}}{{l}}{{\\emph{{superseded or invalid}}}} \\\\")
     for a, b, c, d in SUPERSEDED:
         print(f"{a} & --- & superseded/invalid: {c[:58]}... \\\\")
     print("\\bottomrule")

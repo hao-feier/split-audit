@@ -44,11 +44,12 @@ A $2\times2$ train/test factorial bounds the prevalence-arithmetic
 contribution at ${\sim}9\%$ ($+2.7$\,pp, isolated by reweighting), with the
 training$\times$test interaction term ($+17.8$ to $+26.1$\,pp) exceeding
 either main effect.
-Nine of 90 runs score near-zero $F1$ yet rank at ROC-AUC $0.77$--$0.97$:
+ Nine of 90 runs score near-zero $F1$ yet rank at ROC-AUC $0.77$--$0.97$:
 under extreme imbalance, a near-zero $F1$ does not imply an uninformative
 model. All metrics are agreement with a single noisy reference (GMW); the
 $F1$--ROC-AUC divergence is a property of the metric pair under the split
-protocol, not a decomposition of model error.}
+protocol---including a checkpoint-selection component of the interleaved arm
+that the design does not separate---not a decomposition of model error.}
 
  \keyword{spatial cross-validation; case prevalence; change detection; extreme class imbalance;
 noisy reference labels; buffer separation;
@@ -113,8 +114,8 @@ at the original geometry remain jointly confounded. Models are trained on the Re
 fine-tuning, on two geographically disjoint Chinese sites, with a second
 Sentinel-2-based reference product as an extent-level label-source sensitivity check.
 
-Two of the mechanisms this configuration can carry are worth naming,
-because the distinction is the one the whole paper turns on.
+The distinction between the two mechanisms this configuration can carry is
+what the paper turns on.
 \emph{Level-1 direct overlap}: test patches share at least one pixel with
 a training patch, so near-duplicate observations appear on both sides of
 the split. This is an artefact of the sampling geometry, is absent from
@@ -126,9 +127,9 @@ gap, test patches near the training region share kilometre-scale
 landscape context (mangrove texture, tidal regime, sediment and coastline
 morphology) that a model may legitimately exploit at deployment.
 
-The contributions are three. First, a quantified $F1$--ROC-AUC divergence
-under extreme imbalance: spatially interleaved and buffer-separated evaluation
-produce a $29.6$\,pp difference in change $F1$ (positive in all ten
+ The contributions are three. First, a quantified $F1$--ROC-AUC divergence
+under extreme imbalance, measured in a single training region: spatially
+interleaved and buffer-separated evaluation produce a $29.6$\,pp difference in change $F1$ (positive in all ten
 partitions, $+11.8$ to $+32.8$\,pp across ten architectures) while ROC-AUC
 differs by only $+1.9$\,pp and prevalence-matched AP by $+15.2$\,pp
 (Sections~\ref{sec:rand} and~\ref{sec:metric}). Second, a $2\times2$
@@ -338,8 +339,7 @@ fraction $\ge\,0.60$ and a region clear fraction $\ge\,0.50$, giving 40 scenes
 over 20 tile-epochs; per-scene dates, tidal labels and clear fractions are in
 Table~\ref{tab:scenes}.
 
-Two properties of that selection limit what the composites can support, and
-they are stated here rather than in the limitations. First, each tile-epoch
+Two properties of that selection limit what the composites can support. First, each tile-epoch
 contributes exactly two scenes, so the per-pixel median is a mean of two and
 cannot suppress single-scene contamination. Per-scene mangrove clear fractions
 range from $0.74$ to $1.000$ across the 40 scenes. The four Vietnam $t_2$ tiles
@@ -406,10 +406,11 @@ guarantee realises as 2.56\,km (Section~\ref{sec:rand}). The 76 patches resolve 
 training, 10 validation and 10 test patches, 16 falling in the buffer and never
 used; validation and test are further separated by a row buffer. Early stopping
 uses the validation zone alone, which is separated from the test zone, so model
-selection does not bias the within-region numbers. Note that this is a
+selection does not bias the within-region numbers. This is a
 \emph{sampling-separation} guarantee only: patches overlap 50\% on the
 extraction grid and the landscape is continuous, so separation does not imply
-statistical independence---a distinction this paper measures rather than assumes.
+statistical independence. The interleaved-versus-separated contrast
+(Section~\ref{sec:rand}) prices that residual dependence.
 Table~\ref{tab:data} gives the data volumes.
 
 
@@ -453,28 +454,21 @@ architecture. No architecture ranking is therefore attempted, and the residual
 architecture-level variation is reported as an
 observation with its spatial fragility stated, not as a resolved ordering.
 
-It should be stated explicitly which standard baseline families are \emph{absent},
-because their absence is a scope decision rather than an oversight. The suite
+The suite
 contains no CVA/index-difference fusion variant, no BIT-style
 bidirectional-image-transformer, no SNUNet-style densely connected nested U-Net,
 and no encoder pretrained on remote-sensing imagery (the only pretrained-encoder
-control is supervised on ImageNet, not on remote sensing). The one non-deep
-reference, the post-classification comparison introduced below, classifies each
-date independently rather than differencing bands or indices, so it does not
-cover those families either. They were not added, and the numbers here are not
-read against published state of the art on the common change detection benchmarks.
-This is a scope limitation: the per-architecture numbers in
-Table~\ref{tab:main} are not comparable to published benchmarks that include
-these families. The reason is the object of this paper: those published
-scores are obtained under patch- or image-level splits whose geometry is shown
-here to move within-region change $F1$ by tens of points, so aligning the split
-here with theirs to make the comparison legible would reintroduce the confound this
-paper exists to price. What the suite is for is holding the architecture fixed
-while the split varies, and the ten deep networks spanning six families and
-$2.3$--$19$M parameters (enumerated in Table~\ref{tab:archspec}) are already more
-than that argument needs; a design effect that reproduces across all of them is not
-waiting on an eleventh. A reader whose question is \emph{which architecture is
-best on this data} should treat this paper as not answering it.
+control is supervised on ImageNet). The post-classification comparison
+introduced below classifies each date independently rather than differencing
+bands or indices, and covers none of these families either. Published
+change-detection benchmarks include these families, and their scores are
+obtained under patch- or image-level splits---the same geometry that
+Section~\ref{sec:rand} shows moves within-region change $F1$ by tens of
+points---so the per-architecture numbers in Table~\ref{tab:main} are not
+comparable to them; aligning the split here with theirs would reintroduce the
+confound this paper exists to price. The suite's role is to hold the architecture fixed while the split varies, and
+the ten deep networks spanning six families and $2.3$--$19$M parameters
+(Table~\ref{tab:archspec}) serve that role.
 
 Three deviations bound what the suite can be used for. The dual-encoder models
 consume $X_1$ and $X_2$ separately while the static models receive the
@@ -497,10 +491,11 @@ epoch independently into presence/absence, with change defined as
 disagreement between the two class maps---is now reported under both
 protocols. At Zhanjiang it reaches change $F1$ $0.40$ (three-seed mean,
 $0.40/0.40/0.40$) under the primary uniform scheme and $0.41$
-($0.44/0.40/0.40$) under the secondary square-root scheme. Against the best
-deep model (FC-Siam) under the \emph{same} scheme, the ordering flips by
-protocol---$0.40$ versus $0.43$ under uniform, $0.41$ versus $0.38$ under
-square-root---but the two are within three points in both cases. This is read
+($0.44/0.40/0.40$) under the secondary square-root scheme. Against FC-Siam,
+the best deep model at Zhanjiang under the primary uniform scheme, the
+PCC--deep ordering flips by protocol at the same site---$0.40$ versus $0.43$
+under uniform, $0.41$ versus $0.38$ under square-root---but the two are
+within three points in both cases. This is read
 as evidence that the choice of formulation (PCC versus deep) is not the
 consequential variable here, not as a claim about the two formulations
 (Appendix~\ref{app:repro}).
@@ -518,7 +513,7 @@ this is treated as storage convenience, not an optimisation result. The recipe i
 (2 for the dual-encoder temporal models, which do not fit two 512\,px stacks in
 12\,GB), up to 100 epochs, and early stopping with patience 15 on validation
 mIoU; most runs converge within 25--40 epochs. Early stopping on a
-background-dominated metric is a choice that would be revised. Augmentation is random
+background-dominated metric is a known weakness of the recipe. Augmentation is random
 $90^\circ$ rotation and horizontal flip, applied identically to both dates and the
 labels. The loss is class-weighted cross entropy plus a soft multi-class Dice
 term at 1:1, the Dice computed over the sum of all four classes (so background
@@ -794,7 +789,7 @@ proximate to the test set. Because the interleaved arm draws its training,
 validation, and test patches from the same pool, this val--test proximity is a
 component of the interleaved protocol by construction rather than an independent
 confound; it is part of what the interleaved protocol measures, and the
-checkpoint-selection channel it opens is bounded below (Section~\ref{sec:limitations}).
+checkpoint-selection channel it opens is addressed in Section~\ref{sec:limitations}.
 The isolated arm's slight variation across the ten
 partitions ($0.268$--$0.281$) reflects the different seed triplets drawn from
 the five-seed primary sweep ($C(5,3){=}10$), not a change in data composition.
@@ -1123,7 +1118,6 @@ $\Delta_{\mathrm{int}}{=}\mathrm{RR}{-}\mathrm{RI}{-}\mathrm{IR}{+}\mathrm{II}$.
 \label{tab:factorial}
 {\small
 %% ===== AUTO-GENERATED by analysis/make_factorial_tables.py tab:factorial
-%% ===== AUTO-GENERATED by analysis/make_factorial_tables.py tab:factorial
 \begin{tabular}{l cccc ccc}
 \toprule
  & \multicolumn{4}{c}{Cells (change $F1$)} & \multicolumn{3}{c}{Components (pp)} \\
@@ -1137,7 +1131,6 @@ Temporal U-Net & 0.241 & 0.293 & 0.590 & 0.335 & $+5.1$ & $+9.3$ & $+20.4$ \\
 \bottomrule
 \end{tabular}
 %% ===== END AUTO-GENERATED (factorial tables) =====
-%% ===== END AUTO-GENERATED (factorial tables) =====
 }
 \par\vspace{4pt}
 {\footnotesize I/R run-to-run std (15 runs; 12 for U-Net+CBAM+MSA):
@@ -1145,10 +1138,13 @@ $0.024$--$0.055$.
 Four U-Net-family collapsed runs are excluded from the factorial cells
 (globally, nine of the 90 runs collapse: 4 U-Net family + 5 ChangeFormer);
 including them lowers U-Net-family R/R by 0.06--0.07.
-Confidence intervals for the three components are deferred to a follow-up:
-the cells above are collapse-excluded summary statistics, and a per-run
-resampling does not reproduce these exact point estimates, so a consistent
-run-set re-derivation is required before CIs are reported.}
+Inference: each component is computed per independent random split (the three
+primary splits, $k{=}1,2,3$); the within-split seeds are model
+re-initializations, not independent data draws, so the split is the
+independent unit. $\Delta_{\mathrm{int}}$ and $\Delta_{\mathrm{test}}$ are
+positive in all three splits for every model; $\Delta_{\mathrm{train}}$ is
+small and its sign is not stable (negative in two of three splits for
+DeepLabv3+).}
 \end{table}
 
 The decomposition is consistent across the five architectures
@@ -1179,7 +1175,10 @@ the training zone is also interleaved---train--test contact is set jointly
 by the two assignments, which is what a positive interaction encodes here.
 The pattern is therefore consistent with the inflation arising from joint
 train--test proximity rather than from the training assignment alone, with a
-training-side contribution that is near zero and not robust in sign.
+training-side contribution that is near zero and not robust in sign. The
+interaction and test-side components are positive in all three splits for
+every model (footnote to Table~\ref{tab:factorial}), while the
+training-side component is small and its sign is not stable.
 
 The factorial bounds the effect but does not attribute it. The four cells differ in
 more than the manipulated assignment: re-randomising the training (or test) set
@@ -1304,8 +1303,8 @@ from $\sim$30$\times$ at $10$\,m to below unity by $1$--$2$\,km (kilometre-scale
 proximity is bounded); and the morphological boundary effect is a one-pixel
 displacement ($0.003$--$0.128$\,$F1$) that is flat beyond that. These make
 footprint overlap and near-neighbour proximity the leading candidates among the
-bundled factors; no claim is made that their individual
-contributions have been identified.
+bundled factors; their individual contributions have not been
+identified.
 
 \subsection{The E3 Overlap-Free Control}
 \label{sec:e3}
@@ -1340,7 +1339,7 @@ prevalence, and the separated arm retains a median edge distance of
 $14$--$17$\,km though its minimum falls to one patch width in four of five
 draws. Matching prevalence and maximising distance are anti-correlated in this
 landscape, and prevalence is the confound that invalidates the comparison, so it
-wins; the residual distance cost is reported rather than optimised away.
+wins; the residual distance cost is reported.
 
  Under this control, no contrast is detectable: $+0.1$\,pp
 (percentile spread across the $45$ paired cells $[-3.1$, $+3.4]$;
@@ -1372,13 +1371,20 @@ $[-1.6$, $+3.5]$), and MCC $+0.8$\,pp (percentile spread $[-2.1$,
 $+3.7]$). The prevalence-free interval is four times tighter than the $F1$ interval,
 so the null is not an artefact of the prevalence-sensitive metric. The two arms
 match on prevalence to within $0.1\%$ ($6.06\%$ against $6.06\%$). A second,
-independently constructed overlap-free control at reduced scale (16
-block-interleaved splits, 3 architectures) gives a negative sign in $12$ of $13$
- feasible splits (within-model $-9.4$\,pp, range $[-12.5,\,-5.8]$; between-arm
-$-13.7$\,pp, range $[-19.2,\,-8.6]$); this negative sign is directionally
-consistent with the absence of a positive inflation, though its magnitude
-exceeds E3-C's null and may reflect the different block geometry at this
-reduced scale. Combined with
+ independently constructed overlap-free control at reduced scale (16
+designed block-interleaved splits, 3 architectures; three of the designed
+splits were geometrically infeasible---the prevalence-matched test set
+coincided with the block test set and no disjoint subset existed---leaving
+the $13$ feasible splits used here; the inventory additionally archives three
+split IDs retained from the repaired generation, the source of its $19$) is
+signed as the block-interleaved (near) arm minus the prevalence-matched far
+arm (prevalence residual $\leq 0.46$\,pp against a $1.4$--$2.0\%$ base rate).
+It gives a negative sign in $12$ of the $13$ feasible splits (within-model
+$-9.4$\,pp, per-split min--max $[-19.2,\,+7.2]$; between-arm $-13.7$\,pp,
+per-split min--max $[-29.5,\,+3.8]$): with this sign convention a negative
+value means the near arm scores lower, i.e.\ the absence of a positive
+proximity inflation. The magnitude exceeds E3-C's null and may reflect the
+different block geometry at this reduced scale. Combined with
 the resubstitution check (no generalisation gap), the null rules out
 memorisation at $128$\,px. The contrast is
 instructive: with overlap (E1, $+15.2$\,pp AP at matched prevalence) the
@@ -1467,14 +1473,16 @@ spatial configuration of training and test samples, whose bundled factors are
 not separately identified (Section~\ref{sec:joint}).
 
 Two further findings bound the evidence. First, the phenomenon is not an
-architecture effect: it is consistent in direction across all ten architectures
+architecture effect: it is consistent in direction across all ten architectures,
  so it is a property of the split protocol rather
-than of any specific model. Second, a strict clean-surface mask sensitivity
-(SCL 4--6 only, one model---U-Net---three seeds) shows the gap is essentially
-unchanged: $+29.5$\,pp under the strict mask versus $+28.6$\,pp with the
-retained cloud family (both for that single model; the ten-architecture
-headline is $+29.6$\,pp), so the effect is not an artefact of the retained
-cloud-shadow pixels.
+ than of any specific model. Second, a strict clean-surface mask sensitivity
+ (SCL 4--6 only, one model, U-Net, three seeds) shows the gap is essentially
+ unchanged: $+29.5$\,pp under the strict mask versus $+28.6$\,pp with the
+ retained cloud family (both for that single model; the ten-architecture
+ headline is $+29.6$\,pp). The $0.9$\,pp difference between the two masks is
+ comparable to the spread of the three per-seed gaps under the strict mask
+ ($29.2$--$30.1$\,pp), so the effect is not an artefact of the retained
+ cloud-shadow pixels.
 
 Two design questions this geometry cannot test stay open at the
 resolution tested. The patch grid snaps to multiples of $2.56$\,km, so the
@@ -1587,13 +1595,23 @@ proximate to the test set and can select for it. This is a property of the
 interleaved protocol, not a separately controlled confound: the gap reported
 for that arm is the total cost of the protocol, including the selection
 component. We have not isolated the selection component from the spatial
-representation component---a fixed-epoch control (stopping both arms at the
+representation component: a fixed-epoch control (stopping both arms at the
 honest arm's median epoch, removing the val-selected stopping rule) would
 bound it, and is deferred to a follow-up. The near-zero training-side component
 ($\Delta_{\mathrm{train}}$) is, if anything, conservative under this channel,
-because the channel inflates the interleaved arm's score; the test-side and
-interaction components are inflated in the same direction and are not
-separable into spatial and selection parts with the current runs.
+because the channel inflates an arm's test score to the extent its
+validation set is spatially proximate to its test set. That effect does not
+carry over to the other two components as a uniform inflation:
+$\Delta_{\mathrm{test}}$ compares two arms whose training sides (and hence
+validation sets) are both spatially separated, and $\Delta_{\mathrm{int}}$
+ is a difference of per-arm selection terms whose sign the channel does not
+determine. None of the three is separable into spatial and selection parts
+with the current runs. One consequence is worth stating in the other
+direction: because both arms that $\Delta_{\mathrm{test}}$ compares draw
+their validation sets from the separated zone, the channel does not act
+differentially on either arm, so the test-side component ($+5.8$ to
+$+11.4$\,pp) is the one piece of the decomposition whose sign is not exposed
+to this channel at all.
 
 \emph{Reference-error $\times$ tested-pixel-distribution interaction.} The
 protocol contrast is measured against GMW labels on both arms. GMW's label
@@ -1703,7 +1721,10 @@ $+5.8$ to $+11.4$\,pp, changing the training assignment alone contributes
 $-0.8$ to $+5.1$\,pp, and the interaction exceeds either main effect
 ($+17.8$ to $+26.1$\,pp of the $+29.2$ to $+32.0$\,pp test-side total). This is
 not a simple calibration shift but a configuration-dependent operating-point
-effect. Prevalence arithmetic alone contributes
+effect, and per the disclosure in Section~\ref{sec:limitations} the
+interleaved arm's score includes, by construction, a checkpoint-selection
+component (early stopping on a validation set proximate to its test set)
+that the design does not separate from the spatial component. Prevalence arithmetic alone contributes
 only $+2.7$\,pp. The finding is a thresholded,
 recall-driven effect on $F1$; global pairwise ranking (ROC-AUC $+1.9$\,pp)
 is largely unchanged, but the high-precision-region ranking itself shifts ($+15.2$\,pp at matched prevalence).
@@ -1846,8 +1867,8 @@ identification limits, not statements of what the result happens to be.}
  & Experiment & Question & Can identify & Cannot identify \\
 \midrule
 E1 & interleaved vs.\ separated split (the headline). & what does the split arrangement alone cost? & the size and robustness of the protocol contrast, a property of the sampling geometry rather than of any model. & which component of the arrangement produces it. \\
-E2 & $2\times2$ train/test spatial factorial. & training side, test side, or interaction? & the sign and rough size of a training-side and a test-side component. & attribute either causally, or separate pixel overlap from residual proximity inside the test-side component (delegated to E3). \\
-E3 & overlap-free block-interleaved control. & is shared pixel footprint necessary for the inflation? & whether pure residual proximity, with no shared pixel, suffices to produce an inflation of this size---attempted, but E3-C at reduced patch geometry (128\,px) is underpowered to answer it (no generalisation gap in resubstitution; effective $n{=}5$; observed contrast $+0.1$\,pp, percentile spread $[-3.1$, $+3.4]$). & extrapolate E3-B's reduced block scale to the full protocol; the 16 splits narrow its interval but do not remove the scale mismatch. \\
+E2 & $2\times2$ train/test spatial factorial. & training side, test side, or interaction? & the sign and rough size of a training-side and a test-side component. & attribute any component causally, separate pixel overlap from residual proximity inside the test-side component (delegated to E3), or isolate the checkpoint-selection channel from the spatial representation (Section~\ref{sec:limitations}). \\
+E3 & overlap-free block-interleaved control. & is shared pixel footprint necessary for the inflation? & whether pure residual proximity, with no shared pixel, suffices to produce an inflation of this size---attempted, but E3-C at reduced patch geometry (128\,px) is underpowered to answer it (no generalisation gap in resubstitution; effective $n{=}5$; observed contrast $+0.1$\,pp, percentile spread $[-3.1$, $+3.4]$). & extrapolate E3-B's reduced block scale to the full protocol; the 13 feasible splits narrow its interval but do not remove the scale mismatch. \\
 E4 & distance response under separation. & does a buffer remove dependence, or only overlap? & a descriptive near--far gradient. & a resolved distance effect; a patch random intercept is not identified because distance is patch-constant, and the grid-cell-clustered inference is not significant. \\
 E5 & effective-separation sensitivity. & do the separated numbers depend on the exact buffer? & robustness to the val--test gap. & probe train--test proximity at all. \\
 E6 & leave-one-cluster-out fragility. & how much of a regional number rests on one place? & the fragility of every regional point estimate. & supply a population-level interval. \\
@@ -1860,34 +1881,32 @@ E7 & label-resolution tolerance sweep. & is the change $F1$ a resolution artefac
 \label{app:repro}
 
 Table~\ref{tab:inventory} lists every experiment family executed for this
-study, including the two that were superseded or found invalid, which are
-retained rather than deleted because the branch history is part of the evidence
-for the pre-specified claims. Paths, the preflight lock and the commit are
-recorded here rather than in the body text.
+study, including the two that were superseded or found invalid; paths and the
+preflight lock are listed in the artefact list that follows.
 
 % ===== AUTO-GENERATED by analysis/experiment_inventory.py -- do not edit =====
 \begin{table}[H]
 \small
-\caption{Full inventory of every experiment family executed for this study. Counts are result files, not training runs: one metrics file summarises one trained model, and checkpoints under \texttt{*/checkpoints/} are the run-level record. Two families that were superseded or found invalid are retained rather than deleted, because the branch history (E3 generation 1 $\rightarrow$ E3-B; composition penalty v0 $\rightarrow$ v1) is part of the evidence for the pre-specified claims. Source: \texttt{results/experiment\_inventory.json} [\texttt{analysis/experiment\_inventory.py}].}
+\caption{Full inventory of every experiment family executed for this study. Counts are result files, not training runs: one metrics file summarises one trained model, and checkpoints under \texttt{*/checkpoints/} are the run-level record. Source: \texttt{results/experiment\_inventory.json} [\texttt{analysis/experiment\_inventory.py}].}
 \label{tab:inventory}
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{p{0.29\textwidth}rp{0.51\textwidth}}
 \toprule
 Experiment family & Result files & Description \\
 \midrule
-primary separated (I/I) & 50 & buffer-separated within-region protocol, 5 run seeds \\\\
-secondary sqrt & 150 & square-root weighting replication of the interleaved sweep \\\\
-E1 interleaved sweep & 300 & 10 architectures x 10 split draws x 3 run seeds \\\\
-E3-B block-interleaved & 260 & overlap-free control, result files across 19 split IDs x 2 arms (16 stratified splits from the design, plus 3 retained from the repaired generation); the design target was 16 splits x 3 architectures x 2 run seeds x 2 arms \\\\
-E3-C full-size overlap-free & 90 & disjoint 128 px pool, 40/10/10, scattered vs separated, prevalence matched \\\\
-E2 I/R cell & 75 & isolated training, random test \\\\
-E7 label-resolution tolerance & --- & morphological erosion/dilation/open/close of the reference change mask, 0--40 m, 3 regions \\\\
-E4 distance response & --- & descriptive near--far gradient under the buffer-separated split; grid-cell-clustered inference not significant \\\\
-E5 buffer widths & 18 & val-test buffer 1 / 2 / 4 km \\\\
-E6 leave-one-cluster-out & 1 & cluster-level fragility of regional point estimates (leave\_one\_cluster\_out.json), 3 regions, 10 models \\\\
-PCC baseline & 6 & post-classification comparison, both weighting schemes \\\\
+primary separated (I/I) & 50 & buffer-separated within-region protocol, 5 run seeds \\
+secondary sqrt & 150 & square-root weighting replication of the interleaved sweep \\
+E1 interleaved sweep & 300 & 10 architectures x 10 split draws x 3 run seeds \\
+E3-B block-interleaved & 260 & overlap-free control, result files across 19 split IDs x 2 arms (16 stratified splits from the design, plus 3 retained from the repaired generation); the design target was 16 splits x 3 architectures x 2 run seeds x 2 arms \\
+E3-C full-size overlap-free & 90 & disjoint 128 px pool, 40/10/10, scattered vs separated, prevalence matched \\
+E2 I/R cell & 75 & isolated training, random test \\
+E7 label-resolution tolerance & --- & morphological erosion/dilation/open/close of the reference change mask, 0--40 m, 3 regions \\
+E4 distance response & --- & descriptive near--far gradient under the buffer-separated split; grid-cell-clustered inference not significant \\
+E5 buffer widths & 18 & val-test buffer 1 / 2 / 4 km \\
+E6 leave-one-cluster-out & 1 & cluster-level fragility of regional point estimates (leave\_one\_cluster\_out.json), 3 regions, 10 models \\
+PCC baseline & 6 & post-classification comparison, both weighting schemes \\
 \midrule
-\multicolumn{3}{l}{\emph{superseded or invalid, retained as evidence}} \\
+\multicolumn{3}{l}{\emph{superseded or invalid}} \\
 E3 generation 1 & --- & superseded by E3-B: two of its four split seeds resolved to the same test set, leaving three distinct test sets (80 runs) \\
 composition penalty v0 & --- & invalid: used the block training pool as the composition control; archived, not deleted \\
 \bottomrule
@@ -1918,12 +1937,7 @@ Everything needed to reproduce the numbers in this paper---the analysis code,
 the exact patch index lists and split assignments for every protocol, the
 trained model checkpoints, the per-pixel prediction dumps, the derived metric
 JSONs, and the scripts that generate every table and figure---is available in the public GitHub repository
-\url{https://github.com/hao-feier/split-audit};
- the code base accompanying this submission is the
- \texttt{main} branch of that repository at the time of submission.
-The full code base is provided with the submission rather than on
-request because the paper's subject is the evaluation protocol: a
-reader cannot check a claim about a split without the split itself.
+ \url{https://github.com/hao-feier/split-audit}.
 \ \ \textbf{Code availability.} The composite, label, patch,
 training, counterfactual and analysis pipelines are versioned in the
 project repository accompanying this submission; the environment is
