@@ -48,8 +48,9 @@ either main effect.
 under extreme imbalance, a near-zero $F1$ does not imply an uninformative
 model. All metrics measure agreement with a single noisy reference (GMW); the
 $F1$--ROC-AUC divergence is a property of the metric pair under the split
-protocol---including a checkpoint-selection component of the interleaved arm
-that the design does not separate---not a decomposition of model error.}
+protocol, which includes a checkpoint-selection component of the
+interleaved arm that the design does not separate; it is not a
+decomposition of model error.}
 
  \keyword{spatial cross-validation; case prevalence; change detection; extreme class imbalance;
 noisy reference labels; buffer separation;
@@ -1316,6 +1317,10 @@ so they interleave through the region, the other selects them to be far from the
 training set. Train/test pixel overlap is zero \emph{by construction in both
 arms}, the sizes are identical, and the two arms differ only in where the
 evaluation patches sit---which is the quantity E3 exists to isolate.
+(E3-B and E3-C sign their per-seed gap with opposite conventions---E3-B
+as near minus far, E3-C as far minus near, as each caption states---so
+their signs should not be compared directly; only the magnitudes are
+comparable across the two experiments.)
 
 Test-set prevalence differs between arms a priori, because change concentrates on
 the fringe where the training patches are, so the far arm is systematically less
@@ -1471,10 +1476,11 @@ architecture effect: it is consistent in direction across all ten architectures,
  (SCL 4--6 only, one model, U-Net, three seeds) shows the gap is essentially
  unchanged: $+29.5$\,pp under the strict mask versus $+28.6$\,pp with the
  retained cloud family (both for that single model; the ten-architecture
- headline is $+29.6$\,pp). The $0.9$\,pp difference between the two masks is
- comparable to the spread of the three per-seed gaps under the strict mask
- ($29.2$--$30.1$\,pp), so the effect is not an artefact of the retained
- cloud-shadow pixels.
+  headline is $+29.6$\,pp). The $0.9$\,pp difference between the two masks
+  lies within the spread of the three per-seed gaps under the strict mask
+  ($29.2$--$30.1$\,pp), i.e.\ at the level of seed-to-seed variation rather
+  than a clear systematic effect; the effect is therefore not an artefact
+  of the retained cloud-shadow pixels.
 
 Two design questions remain untested at this resolution. The patch grid snaps to multiples of $2.56$\,km, so the
 nominal $1$-km and $2$-km buffers produce the \emph{identical} split (the $16$
