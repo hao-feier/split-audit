@@ -46,7 +46,7 @@ training$\times$test interaction term ($+17.8$ to $+26.1$\,pp) exceeding
 either main effect.
  Nine of 90 runs score near-zero $F1$ yet rank at ROC-AUC $0.77$--$0.97$:
 under extreme imbalance, a near-zero $F1$ does not imply an uninformative
-model. All metrics are agreement with a single noisy reference (GMW); the
+model. All metrics measure agreement with a single noisy reference (GMW); the
 $F1$--ROC-AUC divergence is a property of the metric pair under the split
 protocol---including a checkpoint-selection component of the interleaved arm
 that the design does not separate---not a decomposition of model error.}
@@ -114,8 +114,8 @@ at the original geometry remain jointly confounded. Models are trained on the Re
 fine-tuning, on two geographically disjoint Chinese sites, with a second
 Sentinel-2-based reference product as an extent-level label-source sensitivity check.
 
-The distinction between the two mechanisms this configuration can carry is
-what the paper turns on.
+The paper's central question is which of the two mechanisms this configuration
+can carry.
 \emph{Level-1 direct overlap}: test patches share at least one pixel with
 a training patch, so near-duplicate observations appear on both sides of
 the split. This is an artefact of the sampling geometry, is absent from
@@ -297,11 +297,11 @@ confirms the underlying products use different processing baselines
 the COG reprocessing, not of the original L2A product. No cross-epoch
 radiometric harmonisation is applied.
 A residual additive or multiplicative bias between epochs cannot be excluded,
-and unharmonised temporal radiometric variation is treated as an unresolved
-nuisance factor rather than a resolved property.
+and unharmonised temporal radiometric variation is an unresolved
+nuisance factor.
 
 Two independent checks on the actual composites (Appendix~\ref{app:repro}) give
-a directionally consistent but non-quantitative check (no reverse power). Water, the standard pseudo-invariant
+a directionally consistent but non-quantitative check. Water, the standard pseudo-invariant
 target, agrees closely in the training region: the 95th percentile of
 water pixels differs by under $1\%$ in the near-infrared and short-wave bands
 ($2666$ against $2658$ in B08) and by $5$--$8\%$ in the blue and green bands.
@@ -313,12 +313,10 @@ The target is not invariant across a five-year interval of real mangrove change,
 and tiles were averaged on differing grids before comparison.
 Both factors bias the slope away from one. It does mean that the absence of
 harmonisation rests on the water-target check alone, which is weaker than a
-cross-sensor harmonisation would require, and a residual additive bias between
-epochs cannot be excluded. The $0.34$--$0.94$ gain range implies that, if a true
+cross-sensor harmonisation would require. The $0.34$--$0.94$ gain range implies that, if a true
 radiometric drift exists, its direction and magnitude are unknown and could
-either amplify or attenuate the measured change signal. This is stated as a
-limitation of the change labels, rather than as a claim that the two epochs are
-radiometrically interchangeable. Two dry-season windows were used: 1 December 2019--31
+either amplify or attenuate the measured change signal. This is a limitation of the change labels: the two epochs are not claimed to
+be radiometrically interchangeable. Two dry-season windows were used: 1 December 2019--31
 January 2020 ($t_1$) and 1 December 2024--31 January 2025 ($t_2$); dry seasons
 minimise cloud and the tidal differences that otherwise dominate mangrove
 spectra.
@@ -466,9 +464,8 @@ obtained under patch- or image-level splits---the same geometry that
 Section~\ref{sec:rand} shows moves within-region change $F1$ by tens of
 points---so the per-architecture numbers in Table~\ref{tab:main} are not
 comparable to them; aligning the split here with theirs would reintroduce the
-confound this paper exists to price. The suite's role is to hold the architecture fixed while the split varies, and
-the ten deep networks spanning six families and $2.3$--$19$M parameters
-(Table~\ref{tab:archspec}) serve that role.
+confound this paper exists to price. The suite holds the architecture fixed while the split varies: the ten deep networks
+spanning six families and $2.3$--$19$M parameters (Table~\ref{tab:archspec}).
 
 Three deviations bound what the suite can be used for. The dual-encoder models
 consume $X_1$ and $X_2$ separately while the static models receive the
@@ -488,17 +485,15 @@ Two non-deep references bracket the suite. The pixel-level baselines
 (Section~\ref{sec:results}) are effectively useless on the change classes. A
 post-classification comparison (PCC) baseline---a plain U-Net classifying each
 epoch independently into presence/absence, with change defined as
-disagreement between the two class maps---is now reported under both
+disagreement between the two class maps---is reported under both
 protocols. At Zhanjiang it reaches change $F1$ $0.40$ (three-seed mean,
 $0.40/0.40/0.40$) under the primary uniform scheme and $0.41$
 ($0.44/0.40/0.40$) under the secondary square-root scheme. Against FC-Siam,
 the best deep model at Zhanjiang under the primary uniform scheme, the
 PCC--deep ordering flips by protocol at the same site---$0.40$ versus $0.43$
 under uniform, $0.41$ versus $0.38$ under square-root---but the two are
-within three points in both cases. This is read
-as evidence that the choice of formulation (PCC versus deep) is not the
-consequential variable here, not as a claim about the two formulations
-(Appendix~\ref{app:repro}).
+within three points in both cases. The choice of formulation (PCC versus deep) is not the consequential variable
+here (Appendix~\ref{app:repro}).
 
 \subsection{Training and Class Imbalance}
  \label{sec:train}
@@ -546,11 +541,10 @@ are not tuned per region.
 Pixel-level baselines use the same nine-band stacks as 27 features ($t_1$,
 $t_2$, $|t_1-t_2|$), a random subsample of at most 300\,000 training pixels,
 default hyper-parameters (Random Forest 300 trees, SVM RBF $C=1$), and each is
-trained both unweighted and with balanced class weights, so the
-deep-versus-pixel comparison is not an artefact of a weakened baseline. Their
+trained both unweighted and with balanced class weights. Their
 low change $F1$ ($0.016$--$0.197$ unweighted) reflects heavy under-sampling of
-the rare class rather than a limit of the model family, and they are read as
-applying to this fixed configuration only.
+the rare class rather than a limit of the model family, and they apply to this
+fixed configuration only.
 
 Re-running U-Net+CBAM+MSA end-to-end in deterministic
 mode (deterministic cuDNN/cuBLAS, fixed RNG, a cross entropy composed from
@@ -637,11 +631,10 @@ $2\times2$ matrix (change = loss + gain vs.\ unchanged) and report $F1_{change}$
 Every deep model was
 trained with five random seeds (2026--2030); tables give mean
 $\pm$ standard deviation over the five seeds, except for the pixel-level
-baselines, which are deterministic given their sampled training pixels. It is
-important to be precise about what that standard deviation is: the five seeds
+baselines, which are deterministic given their sampled training pixels. The five seeds
 re-draw the initialisation, the batch order and the augmentation stream on the
-\emph{same} data and the \emph{same} split, so it measures optimisation
-stochasticity only. It is not a dataset-level or spatial uncertainty and it does
+\emph{same} data and the \emph{same} split, so the standard deviation measures
+optimisation stochasticity only. It is not a dataset-level or spatial uncertainty and it does
 not shrink with more seeds. The spatial uncertainty of any number in this paper
 is bounded instead by the number of independent spatial units available
 (2--5 per test region)---a quantity no amount of seed
@@ -762,7 +755,7 @@ ChangeFormer-style & honest & 0.966\,\scriptsize$\pm$0.001 & 0.471\,\scriptsize$
 \section{Results}
 \label{sec:results}
 
- Stated plainly: the same ten models, trained under an identical recipe, score
+ The same ten models, trained under an identical recipe, score
 $26.9$--$34.1$ percentage points higher change $F1$ when test patches
 interleave the training footprints than when a buffer separates them,
 while their change-pixel ranking (ROC-AUC) differs by only $1.9$\,pp; the
@@ -786,10 +779,9 @@ all shift with the draw; in this arm, 85\% of test patches are adjacent to
 or overlap a validation patch (55/100 have footprint overlap; median minimum
 edge-to-edge distance $0$\,km), so validation-based early stopping is spatially
 proximate to the test set. Because the interleaved arm draws its training,
-validation, and test patches from the same pool, this val--test proximity is a
-component of the interleaved protocol by construction rather than an independent
-confound; it is part of what the interleaved protocol measures, and the
-checkpoint-selection channel it opens is addressed in Section~\ref{sec:limitations}.
+validation, and test patches from the same pool, this val--test proximity is part of the
+interleaved protocol by construction; the checkpoint-selection channel it opens is
+addressed in Section~\ref{sec:limitations}.
 The isolated arm's slight variation across the ten
 partitions ($0.268$--$0.281$) reflects the different seed triplets drawn from
 the five-seed primary sweep ($C(5,3){=}10$), not a change in data composition.
@@ -1087,7 +1079,7 @@ shared validation threshold & one for both & $+8.1$ \\
 \subsection{Decomposing the Gap Between Prevalence Arithmetic and the Recall Shift}
 \label{sec:prevalence}
 
-\emph{This section decomposes the $+29.6$\,pp gap in three steps: a $2\times2$
+\emph{This section decomposes the $+29.6$\,pp gap in two steps: a $2\times2$
  factorial that separates the training-side, test-side and joint components;
 and a direct
 prevalence reweighting that measures the case-mix term on its own.}
@@ -1198,7 +1190,7 @@ version would show.
 The prevalence component is measurable, and it is small. The
 factorial's $\Delta_{\mathrm{test}} = +5.8$--$+11.4$\,pp is sometimes read as a
 pure prevalence (case-mix) effect, but this is incorrect: the I/R and I/I cells
-share the \emph{same} interleaved training zone, so $\Delta_{\mathrm{test}}$
+share the \emph{same} isolated training zone, so $\Delta_{\mathrm{test}}$
 reflects differences in the test set's prevalence, spatial morphology, local
 neighborhood, and patch composition jointly. To isolate the prevalence
 arithmetic, a direct reweighting was performed: for each of the 81
@@ -1272,7 +1264,7 @@ decomposition. The $1.9$\,pp difference between the $+12.5$\,pp
 runs' mean TPR/FPR is due to the 9 collapsed runs (all- or
 near-all-background predictions, BA gap $\approx 0$) diluting the all-run average.
 
-Two reasons to read the factorial bounds as bounds rather than a decomposition.
+The factorial bounds are bounds, not a decomposition, for two reasons.
 The I/R cell's test-set prevalence ($1.70\%$) is itself above the honest
 $1.26\%$, so $\Delta_{\mathrm{test}}$ includes a residual prevalence
 component. And the remainder is labelled by the geometry it co-varies with,
@@ -1310,7 +1302,7 @@ identified.
 \label{sec:e3}
 
 E3-C applies the same control at a reduced patch geometry (128\,px pool).
-E3-B (block-interleaved, 16 splits, 3 architectures) and E3-C (reduced 128\,px
+E3-B (block-interleaved, 13 feasible splits, 3 architectures) and E3-C (reduced 128\,px
 geometry) are two variants of the overlap-free control. E3-B's reduced scale is
 a consequence of one design choice, not a property of the
 landscape: at $512$\,px on a $256$\,px stride the extracted patches overlap, so
@@ -1484,8 +1476,7 @@ architecture effect: it is consistent in direction across all ten architectures,
  ($29.2$--$30.1$\,pp), so the effect is not an artefact of the retained
  cloud-shadow pixels.
 
-Two design questions this geometry cannot test stay open at the
-resolution tested. The patch grid snaps to multiples of $2.56$\,km, so the
+Two design questions remain untested at this resolution. The patch grid snaps to multiples of $2.56$\,km, so the
 nominal $1$-km and $2$-km buffers produce the \emph{identical} split (the $16$
 buffer patches are the same in both); only the $4$-km buffer is materially
 different, and it yields the same within-region $F1$ to within the seed standard
@@ -1518,8 +1509,8 @@ compositing, label density, and prevalence simultaneously---so they cannot
 be used to isolate the split effect. They do show that the within-region
 $F1$ range is not determined by the split protocol alone: cross-region
 transfer, label density, and local prevalence all move the score across the
-full $0.1$--$0.6$ band. They are reported as a descriptive transfer check, not
-as evidence for or against the split-protocol finding. The wide range and
+full $0.1$--$0.6$ band. They are a descriptive transfer check, not evidence
+for or against the split-protocol finding. The wide range and
 its overlap with the honest arm are mechanism-consistent with the TPR
 decomposition: external sites carry no footprint overlap with the training
 set, so the recall boost associated with the joint spatial configuration is
@@ -1567,9 +1558,8 @@ the measured $t_1$--$t_2$ difference may be water level rather than vegetation.
 \subsection{A Benchmarking Checklist}
 \label{sec:checklist}
 
-The nearest thing this study has to a generalisable methodological output is a
-reporting checklist for change-detection results on spatially
-structured imagery. The four items that bear directly on whether the
+The study's methodological output is a reporting checklist for change-detection
+results on spatially structured imagery. The four items that bear directly on whether the
 headline number here is interpretable are: report train--test footprint overlap
 as a count (Section~\ref{sec:geom}); include an overlap-free interleaved
 control and report its interval width and design size, not only its sign
@@ -1583,17 +1573,16 @@ structured change-detection evaluation.
 \subsection{Limitations}
 \label{sec:limitations}
 
-\emph{No field reference.} Every number here is agreement with a GMW label, not
-accuracy. The designed 2{,}400-point interpretation set has no point
+\emph{No field reference.} Every number here measures agreement with a GMW label, not
+accuracy. No point of the designed 2{,}400-point interpretation set has been
 field-interpreted, so no accuracy claim is available.
 
 \emph{Checkpoint-selection channel in the interleaved arm.} Because the
 interleaved arm draws its validation and test patches from the same pool,
 85\% of its test patches are adjacent to or overlap a validation patch
 (Section~\ref{sec:rand}), so validation-based early stopping is spatially
-proximate to the test set and can select for it. This is a property of the
-interleaved protocol, not a separately controlled confound: the gap reported
-for that arm is the total cost of the protocol, including the selection
+proximate to the test set and can select for it. This is part of the interleaved
+protocol: the gap reported for that arm is its total cost, including the selection
 component. We have not isolated the selection component from the spatial
 representation component: a fixed-epoch control (stopping both arms at the
 honest arm's median epoch, removing the val-selected stopping rule) would
@@ -1606,12 +1595,13 @@ $\Delta_{\mathrm{test}}$ compares two arms whose training sides (and hence
 validation sets) are both spatially separated, and $\Delta_{\mathrm{int}}$
  is a difference of per-arm selection terms whose sign the channel does not
 determine. None of the three is separable into spatial and selection parts
-with the current runs. One consequence is worth stating in the other
-direction: because both arms that $\Delta_{\mathrm{test}}$ compares draw
-their validation sets from the separated zone, the channel does not act
-differentially on either arm, so the test-side component ($+5.8$ to
-$+11.4$\,pp) is the one piece of the decomposition whose sign is not exposed
-to this channel at all.
+with the current runs. One consequence runs in the other direction: because
+both arms that $\Delta_{\mathrm{test}}$ compares share the same training and
+validation zones, the training-side selection is held fixed across the two
+arms. The val--test proximity, however, is not held fixed between the arms,
+so the residual differential contribution of this channel to
+$\Delta_{\mathrm{test}}$ ($+5.8$ to $+11.4$\,pp) is not quantified---it falls
+under the same deferred fixed-epoch control.
 
 \emph{Reference-error $\times$ tested-pixel-distribution interaction.} The
 protocol contrast is measured against GMW labels on both arms. GMW's label
@@ -1697,8 +1687,8 @@ comparable to the change signal that any classifier threshold must exceed.
 \section{Conclusions}
 
 A validation score is produced by the model under a sampling and scoring
-protocol, not by the model alone. This was demonstrated in the hardest case
-for bi-temporal change detection: Sentinel-2 composites, one noisy reference,
+protocol, not by the model alone. This was demonstrated in a demanding
+bi-temporal change-detection setting: Sentinel-2 composites, one noisy reference,
 change extremely rare ($0.8$--$2.6\%$), training in Vietnam, testing without
 fine-tuning on two disjoint Chinese sites. Three conclusions survive the
 available evidence.
@@ -1742,12 +1732,11 @@ mechanism---resubstitution shows no detectable generalisation gap, so the
 control is unlikely to be sensitive to memorisation. The reduced-scale block
 control is negative in $12$ of the $13$ feasible splits, but its magnitude is
 unidentified. The joint spatial configuration (overlap, proximity, morphology,
-local prevalence) remains an unidentified black box at the original
-$512$-pixel geometry. This is the boundary of what the design can resolve.
+local prevalence) remains unresolved at the original
+$512$-pixel geometry; that is the boundary of what the design can resolve.
 
-No architecture ranking, no field-accuracy claim (no designed validation point
-field-interpreted), and no causal decomposition of the residual
-contrast are made. The defensible conclusion is that the split protocol is part of the
+No architecture ranking, no field-accuracy claim (no point of the designed interpretation set field-interpreted), and no causal decomposition of the residual
+contrast are made. The conclusion is that the split protocol is part of the
 measurement: a reported change-detection score is a function of model,
 protocol, and reference---not of the model alone.
 
@@ -1832,7 +1821,7 @@ class-weighted CE + soft Dice) \\
 summed over patches and therefore count each 10\,m pixel once per patch that
 covers it; because patches overlap 50\% on the extraction grid, they overstate
 the distinct area by the duplication factors reported in
-Section~\ref{sec:geom} and must not be read as sample sizes.}
+Section~\ref{sec:geom} and are not sample sizes.}
 \label{tab:data}
 \begin{tabular}{lcccc}
 \toprule
