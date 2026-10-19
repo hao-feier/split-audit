@@ -1,13 +1,13 @@
-# The Split Is Part of the Measurement
+# When F1 and ROC-AUC Disagree: A 30-Point Metric Divergence Under Spatial Interleaving
 
 A **spatial evaluation audit** of bi-temporal Sentinel-2 mangrove change detection.
 This repository asks a measurement question, not a model question: **how much of a
 reported change-detection score is produced by the train/test split design rather
 than by the model?**
 
-Manuscript title: *The Split Is Part of the Measurement: Spatial Interleaving,
-Prevalence, and Evaluation Bias in Bi-Temporal Mangrove Change Detection from
-Sentinel-2* (`paper/main.tex`, MDPI *Remote Sensing*, 31 pp in the current build, not yet submitted).
+Manuscript title: *When F1 and ROC-AUC Disagree: A 30-Point Metric Divergence
+Under Spatial Interleaving in Extreme-Imbalance Bi-Temporal Change Detection*
+(`paper/main.tex`, MDPI *Remote Sensing*, 31 pp in the current build, not yet submitted).
 Every number in the manuscript is regenerated and checked from `results/*.json` by
 `analysis/verify_manuscript_numbers.py` (the check set grows with the manuscript).
 
@@ -93,13 +93,19 @@ paper appendix (`tab:reg`).
 
 Mangrove areas are the processed label domain (`data/processed/<region>/label_stats.json`).
 Training and test regions are geographically disjoint and buffer-separated.
-Evaluated change prevalence: 0.81–2.84 % of pixels.
+Evaluated change prevalence: 0.81–2.65 % of pixels across the three reference-label sets
+(interleaved test draws: 2.9–3.8 %).
 
 ## Data
 
-- **Imagery** — Sentinel-2 L2A (B02/B03/B04/B08/B11/B12 + SCL), AWS open data
-  (`s3://sentinel-s2-l2a`), dry-season windows (2019-12–2020-01, 2024-12–2025-01),
-  cloud-filtered median composites. Processing baseline 2022-01.
+- **Imagery** — Sentinel-2 L2A (B02/B03/B04/B08/B11/B12 + SCL), AWS Open Data
+  COG collection (bucket `sentinel-cogs`, via the Element 84 earth-search STAC
+  API), dry-season windows (2019-12–2020-01, 2024-12–2025-01), cloud-filtered
+  median composites. Processing baselines differ by epoch (t1: 02.13/05.00,
+  t2: 05.11); the collection serves both on one offset-free 0–10000 scale — a
+  property of the COG reprocessing, not of the original L2A products
+  (tile-by-tile STAC audit in `results/s2_processing_baseline.json`). No
+  cross-epoch radiometric harmonisation is applied.
 - **Labels** — Global Mangrove Watch v4.1.12 time series (Zenodo record `21346457`;
   Landsat-based; consortium-reported global mangrove-extent F1 0.928
   across 32,569 reference points at 120 sites — an extent, not a change, figure). Four classes: stable mangrove / loss /
@@ -204,7 +210,7 @@ cd paper && pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex ma
 ```
 mangrove/      core package (config, paths, geo, datasets, metrics, models)
 experiments/   exp0 region selection, exp1_* (fetch/composite/labels/patch) data prep, exp2 splits,
-               exp3_* training + evaluation-design sweeps, exp4-5, plus
+               exp3_* training + evaluation-design sweeps, exp4_visualize.py, plus
                resumable run_*.sh launchers for each sweep family
 analysis/      post-hoc analysis, figure/table generation, claim verification,
                figure-QA utilities
@@ -221,7 +227,7 @@ paper/         LaTeX manuscript (main.tex, refs.bib, cover_letter.tex)
 logs/          run logs (not versioned)
 ```
 
-Documents: historical planning and audit artifacts live in `docs/` (the planning files are gitignored by design, see .gitignore; `docs/Figure_and_Table_Audit.md` is tracked for provenance), where superseded documents are kept for local provenance.
+Documents: historical planning and audit artifacts live in `docs/` as local-only working notes (not part of the published repository).
 
 ## Citation
 
@@ -229,8 +235,8 @@ The manuscript is not yet published. Until it is, cite the repository:
 
 ```bibtex
 @misc{split_audit_mangrove,
-  title  = {The Split Is Part of the Measurement: Spatial Interleaving, Prevalence,
-            and Evaluation Bias in Bi-Temporal Mangrove Change Detection from Sentinel-2},
+  title  = {When F1 and ROC-AUC Disagree: A 30-Point Metric Divergence Under
+            Spatial Interleaving in Extreme-Imbalance Bi-Temporal Change Detection},
   author = {Yuan, Junzhe and Hao, Feier},
   year   = {2026},
   note   = {Manuscript, MDPI Remote Sensing (in preparation)}

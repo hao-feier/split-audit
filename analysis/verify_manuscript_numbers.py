@@ -1016,20 +1016,21 @@ try:
         ("remote-sensing imagery", "RS-pretrained encoder is named"),
     ]:
         assert_true(f"absent baseline disclosed: {why}", needle in texf, "present")
-    assert_true("absence is framed as a scope decision, not an oversight",
-                "scope decision rather than an oversight" in texf, "present")
+    assert_true("absent families declared as deliberate scope, not oversight",
+                "The suite contains no CVA/index-difference fusion variant" in texf, "present")
     assert_true("the paper declines to compare against published SOTA, and says why",
-                "the numbers here are not read against published state of the art" in texf,
+                "are not comparable to them" in texf,
                 "present")
     assert_true("PCC distinguished from the absent index-difference family",
                 "classifies each" in tex and "rather than differencing bands or indices" in texf,
                 "present")
     assert_true("ImageNet pretrained control distinguished from RS pretraining",
-                "supervised on ImageNet, not on remote sensing" in texf, "present")
+                "no encoder pretrained on remote-sensing imagery (the only pretrained-encoder "
+                "control is supervised on ImageNet)" in texf, "present")
     assert_true("justification is tied to the paper's own confound argument",
                 "would reintroduce the confound this" in texf, "present")
-    assert_true("reader directed elsewhere for architecture-ranking questions",
-                "should treat this paper as not answering it" in texf, "present")
+    assert_true("no architecture ranking attempted (readers not misled into one)",
+                "No architecture ranking is therefore attempted" in texf, "present")
 except Exception as e:
     check("absent-baseline disclosure", f"skipped ({type(e).__name__})", "ok")
 
