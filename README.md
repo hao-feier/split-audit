@@ -50,6 +50,10 @@ Stated explicitly, because the honest boundary is the contribution:
 
 ## Study design
 
+![Study regions and patch roles: training, validation, 2 km buffer, and held-out test](figures/fig1_spatial_split.png)
+
+*Fig. 1 — Study regions and patch roles. Vietnam (a) holds the training zone with a 2 km buffer and interleaved test draws; Beilunhe (b) and Zhanjiang (c) are geographically separate held-out test regions.*
+
 **Patches.** 512-px patches (5.12 km footprint) cut at 2.56 km steps, so
 adjacent patches overlap by half their width. Vietnam supplies 76 patches
 (40 train / 10 val / 10 test / 16 held out by the buffer); Beilunhe (18) and
