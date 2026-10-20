@@ -238,12 +238,3 @@ The manuscript is not yet published. Until it is, cite the repository:
   note   = {Manuscript, MDPI Remote Sensing (in preparation)}
 }
 ```
-
-## Status & limitations
-
-- **Field interpretation** (2,400 designed points): tooling ready, not yet
-  interpreted — so no field-accuracy claim is possible yet.
-- **Zenodo deposit** of code and processed metrics: pending.
-- Runnable but not reported in the current manuscript: strict-SCL mask
-  sensitivity, tide-matched subset, and the sqrt-protocol full-architecture
-  table.
